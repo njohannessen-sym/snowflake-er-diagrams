@@ -1,0 +1,307 @@
+digraph G {
+        graph [
+            nodesep=0.5;
+            rankdir="LR";
+            cencentrate=true;
+            splines="spline";
+            fontname="Helvetica";
+            pad="0.2,0.2",
+            label="",
+
+        ];
+
+        node [shape=plain, fontname="Helvetica"];
+        edge [
+            dir=both,
+            fontsize=12,
+            arrowsize=0.9,
+            penwidth=1.0,
+            labelangle=32,
+            labeldistance=1.8,
+            fontname="Helvetica"
+        ];
+
+	 CELL_MAPPING [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>CELL_MAPPING</b></td></tr>
+        
+		<tr><td port="ENDPOINT" align="center" cellpadding="5">ENDPOINT</td></tr>
+		<tr><td port="CELL_NAME" align="center" cellpadding="5">CELL_NAME</td></tr>
+		<tr><td port="CELL_PREFIX" align="center" cellpadding="5">CELL_PREFIX</td></tr>
+		<tr><td port="CELL_NAME_MERGED" align="center" cellpadding="5">CELL_NAME_MERGED</td></tr>
+		<tr><td port="THROUGHPUT_TYPE" align="center" cellpadding="5">THROUGHPUT_TYPE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 FACT_DAILY_SUMMARY [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>FACT_DAILY_SUMMARY</b></td></tr>
+        
+		<tr><td port="CALENDAR_DATE" align="center" cellpadding="5">CALENDAR_DATE</td></tr>
+		<tr><td port="CARTON_SUSPECT_QTY" align="center" cellpadding="5">CARTON_SUSPECT_QTY</td></tr>
+		<tr><td port="DML_SOURCE" align="center" cellpadding="5">DML_SOURCE</td></tr>
+		<tr><td port="UPDATED_USER" align="center" cellpadding="5">UPDATED_USER</td></tr>
+		<tr><td port="CARTON_TOTAL_QTY" align="center" cellpadding="5">CARTON_TOTAL_QTY</td></tr>
+		<tr><td port="CREATED_USER" align="center" cellpadding="5">CREATED_USER</td></tr>
+		<tr><td port="CARTON_REMAINING_CAPACITY" align="center" cellpadding="5">CARTON_REMAINING_CAPACITY</td></tr>
+		<tr><td port="UPDATED_TS" align="center" cellpadding="5">UPDATED_TS</td></tr>
+		<tr><td port="CREATED_TS" align="center" cellpadding="5">CREATED_TS</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 FACT_HOURLY_SNAPSHOT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>FACT_HOURLY_SNAPSHOT</b></td></tr>
+        
+		<tr><td port="HOUR_START_TS" align="center" cellpadding="5">HOUR_START_TS</td></tr>
+		<tr><td port="CREATED_USER" align="center" cellpadding="5">CREATED_USER</td></tr>
+		<tr><td port="CARTON_SUSPECT_QTY" align="center" cellpadding="5">CARTON_SUSPECT_QTY</td></tr>
+		<tr><td port="CREATED_TS" align="center" cellpadding="5">CREATED_TS</td></tr>
+		<tr><td port="DML_SOURCE" align="center" cellpadding="5">DML_SOURCE</td></tr>
+		<tr><td port="CARTON_NORMAL_QTY" align="center" cellpadding="5">CARTON_NORMAL_QTY</td></tr>
+		<tr><td port="CALENDAR_DATE" align="center" cellpadding="5">CALENDAR_DATE</td></tr>
+		<tr><td port="UNIQUE_SKU_COUNT" align="center" cellpadding="5">UNIQUE_SKU_COUNT</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 FACT_INVENTORY_THROUGHPUT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>FACT_INVENTORY_THROUGHPUT</b></td></tr>
+        
+		<tr><td port="SHIFT_END_TS" align="center" cellpadding="5">SHIFT_END_TS</td></tr>
+		<tr><td port="INBOUND_THROUGHPUT_QTY" align="center" cellpadding="5">INBOUND_THROUGHPUT_QTY</td></tr>
+		<tr><td port="ENDING_CARTON_QTY" align="center" cellpadding="5">ENDING_CARTON_QTY</td></tr>
+		<tr><td port="CREATED_TS" align="center" cellpadding="5">CREATED_TS</td></tr>
+		<tr><td port="OUTBOUND_THROUGHPUT_QTY" align="center" cellpadding="5">OUTBOUND_THROUGHPUT_QTY</td></tr>
+		<tr><td port="CREATED_USER" align="center" cellpadding="5">CREATED_USER</td></tr>
+		<tr><td port="DML_SOURCE" align="center" cellpadding="5">DML_SOURCE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 FACT_SHELF_USAGE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>FACT_SHELF_USAGE</b></td></tr>
+        
+		<tr><td port="AS_OF_TS" align="center" cellpadding="5">AS_OF_TS</td></tr>
+		<tr><td port="LEVEL_NUMBER" align="center" cellpadding="5">LEVEL_NUMBER</td></tr>
+		<tr><td port="MODULE_NUMBER" align="center" cellpadding="5">MODULE_NUMBER</td></tr>
+		<tr><td port="SHELF_NUMBER" align="center" cellpadding="5">SHELF_NUMBER</td></tr>
+		<tr><td port="CALENDAR_DATE" align="center" cellpadding="5">CALENDAR_DATE</td></tr>
+		<tr><td port="LOC_SUSPECT_QTY" align="center" cellpadding="5">LOC_SUSPECT_QTY</td></tr>
+		<tr><td port="CASE_SUSPECT_QTY" align="center" cellpadding="5">CASE_SUSPECT_QTY</td></tr>
+		<tr><td port="CASE_NORMAL_WIDTH_MM" align="center" cellpadding="5">CASE_NORMAL_WIDTH_MM</td></tr>
+		<tr><td port="LOC_FREE_TOO_SMALL_WIDTH_MM" align="center" cellpadding="5">LOC_FREE_TOO_SMALL_WIDTH_MM</td></tr>
+		<tr><td port="CASE_NORMAL_QTY" align="center" cellpadding="5">CASE_NORMAL_QTY</td></tr>
+		<tr><td port="LOC_FREE_USEABLE_WIDTH_MM" align="center" cellpadding="5">LOC_FREE_USEABLE_WIDTH_MM</td></tr>
+		<tr><td port="CREATED_TS" align="center" cellpadding="5">CREATED_TS</td></tr>
+		<tr><td port="DML_SOURCE" align="center" cellpadding="5">DML_SOURCE</td></tr>
+		<tr><td port="LOC_TOTAL_WIDTH_MM" align="center" cellpadding="5">LOC_TOTAL_WIDTH_MM</td></tr>
+		<tr><td port="CASE_SUSPECT_WIDTH_MM" align="center" cellpadding="5">CASE_SUSPECT_WIDTH_MM</td></tr>
+		<tr><td port="LOC_SUSPECT_WIDTH_MM" align="center" cellpadding="5">LOC_SUSPECT_WIDTH_MM</td></tr>
+		<tr><td port="CREATED_USER" align="center" cellpadding="5">CREATED_USER</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 FIVETRAN_AUDIT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>FIVETRAN_AUDIT</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="MESSAGE" align="center" cellpadding="5">MESSAGE</td></tr>
+		<tr><td port="UPDATE_STARTED" align="center" cellpadding="5">UPDATE_STARTED</td></tr>
+		<tr><td port="UPDATE_ID" align="center" cellpadding="5">UPDATE_ID</td></tr>
+		<tr><td port="SCHEMA" align="center" cellpadding="5">SCHEMA</td></tr>
+		<tr><td port="TABLE" align="center" cellpadding="5">TABLE</td></tr>
+		<tr><td port="START" align="center" cellpadding="5">START</td></tr>
+		<tr><td port="DONE" align="center" cellpadding="5">DONE</td></tr>
+		<tr><td port="ROWS_UPDATED_OR_INSERTED" align="center" cellpadding="5">ROWS_UPDATED_OR_INSERTED</td></tr>
+		<tr><td port="STATUS" align="center" cellpadding="5">STATUS</td></tr>
+		<tr><td port="PROGRESS" align="center" cellpadding="5">PROGRESS</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 HEALTHCHECKPROCEDURESRESULT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>HEALTHCHECKPROCEDURESRESULT</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="ROWCOUNT" align="center" cellpadding="5">ROWCOUNT</td></tr>
+		<tr><td port="PACKAGEVERSION" align="center" cellpadding="5">PACKAGEVERSION</td></tr>
+		<tr><td port="STOREDPROCEDURENAME" align="center" cellpadding="5">STOREDPROCEDURENAME</td></tr>
+		<tr><td port="EXECUTIONDT" align="center" cellpadding="5">EXECUTIONDT</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 INVENTORYSUSPECTACTION [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INVENTORYSUSPECTACTION</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="INVENTORYSUSPECTSID" align="center" cellpadding="5">INVENTORYSUSPECTSID</td></tr>
+		<tr><td port="BOTNUMBER" align="center" cellpadding="5">BOTNUMBER</td></tr>
+		<tr><td port="SUSPECTACTIONTIME" align="center" cellpadding="5">SUSPECTACTIONTIME</td></tr>
+		<tr><td port="SUSPECTACTION" align="center" cellpadding="5">SUSPECTACTION</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="SUSPECTREPORTEDBY" align="center" cellpadding="5">SUSPECTREPORTEDBY</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		</table>>];
+
+	 INVENTORYSUSPECTLOCATIONS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INVENTORYSUSPECTLOCATIONS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="SHELFNAME" align="center" cellpadding="5">SHELFNAME</td></tr>
+		<tr><td port="SUSPECTTIME" align="center" cellpadding="5">SUSPECTTIME</td></tr>
+		<tr><td port="ORIGINALSUSPECTREPORTEDBY" align="center" cellpadding="5">ORIGINALSUSPECTREPORTEDBY</td></tr>
+		<tr><td port="ORIGINALSUSPECTLOCATIONSUBSTATE" align="center" cellpadding="5">ORIGINALSUSPECTLOCATIONSUBSTATE</td></tr>
+		<tr><td port="SHELFLOCATION_OFFSETY" align="center" cellpadding="5">SHELFLOCATION_OFFSETY</td></tr>
+		<tr><td port="INVENTORYID" align="center" cellpadding="5">INVENTORYID</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="SHELFLOCATION_WIDTH" align="center" cellpadding="5">SHELFLOCATION_WIDTH</td></tr>
+		<tr><td port="SUSPECTCLEARTIME" align="center" cellpadding="5">SUSPECTCLEARTIME</td></tr>
+		<tr><td port="ORIGINALSUSPECTREASON" align="center" cellpadding="5">ORIGINALSUSPECTREASON</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 INVENTORYSUSPECTS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INVENTORYSUSPECTS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="ENTERINGWAREHOUSETIME" align="center" cellpadding="5">ENTERINGWAREHOUSETIME</td></tr>
+		<tr><td port="ISUNKNOWN" align="center" cellpadding="5">ISUNKNOWN</td></tr>
+		<tr><td port="EXITINGWAREHOUSETIME" align="center" cellpadding="5">EXITINGWAREHOUSETIME</td></tr>
+		<tr><td port="SUSPECTCLEARLOCATION" align="center" cellpadding="5">SUSPECTCLEARLOCATION</td></tr>
+		<tr><td port="LATESTSUSPECTACTION" align="center" cellpadding="5">LATESTSUSPECTACTION</td></tr>
+		<tr><td port="SKU" align="center" cellpadding="5">SKU</td></tr>
+		<tr><td port="ORIGINALSUSPECTREASON" align="center" cellpadding="5">ORIGINALSUSPECTREASON</td></tr>
+		<tr><td port="CARTONID" align="center" cellpadding="5">CARTONID</td></tr>
+		<tr><td port="SUSPECTLOCATION" align="center" cellpadding="5">SUSPECTLOCATION</td></tr>
+		<tr><td port="CUSTOMERCARTONREF" align="center" cellpadding="5">CUSTOMERCARTONREF</td></tr>
+		<tr><td port="BOTNUMBER" align="center" cellpadding="5">BOTNUMBER</td></tr>
+		<tr><td port="SUSPECTTIME" align="center" cellpadding="5">SUSPECTTIME</td></tr>
+		<tr><td port="LATESTSUSPECTREASON" align="center" cellpadding="5">LATESTSUSPECTREASON</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="ORIGINALSUSPECTACTION" align="center" cellpadding="5">ORIGINALSUSPECTACTION</td></tr>
+		<tr><td port="SUSPECTCLEARTIME" align="center" cellpadding="5">SUSPECTCLEARTIME</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		<tr><td port="ORIGINALSUSPECTREPORTEDBY" align="center" cellpadding="5">ORIGINALSUSPECTREPORTEDBY</td></tr>
+		<tr><td port="LATESTSUSPECTREPORTEDBY" align="center" cellpadding="5">LATESTSUSPECTREPORTEDBY</td></tr>
+		<tr><td port="REMOVED" align="center" cellpadding="5">REMOVED</td></tr>
+		<tr><td port="DRAINED" align="center" cellpadding="5">DRAINED</td></tr>
+		<tr><td port="LABELTYPE" align="center" cellpadding="5">LABELTYPE</td></tr>
+		<tr><td port="FREIGHTTYPE" align="center" cellpadding="5">FREIGHTTYPE</td></tr>
+		<tr><td port="LEVELNUMBER" align="center" cellpadding="5">LEVELNUMBER</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="MINSTOREDTIME" align="center" cellpadding="5">MINSTOREDTIME</td></tr>
+		<tr><td port="ORIGINALBOTID" align="center" cellpadding="5">ORIGINALBOTID</td></tr>
+		<tr><td port="ORIGINALSHELFID" align="center" cellpadding="5">ORIGINALSHELFID</td></tr>
+		<tr><td port="ORIGINALTRANSFERBUFFERID" align="center" cellpadding="5">ORIGINALTRANSFERBUFFERID</td></tr>
+		</table>>];
+
+	 LU_CALENDAR_HOUR [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>LU_CALENDAR_HOUR</b></td></tr>
+        
+		<tr><td port="_FILE" align="center" cellpadding="5">_FILE</td></tr>
+		<tr><td port="_LINE" align="center" cellpadding="5">_LINE</td></tr>
+		<tr><td port="CALENDAR_DATE" align="center" cellpadding="5">CALENDAR_DATE</td></tr>
+		<tr><td port="CALENDAR_HOUR" align="center" cellpadding="5">CALENDAR_HOUR</td></tr>
+		<tr><td port="START_TS" align="center" cellpadding="5">START_TS</td></tr>
+		<tr><td port="END_TS" align="center" cellpadding="5">END_TS</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 LU_INTEGER_VARIABLES_TABLE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>LU_INTEGER_VARIABLES_TABLE</b></td></tr>
+        
+		<tr><td port="VARIABLE_NAME" align="center" cellpadding="5">VARIABLE_NAME</td></tr>
+		<tr><td port="CREATED_USER" align="center" cellpadding="5">CREATED_USER</td></tr>
+		<tr><td port="CREATED_TS" align="center" cellpadding="5">CREATED_TS</td></tr>
+		<tr><td port="VARIABLE_VALUE" align="center" cellpadding="5">VARIABLE_VALUE</td></tr>
+		<tr><td port="UPDATED_TS" align="center" cellpadding="5">UPDATED_TS</td></tr>
+		<tr><td port="DML_SOURCE" align="center" cellpadding="5">DML_SOURCE</td></tr>
+		<tr><td port="UPDATED_USER" align="center" cellpadding="5">UPDATED_USER</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 NOINVENTORYSCRATCHDETAILS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>NOINVENTORYSCRATCHDETAILS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="ISONOVERLAPPINGSUSPECTLOCATION" align="center" cellpadding="5">ISONOVERLAPPINGSUSPECTLOCATION</td></tr>
+		<tr><td port="FREIGHTTYPE" align="center" cellpadding="5">FREIGHTTYPE</td></tr>
+		<tr><td port="ISEPR" align="center" cellpadding="5">ISEPR</td></tr>
+		<tr><td port="ISINVENTORYCURRENTLYONHOLD" align="center" cellpadding="5">ISINVENTORYCURRENTLYONHOLD</td></tr>
+		<tr><td port="ISSUSPECT" align="center" cellpadding="5">ISSUSPECT</td></tr>
+		<tr><td port="ISONUNAVAILABLESHELF" align="center" cellpadding="5">ISONUNAVAILABLESHELF</td></tr>
+		<tr><td port="CARTONID" align="center" cellpadding="5">CARTONID</td></tr>
+		<tr><td port="NOCARTONAVAILABLE" align="center" cellpadding="5">NOCARTONAVAILABLE</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="TODATE" align="center" cellpadding="5">TODATE</td></tr>
+		<tr><td port="FROMDATE" align="center" cellpadding="5">FROMDATE</td></tr>
+		<tr><td port="DELIVERYSTATECHANGETIME" align="center" cellpadding="5">DELIVERYSTATECHANGETIME</td></tr>
+		<tr><td port="CARTONREQUESTID" align="center" cellpadding="5">CARTONREQUESTID</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		<tr><td port="WRONGLABEL" align="center" cellpadding="5">WRONGLABEL</td></tr>
+		</table>>];
+
+	 SCRATCH_REPORT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>SCRATCH_REPORT</b></td></tr>
+        
+		<tr><td port="SCRATCHREPORTID" align="center" cellpadding="5">SCRATCHREPORTID</td></tr>
+		<tr><td port="INVENTORYDISCREPENCYCOUNT" align="center" cellpadding="5">INVENTORYDISCREPENCYCOUNT</td></tr>
+		<tr><td port="PICKORDERTYPE" align="center" cellpadding="5">PICKORDERTYPE</td></tr>
+		<tr><td port="UNKNOWNCOUNT" align="center" cellpadding="5">UNKNOWNCOUNT</td></tr>
+		<tr><td port="UNKNOWNSKUCOUNT" align="center" cellpadding="5">UNKNOWNSKUCOUNT</td></tr>
+		<tr><td port="INVENTORYMANAGERALLOCATIONCOUNT" align="center" cellpadding="5">INVENTORYMANAGERALLOCATIONCOUNT</td></tr>
+		<tr><td port="OTHERCOUNT" align="center" cellpadding="5">OTHERCOUNT</td></tr>
+		<tr><td port="PURGEDCOUNT" align="center" cellpadding="5">PURGEDCOUNT</td></tr>
+		<tr><td port="UNAVAILABLECOUNT" align="center" cellpadding="5">UNAVAILABLECOUNT</td></tr>
+		<tr><td port="OPERATORINITIATEDCOUNT" align="center" cellpadding="5">OPERATORINITIATEDCOUNT</td></tr>
+		<tr><td port="ITEMMASTERISSUECOUNT" align="center" cellpadding="5">ITEMMASTERISSUECOUNT</td></tr>
+		<tr><td port="STARTDATE" align="center" cellpadding="5">STARTDATE</td></tr>
+		<tr><td port="SYSTEMERRORCOUNT" align="center" cellpadding="5">SYSTEMERRORCOUNT</td></tr>
+		<tr><td port="CONVEYABLEMISMATCHCOUNT" align="center" cellpadding="5">CONVEYABLEMISMATCHCOUNT</td></tr>
+		<tr><td port="ENDDATE" align="center" cellpadding="5">ENDDATE</td></tr>
+		<tr><td port="NOINVENTORYCOUNT" align="center" cellpadding="5">NOINVENTORYCOUNT</td></tr>
+		<tr><td port="INVENTORYEXPIREDCOUNT" align="center" cellpadding="5">INVENTORYEXPIREDCOUNT</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 SUSPECTSNAPSHOT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>SUSPECTSNAPSHOT</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="CARTONID" align="center" cellpadding="5">CARTONID</td></tr>
+		<tr><td port="INBOUNDCONVEYORLOADID" align="center" cellpadding="5">INBOUNDCONVEYORLOADID</td></tr>
+		<tr><td port="SNAPSHOTTME" align="center" cellpadding="5">SNAPSHOTTME</td></tr>
+		<tr><td port="TASKPLANID" align="center" cellpadding="5">TASKPLANID</td></tr>
+		<tr><td port="TRANSFERBUFFERLOADID" align="center" cellpadding="5">TRANSFERBUFFERLOADID</td></tr>
+		<tr><td port="INVENTORYID" align="center" cellpadding="5">INVENTORYID</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 INVENTORYSUSPECTACTION:INVENTORYSUSPECTSID->INVENTORYSUSPECTS:ID;
+	}

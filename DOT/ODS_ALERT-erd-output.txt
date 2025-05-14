@@ -1,0 +1,174 @@
+digraph G {
+        graph [
+            nodesep=0.5;
+            rankdir="LR";
+            cencentrate=true;
+            splines="spline";
+            fontname="Helvetica";
+            pad="0.2,0.2",
+            label="",
+
+        ];
+
+        node [shape=plain, fontname="Helvetica"];
+        edge [
+            dir=both,
+            fontsize=12,
+            arrowsize=0.9,
+            penwidth=1.0,
+            labelangle=32,
+            labeldistance=1.8,
+            fontname="Helvetica"
+        ];
+
+	 ALERTLOGS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>ALERTLOGS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="CREATEDTIME" align="center" cellpadding="5">CREATEDTIME</td></tr>
+		<tr><td port="ALERTCONTEXT" align="center" cellpadding="5">ALERTCONTEXT</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="ALERTID" align="center" cellpadding="5">ALERTID</td></tr>
+		<tr><td port="ALERTTYPE" align="center" cellpadding="5">ALERTTYPE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 ALERTS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>ALERTS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="HARDWAREORIGINTYPE" align="center" cellpadding="5">HARDWAREORIGINTYPE</td></tr>
+		<tr><td port="RECOVERYOPTIONS" align="center" cellpadding="5">RECOVERYOPTIONS</td></tr>
+		<tr><td port="ALERTTYPE" align="center" cellpadding="5">ALERTTYPE</td></tr>
+		<tr><td port="PUBLISHER" align="center" cellpadding="5">PUBLISHER</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="ALERTCODE" align="center" cellpadding="5">ALERTCODE</td></tr>
+		<tr><td port="DESCRIPTION" align="center" cellpadding="5">DESCRIPTION</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="RESOLUTIONOWNER" align="center" cellpadding="5">RESOLUTIONOWNER</td></tr>
+		<tr><td port="NAME" align="center" cellpadding="5">NAME</td></tr>
+		<tr><td port="SEVERITY" align="center" cellpadding="5">SEVERITY</td></tr>
+		<tr><td port="RELEVANCETIME" align="center" cellpadding="5">RELEVANCETIME</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 BOTALERTLOGS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>BOTALERTLOGS</b></td></tr>
+        
+		<tr><td port="DYNAMICSTATE_XPOSITION" align="center" cellpadding="5">DYNAMICSTATE_XPOSITION</td></tr>
+		<tr><td port="UNIMPLEMENTEDMODERATEERRORS_TOOMANYWAYPOINTS" align="center" cellpadding="5">UNIMPLEMENTEDMODERATEERRORS_TOOMANYWAYPOINTS</td></tr>
+		<tr><td port="UNIMPLEMENTEDMODERATEERRORS_PLANNINGERROR" align="center" cellpadding="5">UNIMPLEMENTEDMODERATEERRORS_PLANNINGERROR</td></tr>
+		<tr><td port="SLOTSENSORPULSEWIDTH" align="center" cellpadding="5">SLOTSENSORPULSEWIDTH</td></tr>
+		<tr><td port="TRACTIONDRIVE_ERRORSTRING" align="center" cellpadding="5">TRACTIONDRIVE_ERRORSTRING</td></tr>
+		<tr><td port="UNIMPLEMENTEDFATALERRORS_ROVERALERTBADARGS" align="center" cellpadding="5">UNIMPLEMENTEDFATALERRORS_ROVERALERTBADARGS</td></tr>
+		<tr><td port="SENSORWARNING_SENSOR" align="center" cellpadding="5">SENSORWARNING_SENSOR</td></tr>
+		<tr><td port="EXTENSIONRETRACT_FAIL" align="center" cellpadding="5">EXTENSIONRETRACT_FAIL</td></tr>
+		<tr><td port="INVENTORYCHECKRESULTS_CASEPICKDEPTH" align="center" cellpadding="5">INVENTORYCHECKRESULTS_CASEPICKDEPTH</td></tr>
+		<tr><td port="LEVELID" align="center" cellpadding="5">LEVELID</td></tr>
+		<tr><td port="SENSORWARNING_ISSUE" align="center" cellpadding="5">SENSORWARNING_ISSUE</td></tr>
+		<tr><td port="PULSEWIDTH_REARPULSEWIDTH" align="center" cellpadding="5">PULSEWIDTH_REARPULSEWIDTH</td></tr>
+		<tr><td port="EXPERIMENTAL_MISC" align="center" cellpadding="5">EXPERIMENTAL_MISC</td></tr>
+		<tr><td port="INVENTORYCHECKRESULTS_CENTERPOINTY" align="center" cellpadding="5">INVENTORYCHECKRESULTS_CENTERPOINTY</td></tr>
+		<tr><td port="BLADETARGETOUTOFRANGEERROR_REAR" align="center" cellpadding="5">BLADETARGETOUTOFRANGEERROR_REAR</td></tr>
+		<tr><td port="CANNOTSECURE_PAYLOAD" align="center" cellpadding="5">CANNOTSECURE_PAYLOAD</td></tr>
+		<tr><td port="EXCESSIVEHOLDINGFORCE" align="center" cellpadding="5">EXCESSIVEHOLDINGFORCE</td></tr>
+		<tr><td port="BOTID" align="center" cellpadding="5">BOTID</td></tr>
+		<tr><td port="UNIMPLEMENTEDMODERATEERRORS_CASEPICKNOTIDLE" align="center" cellpadding="5">UNIMPLEMENTEDMODERATEERRORS_CASEPICKNOTIDLE</td></tr>
+		<tr><td port="CASEPUTINTOCASEERROR_X1" align="center" cellpadding="5">CASEPUTINTOCASEERROR_X1</td></tr>
+		<tr><td port="DYNAMICSTATE_YPOSITION" align="center" cellpadding="5">DYNAMICSTATE_YPOSITION</td></tr>
+		<tr><td port="INVENTORYCHECKRESULTS_CASEGROUPNUMBER" align="center" cellpadding="5">INVENTORYCHECKRESULTS_CASEGROUPNUMBER</td></tr>
+		<tr><td port="PICKAIR" align="center" cellpadding="5">PICKAIR</td></tr>
+		<tr><td port="ENDPOINTY" align="center" cellpadding="5">ENDPOINTY</td></tr>
+		<tr><td port="LINESENSORREPORT_FRONTLINESCORE" align="center" cellpadding="5">LINESENSORREPORT_FRONTLINESCORE</td></tr>
+		<tr><td port="CASELENOUTOFTOLERANCEERROR_EXPECTEDDEPTH" align="center" cellpadding="5">CASELENOUTOFTOLERANCEERROR_EXPECTEDDEPTH</td></tr>
+		<tr><td port="ROLLERTIMEOUTREASON" align="center" cellpadding="5">ROLLERTIMEOUTREASON</td></tr>
+		<tr><td port="THUMPERSCORE_LEFTTHUMPERSCORE" align="center" cellpadding="5">THUMPERSCORE_LEFTTHUMPERSCORE</td></tr>
+		<tr><td port="SYSTEMINITIALIZATIONFAILURE_ERRORCODE" align="center" cellpadding="5">SYSTEMINITIALIZATIONFAILURE_ERRORCODE</td></tr>
+		<tr><td port="THUMPERSCORE_RIGHTTHUMPERSCORE" align="center" cellpadding="5">THUMPERSCORE_RIGHTTHUMPERSCORE</td></tr>
+		<tr><td port="INVENTORYCHECKRESULTS_UPPERYPOINT" align="center" cellpadding="5">INVENTORYCHECKRESULTS_UPPERYPOINT</td></tr>
+		<tr><td port="DYNAMICSTATE_ROTATIONVEL" align="center" cellpadding="5">DYNAMICSTATE_ROTATIONVEL</td></tr>
+		<tr><td port="UNIMPLEMENTEDFATALERRORS_NOTACTIVE" align="center" cellpadding="5">UNIMPLEMENTEDFATALERRORS_NOTACTIVE</td></tr>
+		<tr><td port="CASEPUTINTOCASEERROR_X2" align="center" cellpadding="5">CASEPUTINTOCASEERROR_X2</td></tr>
+		<tr><td port="CASELENOUTOFTOLERANCEERROR_MEASUREDDEPTH" align="center" cellpadding="5">CASELENOUTOFTOLERANCEERROR_MEASUREDDEPTH</td></tr>
+		<tr><td port="POSITIONUNCERTAIN_POSITIONERROR" align="center" cellpadding="5">POSITIONUNCERTAIN_POSITIONERROR</td></tr>
+		<tr><td port="ENDPOINTX" align="center" cellpadding="5">ENDPOINTX</td></tr>
+		<tr><td port="INVENTORYCHECKRESULTS_LOWERYPOINT" align="center" cellpadding="5">INVENTORYCHECKRESULTS_LOWERYPOINT</td></tr>
+		<tr><td port="WRONGLEVELERROR_OBSERVED" align="center" cellpadding="5">WRONGLEVELERROR_OBSERVED</td></tr>
+		<tr><td port="WHEELRADIUS_RIGHTWHEELRADIUS" align="center" cellpadding="5">WHEELRADIUS_RIGHTWHEELRADIUS</td></tr>
+		<tr><td port="DYNAMICSTATE_YAW" align="center" cellpadding="5">DYNAMICSTATE_YAW</td></tr>
+		<tr><td port="AUTOLOCATENOBARCODE_" align="center" cellpadding="5">AUTOLOCATENOBARCODE_</td></tr>
+		<tr><td port="POSITIONUNCERTAIN_ESTIMATEVARIANCE" align="center" cellpadding="5">POSITIONUNCERTAIN_ESTIMATEVARIANCE</td></tr>
+		<tr><td port="PULSEWIDTH_FRONTPULSEWIDTH" align="center" cellpadding="5">PULSEWIDTH_FRONTPULSEWIDTH</td></tr>
+		<tr><td port="CASEPUTINTOCASEERROR_Y1" align="center" cellpadding="5">CASEPUTINTOCASEERROR_Y1</td></tr>
+		<tr><td port="ODOMETER" align="center" cellpadding="5">ODOMETER</td></tr>
+		<tr><td port="TURNCOUNT" align="center" cellpadding="5">TURNCOUNT</td></tr>
+		<tr><td port="UNIMPLEMENTEDFATALERRORS_FEATUREMAPERROR" align="center" cellpadding="5">UNIMPLEMENTEDFATALERRORS_FEATUREMAPERROR</td></tr>
+		<tr><td port="LINESENSORREPORT_REARLINESCORE" align="center" cellpadding="5">LINESENSORREPORT_REARLINESCORE</td></tr>
+		<tr><td port="BADCASEDIMENSIONERROR_MEASUREDDEPTH" align="center" cellpadding="5">BADCASEDIMENSIONERROR_MEASUREDDEPTH</td></tr>
+		<tr><td port="INVENTORYCHECKRESULTS_UPPERXPOINT" align="center" cellpadding="5">INVENTORYCHECKRESULTS_UPPERXPOINT</td></tr>
+		<tr><td port="DECKLINEWARNINGERRORCOUNT" align="center" cellpadding="5">DECKLINEWARNINGERRORCOUNT</td></tr>
+		<tr><td port="EXTENSIONTIMEOUT_DIRECTION" align="center" cellpadding="5">EXTENSIONTIMEOUT_DIRECTION</td></tr>
+		<tr><td port="EXTENSIONTIMEOUT_POSITION" align="center" cellpadding="5">EXTENSIONTIMEOUT_POSITION</td></tr>
+		<tr><td port="CASEPUTINTOCASEERROR_Y2" align="center" cellpadding="5">CASEPUTINTOCASEERROR_Y2</td></tr>
+		<tr><td port="SLOTSENSORSCORE" align="center" cellpadding="5">SLOTSENSORSCORE</td></tr>
+		<tr><td port="UNIMPLEMENTEDFATALERRORS_ROVERALERTNOTINIT" align="center" cellpadding="5">UNIMPLEMENTEDFATALERRORS_ROVERALERTNOTINIT</td></tr>
+		<tr><td port="INVENTORYCHECKRESULTS_CENTERPOINTX" align="center" cellpadding="5">INVENTORYCHECKRESULTS_CENTERPOINTX</td></tr>
+		<tr><td port="UNIMPLEMENTEDFATALERRORS_CASEBAYCALCULATION" align="center" cellpadding="5">UNIMPLEMENTEDFATALERRORS_CASEBAYCALCULATION</td></tr>
+		<tr><td port="MOTIONWHILEDISABLEDERROR" align="center" cellpadding="5">MOTIONWHILEDISABLEDERROR</td></tr>
+		<tr><td port="WRONGLEVELERROR_EXPECTED" align="center" cellpadding="5">WRONGLEVELERROR_EXPECTED</td></tr>
+		<tr><td port="WHICHARM" align="center" cellpadding="5">WHICHARM</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="TRACTIONDRIVE_DRIVE" align="center" cellpadding="5">TRACTIONDRIVE_DRIVE</td></tr>
+		<tr><td port="CASTERUNLOCKFAILURELEVEL" align="center" cellpadding="5">CASTERUNLOCKFAILURELEVEL</td></tr>
+		<tr><td port="BADCASEDIMENSIONERROR_EXPECTEDDEPTH" align="center" cellpadding="5">BADCASEDIMENSIONERROR_EXPECTEDDEPTH</td></tr>
+		<tr><td port="BLADETARGETOUTOFRANGEERROR_TYPE" align="center" cellpadding="5">BLADETARGETOUTOFRANGEERROR_TYPE</td></tr>
+		<tr><td port="DYNAMICSTATE_LINEARVEL" align="center" cellpadding="5">DYNAMICSTATE_LINEARVEL</td></tr>
+		<tr><td port="UNDERVOLTAGE" align="center" cellpadding="5">UNDERVOLTAGE</td></tr>
+		<tr><td port="UNIMPLEMENTEDFATALERRORS_NOTINITIALISED" align="center" cellpadding="5">UNIMPLEMENTEDFATALERRORS_NOTINITIALISED</td></tr>
+		<tr><td port="INVENTORYCHECKRESULTS_LOWERXPOINT" align="center" cellpadding="5">INVENTORYCHECKRESULTS_LOWERXPOINT</td></tr>
+		<tr><td port="STRUCTURELOCATIONID" align="center" cellpadding="5">STRUCTURELOCATIONID</td></tr>
+		<tr><td port="WHEELRADIUS_LEFTWHEELRADIUS" align="center" cellpadding="5">WHEELRADIUS_LEFTWHEELRADIUS</td></tr>
+		<tr><td port="UNIMPLEMENTEDMODERATEERRORS_NOWAYPOINTS" align="center" cellpadding="5">UNIMPLEMENTEDMODERATEERRORS_NOWAYPOINTS</td></tr>
+		<tr><td port="AUTOLOCATECRCFAIL_" align="center" cellpadding="5">AUTOLOCATECRCFAIL_</td></tr>
+		<tr><td port="INTERNALERROR_GENERICERROR" align="center" cellpadding="5">INTERNALERROR_GENERICERROR</td></tr>
+		<tr><td port="SYSTEMINITIALIZATIONFAILURE_AXIS" align="center" cellpadding="5">SYSTEMINITIALIZATIONFAILURE_AXIS</td></tr>
+		<tr><td port="BLADETARGETOUTOFRANGEERROR_FRONT" align="center" cellpadding="5">BLADETARGETOUTOFRANGEERROR_FRONT</td></tr>
+		<tr><td port="UNIMPLEMENTEDMODERATEERRORS_CASEPICKNOTPLANNED" align="center" cellpadding="5">UNIMPLEMENTEDMODERATEERRORS_CASEPICKNOTPLANNED</td></tr>
+		<tr><td port="CASEHANDLING_DISABLED" align="center" cellpadding="5">CASEHANDLING_DISABLED</td></tr>
+		<tr><td port="OVERHANGINGCASE" align="center" cellpadding="5">OVERHANGINGCASE</td></tr>
+		<tr><td port="RECOVERY_SUCCESS" align="center" cellpadding="5">RECOVERY_SUCCESS</td></tr>
+		<tr><td port="INVENTORYCHECKRESULTS_CASEYAW" align="center" cellpadding="5">INVENTORYCHECKRESULTS_CASEYAW</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 FIVETRAN_AUDIT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>FIVETRAN_AUDIT</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="MESSAGE" align="center" cellpadding="5">MESSAGE</td></tr>
+		<tr><td port="UPDATE_STARTED" align="center" cellpadding="5">UPDATE_STARTED</td></tr>
+		<tr><td port="UPDATE_ID" align="center" cellpadding="5">UPDATE_ID</td></tr>
+		<tr><td port="SCHEMA" align="center" cellpadding="5">SCHEMA</td></tr>
+		<tr><td port="TABLE" align="center" cellpadding="5">TABLE</td></tr>
+		<tr><td port="START" align="center" cellpadding="5">START</td></tr>
+		<tr><td port="DONE" align="center" cellpadding="5">DONE</td></tr>
+		<tr><td port="ROWS_UPDATED_OR_INSERTED" align="center" cellpadding="5">ROWS_UPDATED_OR_INSERTED</td></tr>
+		<tr><td port="STATUS" align="center" cellpadding="5">STATUS</td></tr>
+		<tr><td port="PROGRESS" align="center" cellpadding="5">PROGRESS</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 ALERTLOGS:ALERTID->ALERTS:ID;
+	}

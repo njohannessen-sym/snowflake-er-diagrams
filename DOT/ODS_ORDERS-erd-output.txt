@@ -1,0 +1,246 @@
+digraph G {
+        graph [
+            nodesep=0.5;
+            rankdir="LR";
+            cencentrate=true;
+            splines="spline";
+            fontname="Helvetica";
+            pad="0.2,0.2",
+            label="",
+
+        ];
+
+        node [shape=plain, fontname="Helvetica"];
+        edge [
+            dir=both,
+            fontsize=12,
+            arrowsize=0.9,
+            penwidth=1.0,
+            labelangle=32,
+            labeldistance=1.8,
+            fontname="Helvetica"
+        ];
+
+	 CARTONLABELS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>CARTONLABELS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="ORDERDETAILID" align="center" cellpadding="5">ORDERDETAILID</td></tr>
+		<tr><td port="SEQUENCENUMBER" align="center" cellpadding="5">SEQUENCENUMBER</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 FIVETRAN_AUDIT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>FIVETRAN_AUDIT</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="MESSAGE" align="center" cellpadding="5">MESSAGE</td></tr>
+		<tr><td port="UPDATE_STARTED" align="center" cellpadding="5">UPDATE_STARTED</td></tr>
+		<tr><td port="UPDATE_ID" align="center" cellpadding="5">UPDATE_ID</td></tr>
+		<tr><td port="SCHEMA" align="center" cellpadding="5">SCHEMA</td></tr>
+		<tr><td port="TABLE" align="center" cellpadding="5">TABLE</td></tr>
+		<tr><td port="START" align="center" cellpadding="5">START</td></tr>
+		<tr><td port="DONE" align="center" cellpadding="5">DONE</td></tr>
+		<tr><td port="ROWS_UPDATED_OR_INSERTED" align="center" cellpadding="5">ROWS_UPDATED_OR_INSERTED</td></tr>
+		<tr><td port="STATUS" align="center" cellpadding="5">STATUS</td></tr>
+		<tr><td port="PROGRESS" align="center" cellpadding="5">PROGRESS</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 ORDERBATCHES [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>ORDERBATCHES</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="PRIORITY" align="center" cellpadding="5">PRIORITY</td></tr>
+		<tr><td port="NONSYMBOTICHEAVYCASECOUNT" align="center" cellpadding="5">NONSYMBOTICHEAVYCASECOUNT</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="CUSTOMERBATCHREF" align="center" cellpadding="5">CUSTOMERBATCHREF</td></tr>
+		<tr><td port="NONSYMBOTICLIGHTCASECOUNT" align="center" cellpadding="5">NONSYMBOTICLIGHTCASECOUNT</td></tr>
+		<tr><td port="WAVENUMBER" align="center" cellpadding="5">WAVENUMBER</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="STATE" align="center" cellpadding="5">STATE</td></tr>
+		<tr><td port="CLOSEDTIME" align="center" cellpadding="5">CLOSEDTIME</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 ORDERDETAILEXTENSION [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>ORDERDETAILEXTENSION</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="EXTENSIONVALUE" align="center" cellpadding="5">EXTENSIONVALUE</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="ORDERDETAILID" align="center" cellpadding="5">ORDERDETAILID</td></tr>
+		<tr><td port="EXTENSIONKEYID" align="center" cellpadding="5">EXTENSIONKEYID</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 ORDERDETAILS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>ORDERDETAILS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="ORDERID" align="center" cellpadding="5">ORDERID</td></tr>
+		<tr><td port="APPOINTMENTNUMBER" align="center" cellpadding="5">APPOINTMENTNUMBER</td></tr>
+		<tr><td port="SPOGNUMBER" align="center" cellpadding="5">SPOGNUMBER</td></tr>
+		<tr><td port="DESTINATIONCATEGORYID" align="center" cellpadding="5">DESTINATIONCATEGORYID</td></tr>
+		<tr><td port="LPNSELECTIONMODE" align="center" cellpadding="5">LPNSELECTIONMODE</td></tr>
+		<tr><td port="FULFILLEDBYID" align="center" cellpadding="5">FULFILLEDBYID</td></tr>
+		<tr><td port="GROUPID" align="center" cellpadding="5">GROUPID</td></tr>
+		<tr><td port="PONUMBER" align="center" cellpadding="5">PONUMBER</td></tr>
+		<tr><td port="LABELTYPEID" align="center" cellpadding="5">LABELTYPEID</td></tr>
+		<tr><td port="CANUSEEXPIRED" align="center" cellpadding="5">CANUSEEXPIRED</td></tr>
+		<tr><td port="SSP" align="center" cellpadding="5">SSP</td></tr>
+		<tr><td port="CARTONAVAILABILITYSELECTIONMODE" align="center" cellpadding="5">CARTONAVAILABILITYSELECTIONMODE</td></tr>
+		<tr><td port="USESUBSTITUTESKUS" align="center" cellpadding="5">USESUBSTITUTESKUS</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="LPNID" align="center" cellpadding="5">LPNID</td></tr>
+		<tr><td port="VCP" align="center" cellpadding="5">VCP</td></tr>
+		<tr><td port="CUSTOMERCARTONREF" align="center" cellpadding="5">CUSTOMERCARTONREF</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="CUSTOMERREF" align="center" cellpadding="5">CUSTOMERREF</td></tr>
+		<tr><td port="CUSTOMERCHAINNUMBER" align="center" cellpadding="5">CUSTOMERCHAINNUMBER</td></tr>
+		<tr><td port="ORDERDESTINATION" align="center" cellpadding="5">ORDERDESTINATION</td></tr>
+		<tr><td port="OUTBOUNDDESTINATIONID" align="center" cellpadding="5">OUTBOUNDDESTINATIONID</td></tr>
+		<tr><td port="CUSTOMERTASKID" align="center" cellpadding="5">CUSTOMERTASKID</td></tr>
+		<tr><td port="SOURCEFACILITY" align="center" cellpadding="5">SOURCEFACILITY</td></tr>
+		<tr><td port="BATCH" align="center" cellpadding="5">BATCH</td></tr>
+		<tr><td port="LABELTYPEINCLUSIVITY" align="center" cellpadding="5">LABELTYPEINCLUSIVITY</td></tr>
+		<tr><td port="EACHES" align="center" cellpadding="5">EACHES</td></tr>
+		<tr><td port="CARTONTYPE" align="center" cellpadding="5">CARTONTYPE</td></tr>
+		<tr><td port="TRAPFLAG" align="center" cellpadding="5">TRAPFLAG</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="TRAPPROMOTIONNUMBER" align="center" cellpadding="5">TRAPPROMOTIONNUMBER</td></tr>
+		<tr><td port="PALLETBASETYPEID" align="center" cellpadding="5">PALLETBASETYPEID</td></tr>
+		<tr><td port="SKUID" align="center" cellpadding="5">SKUID</td></tr>
+		<tr><td port="USEQUARANTINEDSUSPECTS" align="center" cellpadding="5">USEQUARANTINEDSUSPECTS</td></tr>
+		<tr><td port="EXPIRATIONOFFSET" align="center" cellpadding="5">EXPIRATIONOFFSET</td></tr>
+		<tr><td port="CUSTOMERNUMBER" align="center" cellpadding="5">CUSTOMERNUMBER</td></tr>
+		<tr><td port="EXPIRATIONDATE" align="center" cellpadding="5">EXPIRATIONDATE</td></tr>
+		<tr><td port="USEAVAILABLEONLY" align="center" cellpadding="5">USEAVAILABLEONLY</td></tr>
+		<tr><td port="QUANTITY" align="center" cellpadding="5">QUANTITY</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="EXPIRATIONSELECTIONMODE" align="center" cellpadding="5">EXPIRATIONSELECTIONMODE</td></tr>
+		<tr><td port="CONTAINERTYPE" align="center" cellpadding="5">CONTAINERTYPE</td></tr>
+		<tr><td port="EXPIRATIONWINDOW" align="center" cellpadding="5">EXPIRATIONWINDOW</td></tr>
+		<tr><td port="QUANTITYTYPE" align="center" cellpadding="5">QUANTITYTYPE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 ORDEREXTENSION [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>ORDEREXTENSION</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="EXTENSIONVALUE" align="center" cellpadding="5">EXTENSIONVALUE</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="ORDERID" align="center" cellpadding="5">ORDERID</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="EXTENSIONKEYID" align="center" cellpadding="5">EXTENSIONKEYID</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 ORDERS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>ORDERS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="COMPLETEDNOTIFYSTATE" align="center" cellpadding="5">COMPLETEDNOTIFYSTATE</td></tr>
+		<tr><td port="PRIORITY" align="center" cellpadding="5">PRIORITY</td></tr>
+		<tr><td port="ISCHASEELIGIBLE" align="center" cellpadding="5">ISCHASEELIGIBLE</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="PROPOSEDGATETIME" align="center" cellpadding="5">PROPOSEDGATETIME</td></tr>
+		<tr><td port="PLANUPDATEDNOTIFYSTATE" align="center" cellpadding="5">PLANUPDATEDNOTIFYSTATE</td></tr>
+		<tr><td port="CASESTORAGENOTIFYSTATE" align="center" cellpadding="5">CASESTORAGENOTIFYSTATE</td></tr>
+		<tr><td port="LATESTDELIVERYTIME" align="center" cellpadding="5">LATESTDELIVERYTIME</td></tr>
+		<tr><td port="CANCELEDTIME" align="center" cellpadding="5">CANCELEDTIME</td></tr>
+		<tr><td port="PLANNINGCOMPLETEDTIME" align="center" cellpadding="5">PLANNINGCOMPLETEDTIME</td></tr>
+		<tr><td port="FIRSTAVAILABLEPALLETID" align="center" cellpadding="5">FIRSTAVAILABLEPALLETID</td></tr>
+		<tr><td port="ISINTERNAL" align="center" cellpadding="5">ISINTERNAL</td></tr>
+		<tr><td port="CUSTOMERNUMBER" align="center" cellpadding="5">CUSTOMERNUMBER</td></tr>
+		<tr><td port="PLANSTATE" align="center" cellpadding="5">PLANSTATE</td></tr>
+		<tr><td port="PURGEDEADLINETIME" align="center" cellpadding="5">PURGEDEADLINETIME</td></tr>
+		<tr><td port="ORDERTYPEID" align="center" cellpadding="5">ORDERTYPEID</td></tr>
+		<tr><td port="MAXPALLETCUBE" align="center" cellpadding="5">MAXPALLETCUBE</td></tr>
+		<tr><td port="ORDERNUMBER" align="center" cellpadding="5">ORDERNUMBER</td></tr>
+		<tr><td port="PROCESSINGCOMPLETEDTIME" align="center" cellpadding="5">PROCESSINGCOMPLETEDTIME</td></tr>
+		<tr><td port="SELECTIONMODE" align="center" cellpadding="5">SELECTIONMODE</td></tr>
+		<tr><td port="SEQUENCECOUNT" align="center" cellpadding="5">SEQUENCECOUNT</td></tr>
+		<tr><td port="ORDERCANCELSOURCEID" align="center" cellpadding="5">ORDERCANCELSOURCEID</td></tr>
+		<tr><td port="ISTEST" align="center" cellpadding="5">ISTEST</td></tr>
+		<tr><td port="REVERSESTOPSEQUENCE" align="center" cellpadding="5">REVERSESTOPSEQUENCE</td></tr>
+		<tr><td port="CREATEDTIME" align="center" cellpadding="5">CREATEDTIME</td></tr>
+		<tr><td port="PROCESSINGSTARTEDTIME" align="center" cellpadding="5">PROCESSINGSTARTEDTIME</td></tr>
+		<tr><td port="DOORNUMBER" align="center" cellpadding="5">DOORNUMBER</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="TRUCKROUTE" align="center" cellpadding="5">TRUCKROUTE</td></tr>
+		<tr><td port="PLANNEDNOTIFYSTATE" align="center" cellpadding="5">PLANNEDNOTIFYSTATE</td></tr>
+		<tr><td port="REQUIRESRESOLUTION" align="center" cellpadding="5">REQUIRESRESOLUTION</td></tr>
+		<tr><td port="SEQUENCEINDEX" align="center" cellpadding="5">SEQUENCEINDEX</td></tr>
+		<tr><td port="HOLDSTATE" align="center" cellpadding="5">HOLDSTATE</td></tr>
+		<tr><td port="EARLIESTDELIVERYTIME" align="center" cellpadding="5">EARLIESTDELIVERYTIME</td></tr>
+		<tr><td port="MAXCUBICVOLUME" align="center" cellpadding="5">MAXCUBICVOLUME</td></tr>
+		<tr><td port="STATE" align="center" cellpadding="5">STATE</td></tr>
+		<tr><td port="CUSTOMERNAME" align="center" cellpadding="5">CUSTOMERNAME</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="PARENTORDERID" align="center" cellpadding="5">PARENTORDERID</td></tr>
+		<tr><td port="STOPSEQUENCE" align="center" cellpadding="5">STOPSEQUENCE</td></tr>
+		<tr><td port="BATCHINDEX" align="center" cellpadding="5">BATCHINDEX</td></tr>
+		<tr><td port="CUSTOMERCHAINNUMBER" align="center" cellpadding="5">CUSTOMERCHAINNUMBER</td></tr>
+		<tr><td port="CLOSEDTIME" align="center" cellpadding="5">CLOSEDTIME</td></tr>
+		<tr><td port="LASTMODIFIEDTIME" align="center" cellpadding="5">LASTMODIFIEDTIME</td></tr>
+		<tr><td port="TRAILERNUMBER" align="center" cellpadding="5">TRAILERNUMBER</td></tr>
+		<tr><td port="ORDERBATCHID" align="center" cellpadding="5">ORDERBATCHID</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		<tr><td port="CELLGROUP" align="center" cellpadding="5">CELLGROUP</td></tr>
+		<tr><td port="MAXPALLETHEIGHTOVERRIDE" align="center" cellpadding="5">MAXPALLETHEIGHTOVERRIDE</td></tr>
+		</table>>];
+
+	 ORDERTYPES [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>ORDERTYPES</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="REGEX" align="center" cellpadding="5">REGEX</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="RECORDNUMBER" align="center" cellpadding="5">RECORDNUMBER</td></tr>
+		<tr><td port="DISPLAYORDER" align="center" cellpadding="5">DISPLAYORDER</td></tr>
+		<tr><td port="DEFAULTPRIORITY" align="center" cellpadding="5">DEFAULTPRIORITY</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="NAME" align="center" cellpadding="5">NAME</td></tr>
+		<tr><td port="DISPLAYNAME" align="center" cellpadding="5">DISPLAYNAME</td></tr>
+		<tr><td port="DESCRIPTION" align="center" cellpadding="5">DESCRIPTION</td></tr>
+		<tr><td port="ISACTIVE" align="center" cellpadding="5">ISACTIVE</td></tr>
+		<tr><td port="CANMANUALCANCEL" align="center" cellpadding="5">CANMANUALCANCEL</td></tr>
+		<tr><td port="ISDEFAULT" align="center" cellpadding="5">ISDEFAULT</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 CARTONLABELS:ORDERDETAILID->ORDERDETAILS:ID;
+
+	 ORDERDETAILEXTENSION:ORDERDETAILID->ORDERDETAILS:ID;
+
+	 ORDERDETAILS:ORDERID->ORDERS:ID;
+
+	 ORDEREXTENSION:ORDERID->ORDERS:ID;
+
+	 ORDERS:ORDERTYPEID->ORDERTYPES:ID;
+	}

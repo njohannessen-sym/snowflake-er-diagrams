@@ -1,0 +1,342 @@
+digraph G {
+        graph [
+            nodesep=0.5;
+            rankdir="LR";
+            cencentrate=true;
+            splines="spline";
+            fontname="Helvetica";
+            pad="0.2,0.2",
+            label="",
+
+        ];
+
+        node [shape=plain, fontname="Helvetica"];
+        edge [
+            dir=both,
+            fontsize=12,
+            arrowsize=0.9,
+            penwidth=1.0,
+            labelangle=32,
+            labeldistance=1.8,
+            fontname="Helvetica"
+        ];
+
+	 FIVETRAN_AUDIT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>FIVETRAN_AUDIT</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="MESSAGE" align="center" cellpadding="5">MESSAGE</td></tr>
+		<tr><td port="UPDATE_STARTED" align="center" cellpadding="5">UPDATE_STARTED</td></tr>
+		<tr><td port="UPDATE_ID" align="center" cellpadding="5">UPDATE_ID</td></tr>
+		<tr><td port="SCHEMA" align="center" cellpadding="5">SCHEMA</td></tr>
+		<tr><td port="TABLE" align="center" cellpadding="5">TABLE</td></tr>
+		<tr><td port="START" align="center" cellpadding="5">START</td></tr>
+		<tr><td port="DONE" align="center" cellpadding="5">DONE</td></tr>
+		<tr><td port="ROWS_UPDATED_OR_INSERTED" align="center" cellpadding="5">ROWS_UPDATED_OR_INSERTED</td></tr>
+		<tr><td port="STATUS" align="center" cellpadding="5">STATUS</td></tr>
+		<tr><td port="PROGRESS" align="center" cellpadding="5">PROGRESS</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 INBOUNDDIMENSIONALVARIANTS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INBOUNDDIMENSIONALVARIANTS</b></td></tr>
+        
+		<tr><td port="RECORDNUMBER" align="center" cellpadding="5">RECORDNUMBER</td></tr>
+		<tr><td port="HEIGHT" align="center" cellpadding="5">HEIGHT</td></tr>
+		<tr><td port="ISGOLDEN" align="center" cellpadding="5">ISGOLDEN</td></tr>
+		<tr><td port="LENGTH" align="center" cellpadding="5">LENGTH</td></tr>
+		<tr><td port="ISSTORAGEELIGIBLE" align="center" cellpadding="5">ISSTORAGEELIGIBLE</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="MAXCARTONSPERPICKFACELONGEDGE" align="center" cellpadding="5">MAXCARTONSPERPICKFACELONGEDGE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="WEIGHT" align="center" cellpadding="5">WEIGHT</td></tr>
+		<tr><td port="PARENTINBOUNDDIMENSIONALVARIANTID" align="center" cellpadding="5">PARENTINBOUNDDIMENSIONALVARIANTID</td></tr>
+		<tr><td port="TAUGHTDATE" align="center" cellpadding="5">TAUGHTDATE</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="SKUID" align="center" cellpadding="5">SKUID</td></tr>
+		<tr><td port="INBOUNDROBOTPROPERTYID" align="center" cellpadding="5">INBOUNDROBOTPROPERTYID</td></tr>
+		<tr><td port="STOREDORIENTATION" align="center" cellpadding="5">STOREDORIENTATION</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="MANUALENTRY" align="center" cellpadding="5">MANUALENTRY</td></tr>
+		<tr><td port="WIDTH" align="center" cellpadding="5">WIDTH</td></tr>
+		<tr><td port="MAXCARTONSPERPICKFACESHORTEDGE" align="center" cellpadding="5">MAXCARTONSPERPICKFACESHORTEDGE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		<tr><td port="MEASUREMENTSTATION" align="center" cellpadding="5">MEASUREMENTSTATION</td></tr>
+		<tr><td port="MEASUREDBY" align="center" cellpadding="5">MEASUREDBY</td></tr>
+		<tr><td port="TIPOVERRIDEUSERNAME" align="center" cellpadding="5">TIPOVERRIDEUSERNAME</td></tr>
+		<tr><td port="TIPOVERRIDDEN" align="center" cellpadding="5">TIPOVERRIDDEN</td></tr>
+		<tr><td port="TIPOVERRIDEREASONCODE" align="center" cellpadding="5">TIPOVERRIDEREASONCODE</td></tr>
+		</table>>];
+
+	 INBOUNDROBOTPROPERTIES [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INBOUNDROBOTPROPERTIES</b></td></tr>
+        
+		<tr><td port="RECORDNUMBER" align="center" cellpadding="5">RECORDNUMBER</td></tr>
+		<tr><td port="SINGULATORPICKSTRENGTHLONGSIDE" align="center" cellpadding="5">SINGULATORPICKSTRENGTHLONGSIDE</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="DELAYERROBOTACCELERATION" align="center" cellpadding="5">DELAYERROBOTACCELERATION</td></tr>
+		<tr><td port="PROFILENAME" align="center" cellpadding="5">PROFILENAME</td></tr>
+		<tr><td port="DELAYERCLOSEPLATESDELAY" align="center" cellpadding="5">DELAYERCLOSEPLATESDELAY</td></tr>
+		<tr><td port="SINGULATORPICKSTRENGTHSHORTSIDE" align="center" cellpadding="5">SINGULATORPICKSTRENGTHSHORTSIDE</td></tr>
+		<tr><td port="SUPPORTLAYOUTM" align="center" cellpadding="5">SUPPORTLAYOUTM</td></tr>
+		<tr><td port="SUPPORTLAYOUTN" align="center" cellpadding="5">SUPPORTLAYOUTN</td></tr>
+		<tr><td port="DELAYERPLATEPRESSURE" align="center" cellpadding="5">DELAYERPLATEPRESSURE</td></tr>
+		<tr><td port="VISIONPICKMODE" align="center" cellpadding="5">VISIONPICKMODE</td></tr>
+		<tr><td port="TOPSTRENGTH" align="center" cellpadding="5">TOPSTRENGTH</td></tr>
+		<tr><td port="REDUCEDSUPPORT" align="center" cellpadding="5">REDUCEDSUPPORT</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="DELAYERPICKNUMBER" align="center" cellpadding="5">DELAYERPICKNUMBER</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="LAYERHEIGHT" align="center" cellpadding="5">LAYERHEIGHT</td></tr>
+		<tr><td port="ROBOTCONFIGURATIONPROFILEID" align="center" cellpadding="5">ROBOTCONFIGURATIONPROFILEID</td></tr>
+		<tr><td port="SINGULATORROBOTACCELERATION" align="center" cellpadding="5">SINGULATORROBOTACCELERATION</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 LPNEXTENSION [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>LPNEXTENSION</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="LPNID" align="center" cellpadding="5">LPNID</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="EXTENSIONVALUE" align="center" cellpadding="5">EXTENSIONVALUE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="EXTENSIONKEYID" align="center" cellpadding="5">EXTENSIONKEYID</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 LPNS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>LPNS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="LICENSEPLATENUMBER" align="center" cellpadding="5">LICENSEPLATENUMBER</td></tr>
+		<tr><td port="ISINTERNAL" align="center" cellpadding="5">ISINTERNAL</td></tr>
+		<tr><td port="BATCH" align="center" cellpadding="5">BATCH</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="EXPIRATIONDATE" align="center" cellpadding="5">EXPIRATIONDATE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="HOLDSTATE" align="center" cellpadding="5">HOLDSTATE</td></tr>
+		<tr><td port="ISACTIVE" align="center" cellpadding="5">ISACTIVE</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="SOURCEFACILITY" align="center" cellpadding="5">SOURCEFACILITY</td></tr>
+		<tr><td port="RECEIVEDDATE" align="center" cellpadding="5">RECEIVEDDATE</td></tr>
+		<tr><td port="STORENUMBER" align="center" cellpadding="5">STORENUMBER</td></tr>
+		<tr><td port="SKUID" align="center" cellpadding="5">SKUID</td></tr>
+		<tr><td port="LABELTYPEID" align="center" cellpadding="5">LABELTYPEID</td></tr>
+		<tr><td port="INDUCTIONDATE" align="center" cellpadding="5">INDUCTIONDATE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		<tr><td port="ISRECEIVINGREQUESTED" align="center" cellpadding="5">ISRECEIVINGREQUESTED</td></tr>
+		<tr><td port="CELLGROUP" align="center" cellpadding="5">CELLGROUP</td></tr>
+		</table>>];
+
+	 OUTBOUNDDIMENSIONALVARIANTS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>OUTBOUNDDIMENSIONALVARIANTS</b></td></tr>
+        
+		<tr><td port="RECORDNUMBER" align="center" cellpadding="5">RECORDNUMBER</td></tr>
+		<tr><td port="ODVTYPEID" align="center" cellpadding="5">ODVTYPEID</td></tr>
+		<tr><td port="CARTONWEIGHT" align="center" cellpadding="5">CARTONWEIGHT</td></tr>
+		<tr><td port="TOLERANCE" align="center" cellpadding="5">TOLERANCE</td></tr>
+		<tr><td port="WEIGHTTOLERANCE" align="center" cellpadding="5">WEIGHTTOLERANCE</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="CARTONLENGTH" align="center" cellpadding="5">CARTONLENGTH</td></tr>
+		<tr><td port="CARTONWIDTH" align="center" cellpadding="5">CARTONWIDTH</td></tr>
+		<tr><td port="CARTONHEIGHT" align="center" cellpadding="5">CARTONHEIGHT</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="SKUID" align="center" cellpadding="5">SKUID</td></tr>
+		<tr><td port="ISACTIVE" align="center" cellpadding="5">ISACTIVE</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 PACKAGINGTYPE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>PACKAGINGTYPE</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="DESCRIPTION" align="center" cellpadding="5">DESCRIPTION</td></tr>
+		<tr><td port="ISOPENTOTE" align="center" cellpadding="5">ISOPENTOTE</td></tr>
+		<tr><td port="ISDEFAULT" align="center" cellpadding="5">ISDEFAULT</td></tr>
+		<tr><td port="DISPLAYNAME" align="center" cellpadding="5">DISPLAYNAME</td></tr>
+		<tr><td port="NESTINGDEPTH" align="center" cellpadding="5">NESTINGDEPTH</td></tr>
+		<tr><td port="NAME" align="center" cellpadding="5">NAME</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="ISACTIVE" align="center" cellpadding="5">ISACTIVE</td></tr>
+		<tr><td port="DISPLAYORDER" align="center" cellpadding="5">DISPLAYORDER</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 PALLETIZATIONGROUPTYPE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>PALLETIZATIONGROUPTYPE</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="DESCRIPTION" align="center" cellpadding="5">DESCRIPTION</td></tr>
+		<tr><td port="DISPLAYORDER" align="center" cellpadding="5">DISPLAYORDER</td></tr>
+		<tr><td port="ISACTIVE" align="center" cellpadding="5">ISACTIVE</td></tr>
+		<tr><td port="NAME" align="center" cellpadding="5">NAME</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="DISPLAYNAME" align="center" cellpadding="5">DISPLAYNAME</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 SKUS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>SKUS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="PACKAGINGTYPEID" align="center" cellpadding="5">PACKAGINGTYPEID</td></tr>
+		<tr><td port="WEIGHT" align="center" cellpadding="5">WEIGHT</td></tr>
+		<tr><td port="LENGTH" align="center" cellpadding="5">LENGTH</td></tr>
+		<tr><td port="OUTBOUNDROBOTPROGRAM" align="center" cellpadding="5">OUTBOUNDROBOTPROGRAM</td></tr>
+		<tr><td port="SSP" align="center" cellpadding="5">SSP</td></tr>
+		<tr><td port="PALLETIZATIONGROUPTYPEID" align="center" cellpadding="5">PALLETIZATIONGROUPTYPEID</td></tr>
+		<tr><td port="LEADEDGEORIENTATION" align="center" cellpadding="5">LEADEDGEORIENTATION</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="MAXCARTONSPERPICKFACE" align="center" cellpadding="5">MAXCARTONSPERPICKFACE</td></tr>
+		<tr><td port="CASESPERLAYER" align="center" cellpadding="5">CASESPERLAYER</td></tr>
+		<tr><td port="NAME" align="center" cellpadding="5">NAME</td></tr>
+		<tr><td port="BREAKPACKELIGIBLE" align="center" cellpadding="5">BREAKPACKELIGIBLE</td></tr>
+		<tr><td port="ALLERGENTYPEID" align="center" cellpadding="5">ALLERGENTYPEID</td></tr>
+		<tr><td port="ISBREAKPACKELIGIBLEOVERRIDE" align="center" cellpadding="5">ISBREAKPACKELIGIBLEOVERRIDE</td></tr>
+		<tr><td port="HEIGHT" align="center" cellpadding="5">HEIGHT</td></tr>
+		<tr><td port="OUTBOUNDCONVEYORPROGRAM" align="center" cellpadding="5">OUTBOUNDCONVEYORPROGRAM</td></tr>
+		<tr><td port="LAYERSPERPALLET" align="center" cellpadding="5">LAYERSPERPALLET</td></tr>
+		<tr><td port="HOLDSTATE" align="center" cellpadding="5">HOLDSTATE</td></tr>
+		<tr><td port="ISPRESSURIZED" align="center" cellpadding="5">ISPRESSURIZED</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="VCP" align="center" cellpadding="5">VCP</td></tr>
+		<tr><td port="ISFRIDGEPACK" align="center" cellpadding="5">ISFRIDGEPACK</td></tr>
+		<tr><td port="ISUPCAVAILABLE" align="center" cellpadding="5">ISUPCAVAILABLE</td></tr>
+		<tr><td port="ISDATESENSITIVE" align="center" cellpadding="5">ISDATESENSITIVE</td></tr>
+		<tr><td port="ISPROBLEMUPC" align="center" cellpadding="5">ISPROBLEMUPC</td></tr>
+		<tr><td port="WIDTH" align="center" cellpadding="5">WIDTH</td></tr>
+		<tr><td port="ISBREAKPACKELIGIBLE" align="center" cellpadding="5">ISBREAKPACKELIGIBLE</td></tr>
+		<tr><td port="GRIPFORCE" align="center" cellpadding="5">GRIPFORCE</td></tr>
+		<tr><td port="ISBREAKPACKELIGIBLECUSTOMER" align="center" cellpadding="5">ISBREAKPACKELIGIBLECUSTOMER</td></tr>
+		<tr><td port="DESCRIPTION" align="center" cellpadding="5">DESCRIPTION</td></tr>
+		<tr><td port="ROTATIONWINDOWDAYS" align="center" cellpadding="5">ROTATIONWINDOWDAYS</td></tr>
+		<tr><td port="ISELIGIBLE" align="center" cellpadding="5">ISELIGIBLE</td></tr>
+		<tr><td port="PRODUCTTYPES" align="center" cellpadding="5">PRODUCTTYPES</td></tr>
+		<tr><td port="ISFRAGILE" align="center" cellpadding="5">ISFRAGILE</td></tr>
+		<tr><td port="UPC" align="center" cellpadding="5">UPC</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="ISTAUGHT" align="center" cellpadding="5">ISTAUGHT</td></tr>
+		<tr><td port="SKU" align="center" cellpadding="5">SKU</td></tr>
+		<tr><td port="SLOTTEDSTATE" align="center" cellpadding="5">SLOTTEDSTATE</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="ISUNKNOWN" align="center" cellpadding="5">ISUNKNOWN</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		<tr><td port="RELATIVEPALLETPLACEMENT" align="center" cellpadding="5">RELATIVEPALLETPLACEMENT</td></tr>
+		<tr><td port="SEGREGATIONZONEID" align="center" cellpadding="5">SEGREGATIONZONEID</td></tr>
+		</table>>];
+
+	 SKUSEXTENSIONDATA [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>SKUSEXTENSIONDATA</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="ITEMUPC" align="center" cellpadding="5">ITEMUPC</td></tr>
+		<tr><td port="LITHIUMINDICATOR" align="center" cellpadding="5">LITHIUMINDICATOR</td></tr>
+		<tr><td port="VENDORNAME" align="center" cellpadding="5">VENDORNAME</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="VENDORSTOCKNO" align="center" cellpadding="5">VENDORSTOCKNO</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="FHSCODE" align="center" cellpadding="5">FHSCODE</td></tr>
+		<tr><td port="DESCRIPTION2" align="center" cellpadding="5">DESCRIPTION2</td></tr>
+		<tr><td port="ISCODEDATED" align="center" cellpadding="5">ISCODEDATED</td></tr>
+		<tr><td port="COLOR" align="center" cellpadding="5">COLOR</td></tr>
+		<tr><td port="MATERIALTYPE" align="center" cellpadding="5">MATERIALTYPE</td></tr>
+		<tr><td port="WAREHOUSEPERVENDORPACK" align="center" cellpadding="5">WAREHOUSEPERVENDORPACK</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="ISAUTODEPAL" align="center" cellpadding="5">ISAUTODEPAL</td></tr>
+		<tr><td port="ITEMSIZE" align="center" cellpadding="5">ITEMSIZE</td></tr>
+		<tr><td port="SEGREGATIONCODE" align="center" cellpadding="5">SEGREGATIONCODE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 UPCS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>UPCS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="NAME" align="center" cellpadding="5">NAME</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 WAREHOUSEPACKHANDLINGPROFILES [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>WAREHOUSEPACKHANDLINGPROFILES</b></td></tr>
+        
+		<tr><td port="WAREHOUSEPACKID" align="center" cellpadding="5">WAREHOUSEPACKID</td></tr>
+		<tr><td port="WAREHOUSEPACKHANDLINGPROFILETYPEID" align="center" cellpadding="5">WAREHOUSEPACKHANDLINGPROFILETYPEID</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 WAREHOUSEPACKS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>WAREHOUSEPACKS</b></td></tr>
+        
+		<tr><td port="MEASUREMENTSTATION" align="center" cellpadding="5">MEASUREMENTSTATION</td></tr>
+		<tr><td port="WIDTH" align="center" cellpadding="5">WIDTH</td></tr>
+		<tr><td port="HEIGHT" align="center" cellpadding="5">HEIGHT</td></tr>
+		<tr><td port="LENGTH" align="center" cellpadding="5">LENGTH</td></tr>
+		<tr><td port="SKUID" align="center" cellpadding="5">SKUID</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="ROBOTICPICKSCOREDATE" align="center" cellpadding="5">ROBOTICPICKSCOREDATE</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="ISMANUALPICKONLY" align="center" cellpadding="5">ISMANUALPICKONLY</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="WAREHOUSEPACKPACKAGETYPEID" align="center" cellpadding="5">WAREHOUSEPACKPACKAGETYPEID</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="WEIGHT" align="center" cellpadding="5">WEIGHT</td></tr>
+		<tr><td port="MEASUREDBY" align="center" cellpadding="5">MEASUREDBY</td></tr>
+		<tr><td port="ROBOTICPICKELIGIBLESCORE" align="center" cellpadding="5">ROBOTICPICKELIGIBLESCORE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 INBOUNDDIMENSIONALVARIANTS:SKUID->SKUS:ID;
+
+	 LPNEXTENSION:LPNID->LPNS:ID;
+
+	 LPNS:SKUID->SKUS:ID;
+
+	 OUTBOUNDDIMENSIONALVARIANTS:SKUID->SKUS:ID;
+
+	 SKUS:PACKAGINGTYPEID->PACKAGINGTYPE:ID;
+
+	 SKUS:PALLETIZATIONGROUPTYPEID->PALLETIZATIONGROUPTYPE:ID;
+	}

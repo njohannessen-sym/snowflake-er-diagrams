@@ -1,0 +1,649 @@
+digraph G {
+        graph [
+            nodesep=0.5;
+            rankdir="LR";
+            cencentrate=true;
+            splines="spline";
+            fontname="Helvetica";
+            pad="0.2,0.2",
+            label="",
+
+        ];
+
+        node [shape=plain, fontname="Helvetica"];
+        edge [
+            dir=both,
+            fontsize=12,
+            arrowsize=0.9,
+            penwidth=1.0,
+            labelangle=32,
+            labeldistance=1.8,
+            fontname="Helvetica"
+        ];
+
+	 CARTONEXTENSION [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>CARTONEXTENSION</b></td></tr>
+        
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="CARTONID" align="center" cellpadding="5">CARTONID</td></tr>
+		<tr><td port="EXTENSIONVALUE" align="center" cellpadding="5">EXTENSIONVALUE</td></tr>
+		<tr><td port="EXTENSIONKEYID" align="center" cellpadding="5">EXTENSIONKEYID</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 CARTONS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>CARTONS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="PONUMBER" align="center" cellpadding="5">PONUMBER</td></tr>
+		<tr><td port="STORELABEL" align="center" cellpadding="5">STORELABEL</td></tr>
+		<tr><td port="BATCH" align="center" cellpadding="5">BATCH</td></tr>
+		<tr><td port="TRANSITIONRELEASEDATE" align="center" cellpadding="5">TRANSITIONRELEASEDATE</td></tr>
+		<tr><td port="OUTERWIDTH" align="center" cellpadding="5">OUTERWIDTH</td></tr>
+		<tr><td port="APPOINTMENTNUMBER" align="center" cellpadding="5">APPOINTMENTNUMBER</td></tr>
+		<tr><td port="LPNID" align="center" cellpadding="5">LPNID</td></tr>
+		<tr><td port="SOURCEFACILITY" align="center" cellpadding="5">SOURCEFACILITY</td></tr>
+		<tr><td port="STOREDTIME" align="center" cellpadding="5">STOREDTIME</td></tr>
+		<tr><td port="STORENUMBER" align="center" cellpadding="5">STORENUMBER</td></tr>
+		<tr><td port="ENABLEDIMENSIONCHECK" align="center" cellpadding="5">ENABLEDIMENSIONCHECK</td></tr>
+		<tr><td port="ISOPENCASE" align="center" cellpadding="5">ISOPENCASE</td></tr>
+		<tr><td port="WIDTH" align="center" cellpadding="5">WIDTH</td></tr>
+		<tr><td port="EXPIRATIONDATE" align="center" cellpadding="5">EXPIRATIONDATE</td></tr>
+		<tr><td port="RECEIPTID" align="center" cellpadding="5">RECEIPTID</td></tr>
+		<tr><td port="ISMARKEDFORREPRINT" align="center" cellpadding="5">ISMARKEDFORREPRINT</td></tr>
+		<tr><td port="CARTONHOLDTIME" align="center" cellpadding="5">CARTONHOLDTIME</td></tr>
+		<tr><td port="OUTERLENGTH" align="center" cellpadding="5">OUTERLENGTH</td></tr>
+		<tr><td port="BOTMEASUREDWIDTH" align="center" cellpadding="5">BOTMEASUREDWIDTH</td></tr>
+		<tr><td port="ISOUTLIER" align="center" cellpadding="5">ISOUTLIER</td></tr>
+		<tr><td port="CUSTOMERCARTONREF" align="center" cellpadding="5">CUSTOMERCARTONREF</td></tr>
+		<tr><td port="LENGTH" align="center" cellpadding="5">LENGTH</td></tr>
+		<tr><td port="SKUID" align="center" cellpadding="5">SKUID</td></tr>
+		<tr><td port="ALTERNATECONTAINERREF" align="center" cellpadding="5">ALTERNATECONTAINERREF</td></tr>
+		<tr><td port="HEIGHT" align="center" cellpadding="5">HEIGHT</td></tr>
+		<tr><td port="STOREDORIENTATION" align="center" cellpadding="5">STOREDORIENTATION</td></tr>
+		<tr><td port="VCP" align="center" cellpadding="5">VCP</td></tr>
+		<tr><td port="EACHES" align="center" cellpadding="5">EACHES</td></tr>
+		<tr><td port="HOLDREASON" align="center" cellpadding="5">HOLDREASON</td></tr>
+		<tr><td port="ENTERINGWAREHOUSETIME" align="center" cellpadding="5">ENTERINGWAREHOUSETIME</td></tr>
+		<tr><td port="UPCID" align="center" cellpadding="5">UPCID</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="DELIVERYGROUP" align="center" cellpadding="5">DELIVERYGROUP</td></tr>
+		<tr><td port="WEIGHT" align="center" cellpadding="5">WEIGHT</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="OUTERHEIGHT" align="center" cellpadding="5">OUTERHEIGHT</td></tr>
+		<tr><td port="SHELFLIFEREPORTSTARTTIME" align="center" cellpadding="5">SHELFLIFEREPORTSTARTTIME</td></tr>
+		<tr><td port="STATE" align="center" cellpadding="5">STATE</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="LABELTYPEID" align="center" cellpadding="5">LABELTYPEID</td></tr>
+		<tr><td port="STOREDLENGTH" align="center" cellpadding="5">STOREDLENGTH</td></tr>
+		<tr><td port="STATECHANGETIME" align="center" cellpadding="5">STATECHANGETIME</td></tr>
+		<tr><td port="INTRANSITION" align="center" cellpadding="5">INTRANSITION</td></tr>
+		<tr><td port="CONTAINERTYPEID" align="center" cellpadding="5">CONTAINERTYPEID</td></tr>
+		<tr><td port="STOREDWIDTH" align="center" cellpadding="5">STOREDWIDTH</td></tr>
+		<tr><td port="DIMENSIONSOVERWRITTEN" align="center" cellpadding="5">DIMENSIONSOVERWRITTEN</td></tr>
+		<tr><td port="OUTBOUNDDIMVARID" align="center" cellpadding="5">OUTBOUNDDIMVARID</td></tr>
+		<tr><td port="SSP" align="center" cellpadding="5">SSP</td></tr>
+		<tr><td port="BOTMEASUREDLENGTH" align="center" cellpadding="5">BOTMEASUREDLENGTH</td></tr>
+		<tr><td port="FIFODATE" align="center" cellpadding="5">FIFODATE</td></tr>
+		<tr><td port="HANDLINGDIMENSIONS" align="center" cellpadding="5">HANDLINGDIMENSIONS</td></tr>
+		<tr><td port="EXITINGWAREHOUSETIME" align="center" cellpadding="5">EXITINGWAREHOUSETIME</td></tr>
+		<tr><td port="PRODUCTTYPES" align="center" cellpadding="5">PRODUCTTYPES</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="ISACTIVECUSTOMERCARTONREF" align="center" cellpadding="5">ISACTIVECUSTOMERCARTONREF</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		<tr><td port="ISEXCEPTIONPROCESSINGREQUIRED" align="center" cellpadding="5">ISEXCEPTIONPROCESSINGREQUIRED</td></tr>
+		<tr><td port="WAREHOUSEPACKSCOUNT" align="center" cellpadding="5">WAREHOUSEPACKSCOUNT</td></tr>
+		</table>>];
+
+	 CARTONSCANS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>CARTONSCANS</b></td></tr>
+        
+		<tr><td port="LENGTH" align="center" cellpadding="5">LENGTH</td></tr>
+		<tr><td port="SCANSOURCE" align="center" cellpadding="5">SCANSOURCE</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="WEIGHT" align="center" cellpadding="5">WEIGHT</td></tr>
+		<tr><td port="HEIGHT" align="center" cellpadding="5">HEIGHT</td></tr>
+		<tr><td port="CARTONID" align="center" cellpadding="5">CARTONID</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="SCANTIME" align="center" cellpadding="5">SCANTIME</td></tr>
+		<tr><td port="WIDTH" align="center" cellpadding="5">WIDTH</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="SCANNERTYPE" align="center" cellpadding="5">SCANNERTYPE</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 EXCEPTIONPROCESSINGREQUIREDDETAILS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>EXCEPTIONPROCESSINGREQUIREDDETAILS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="REASON" align="center" cellpadding="5">REASON</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="EXTRAINFORMATION" align="center" cellpadding="5">EXTRAINFORMATION</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="SUBREASON" align="center" cellpadding="5">SUBREASON</td></tr>
+		<tr><td port="CARTONID" align="center" cellpadding="5">CARTONID</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 FIVETRAN_AUDIT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>FIVETRAN_AUDIT</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="MESSAGE" align="center" cellpadding="5">MESSAGE</td></tr>
+		<tr><td port="UPDATE_STARTED" align="center" cellpadding="5">UPDATE_STARTED</td></tr>
+		<tr><td port="UPDATE_ID" align="center" cellpadding="5">UPDATE_ID</td></tr>
+		<tr><td port="SCHEMA" align="center" cellpadding="5">SCHEMA</td></tr>
+		<tr><td port="TABLE" align="center" cellpadding="5">TABLE</td></tr>
+		<tr><td port="START" align="center" cellpadding="5">START</td></tr>
+		<tr><td port="DONE" align="center" cellpadding="5">DONE</td></tr>
+		<tr><td port="ROWS_UPDATED_OR_INSERTED" align="center" cellpadding="5">ROWS_UPDATED_OR_INSERTED</td></tr>
+		<tr><td port="STATUS" align="center" cellpadding="5">STATUS</td></tr>
+		<tr><td port="PROGRESS" align="center" cellpadding="5">PROGRESS</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 INBOUNDCONVEYORLOADCARTONS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INBOUNDCONVEYORLOADCARTONS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="RECORDNUMBER" align="center" cellpadding="5">RECORDNUMBER</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="INBOUNDCONVEYORLOADID" align="center" cellpadding="5">INBOUNDCONVEYORLOADID</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="POSITION" align="center" cellpadding="5">POSITION</td></tr>
+		<tr><td port="CARTONID" align="center" cellpadding="5">CARTONID</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 INBOUNDCONVEYORLOADCARTONSTOMBSTONE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INBOUNDCONVEYORLOADCARTONSTOMBSTONE</b></td></tr>
+        
+		<tr><td port="INBCONVLOADSCTNSTOMBSTONESK" align="center" cellpadding="5">INBCONVLOADSCTNSTOMBSTONESK</td></tr>
+		<tr><td port="INBOUNDCONVEYORLOADID" align="center" cellpadding="5">INBOUNDCONVEYORLOADID</td></tr>
+		<tr><td port="POSITION" align="center" cellpadding="5">POSITION</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="TOMBSTONEDATE" align="center" cellpadding="5">TOMBSTONEDATE</td></tr>
+		<tr><td port="RECORDNUMBER" align="center" cellpadding="5">RECORDNUMBER</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="CARTONID" align="center" cellpadding="5">CARTONID</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 INBOUNDCONVEYORLOADS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INBOUNDCONVEYORLOADS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="SUSPECTREPORTEDBY" align="center" cellpadding="5">SUSPECTREPORTEDBY</td></tr>
+		<tr><td port="PICKFACENOTIFICATIONTIME" align="center" cellpadding="5">PICKFACENOTIFICATIONTIME</td></tr>
+		<tr><td port="SUSPECTCLEARTIME" align="center" cellpadding="5">SUSPECTCLEARTIME</td></tr>
+		<tr><td port="SUSPECTTIME" align="center" cellpadding="5">SUSPECTTIME</td></tr>
+		<tr><td port="SUSPECTRESOLUTION" align="center" cellpadding="5">SUSPECTRESOLUTION</td></tr>
+		<tr><td port="UNLOADTIME" align="center" cellpadding="5">UNLOADTIME</td></tr>
+		<tr><td port="SUSPECTREASON" align="center" cellpadding="5">SUSPECTREASON</td></tr>
+		<tr><td port="CONVEYORLANEID" align="center" cellpadding="5">CONVEYORLANEID</td></tr>
+		<tr><td port="PICKDEPTH" align="center" cellpadding="5">PICKDEPTH</td></tr>
+		<tr><td port="SUSPECTLOCATIONSUBSTATE" align="center" cellpadding="5">SUSPECTLOCATIONSUBSTATE</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="CASEGROUPNUMBER" align="center" cellpadding="5">CASEGROUPNUMBER</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="RECORDNUMBER" align="center" cellpadding="5">RECORDNUMBER</td></tr>
+		<tr><td port="SUSPECTTYPE" align="center" cellpadding="5">SUSPECTTYPE</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="SUSPECTACTION" align="center" cellpadding="5">SUSPECTACTION</td></tr>
+		<tr><td port="CUSTOMERCARTONGROUPREF" align="center" cellpadding="5">CUSTOMERCARTONGROUPREF</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 INBOUNDCONVEYORLOADSTOMBSTONE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INBOUNDCONVEYORLOADSTOMBSTONE</b></td></tr>
+        
+		<tr><td port="INBCONVLOADSTOMBSTONESK" align="center" cellpadding="5">INBCONVLOADSTOMBSTONESK</td></tr>
+		<tr><td port="PICKDEPTH" align="center" cellpadding="5">PICKDEPTH</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="SUSPECTREPORTEDBY" align="center" cellpadding="5">SUSPECTREPORTEDBY</td></tr>
+		<tr><td port="CONVEYORLANEID" align="center" cellpadding="5">CONVEYORLANEID</td></tr>
+		<tr><td port="SUSPECTREASON" align="center" cellpadding="5">SUSPECTREASON</td></tr>
+		<tr><td port="CASEGROUPNUMBER" align="center" cellpadding="5">CASEGROUPNUMBER</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="SUSPECTTIME" align="center" cellpadding="5">SUSPECTTIME</td></tr>
+		<tr><td port="SUSPECTTYPE" align="center" cellpadding="5">SUSPECTTYPE</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="SUSPECTLOCATIONSUBSTATE" align="center" cellpadding="5">SUSPECTLOCATIONSUBSTATE</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="CUSTOMERCARTONGROUPREF" align="center" cellpadding="5">CUSTOMERCARTONGROUPREF</td></tr>
+		<tr><td port="SUSPECTACTION" align="center" cellpadding="5">SUSPECTACTION</td></tr>
+		<tr><td port="RECORDNUMBER" align="center" cellpadding="5">RECORDNUMBER</td></tr>
+		<tr><td port="SUSPECTCLEARTIME" align="center" cellpadding="5">SUSPECTCLEARTIME</td></tr>
+		<tr><td port="UNLOADTIME" align="center" cellpadding="5">UNLOADTIME</td></tr>
+		<tr><td port="TOMBSTONEDATE" align="center" cellpadding="5">TOMBSTONEDATE</td></tr>
+		<tr><td port="SUSPECTRESOLUTION" align="center" cellpadding="5">SUSPECTRESOLUTION</td></tr>
+		<tr><td port="PICKFACENOTIFICATIONTIME" align="center" cellpadding="5">PICKFACENOTIFICATIONTIME</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 INVENTORY [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INVENTORY</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="SUSPECTREPORTEDBY" align="center" cellpadding="5">SUSPECTREPORTEDBY</td></tr>
+		<tr><td port="LASTSCANTIME" align="center" cellpadding="5">LASTSCANTIME</td></tr>
+		<tr><td port="ISSUSPECT" align="center" cellpadding="5">ISSUSPECT</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="SUSPECTRESOLUTION" align="center" cellpadding="5">SUSPECTRESOLUTION</td></tr>
+		<tr><td port="PICKDEPTH" align="center" cellpadding="5">PICKDEPTH</td></tr>
+		<tr><td port="SUSPECTLOCATIONSUBSTATE" align="center" cellpadding="5">SUSPECTLOCATIONSUBSTATE</td></tr>
+		<tr><td port="ONSHELFTIME" align="center" cellpadding="5">ONSHELFTIME</td></tr>
+		<tr><td port="SHELFLOCATION_CARTONOFFSETY" align="center" cellpadding="5">SHELFLOCATION_CARTONOFFSETY</td></tr>
+		<tr><td port="SUSPECTREASON" align="center" cellpadding="5">SUSPECTREASON</td></tr>
+		<tr><td port="OFFSHELFTIME" align="center" cellpadding="5">OFFSHELFTIME</td></tr>
+		<tr><td port="CARTONID" align="center" cellpadding="5">CARTONID</td></tr>
+		<tr><td port="SHELFLOCATION_CARTONOFFSETX" align="center" cellpadding="5">SHELFLOCATION_CARTONOFFSETX</td></tr>
+		<tr><td port="SUSPECTTYPE" align="center" cellpadding="5">SUSPECTTYPE</td></tr>
+		<tr><td port="ITEMTYPE" align="center" cellpadding="5">ITEMTYPE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="SHELFLOCATION_OFFSETY" align="center" cellpadding="5">SHELFLOCATION_OFFSETY</td></tr>
+		<tr><td port="SUSPECTCLEARTIME" align="center" cellpadding="5">SUSPECTCLEARTIME</td></tr>
+		<tr><td port="LOADTASKNUMBER" align="center" cellpadding="5">LOADTASKNUMBER</td></tr>
+		<tr><td port="SHELFLOCATION_OFFSETX" align="center" cellpadding="5">SHELFLOCATION_OFFSETX</td></tr>
+		<tr><td port="SHELFID" align="center" cellpadding="5">SHELFID</td></tr>
+		<tr><td port="CUSTOMERCARTONGROUPREF" align="center" cellpadding="5">CUSTOMERCARTONGROUPREF</td></tr>
+		<tr><td port="CASEGROUPNUMBER" align="center" cellpadding="5">CASEGROUPNUMBER</td></tr>
+		<tr><td port="SUSPECTTIME" align="center" cellpadding="5">SUSPECTTIME</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="SUSPECTACTION" align="center" cellpadding="5">SUSPECTACTION</td></tr>
+		<tr><td port="SHELFLOCATION_WIDTH" align="center" cellpadding="5">SHELFLOCATION_WIDTH</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 INVENTORYTOMBSTONE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INVENTORYTOMBSTONE</b></td></tr>
+        
+		<tr><td port="INVENTORYTOMBSONESK" align="center" cellpadding="5">INVENTORYTOMBSONESK</td></tr>
+		<tr><td port="PICKDEPTH" align="center" cellpadding="5">PICKDEPTH</td></tr>
+		<tr><td port="CUSTOMERCARTONGROUPREF" align="center" cellpadding="5">CUSTOMERCARTONGROUPREF</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="ONSHELFTIME" align="center" cellpadding="5">ONSHELFTIME</td></tr>
+		<tr><td port="SUSPECTREASON" align="center" cellpadding="5">SUSPECTREASON</td></tr>
+		<tr><td port="SHELFLOCATION_OFFSETX" align="center" cellpadding="5">SHELFLOCATION_OFFSETX</td></tr>
+		<tr><td port="SUSPECTLOCATIONSUBSTATE" align="center" cellpadding="5">SUSPECTLOCATIONSUBSTATE</td></tr>
+		<tr><td port="LASTSCANTIME" align="center" cellpadding="5">LASTSCANTIME</td></tr>
+		<tr><td port="TOMBSTONEDATE" align="center" cellpadding="5">TOMBSTONEDATE</td></tr>
+		<tr><td port="CARTONID" align="center" cellpadding="5">CARTONID</td></tr>
+		<tr><td port="SHELFID" align="center" cellpadding="5">SHELFID</td></tr>
+		<tr><td port="CASEGROUPNUMBER" align="center" cellpadding="5">CASEGROUPNUMBER</td></tr>
+		<tr><td port="OFFSHELFTIME" align="center" cellpadding="5">OFFSHELFTIME</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="SHELFLOCATION_CARTONOFFSETY" align="center" cellpadding="5">SHELFLOCATION_CARTONOFFSETY</td></tr>
+		<tr><td port="SUSPECTREPORTEDBY" align="center" cellpadding="5">SUSPECTREPORTEDBY</td></tr>
+		<tr><td port="SUSPECTTYPE" align="center" cellpadding="5">SUSPECTTYPE</td></tr>
+		<tr><td port="SUSPECTRESOLUTION" align="center" cellpadding="5">SUSPECTRESOLUTION</td></tr>
+		<tr><td port="SUSPECTACTION" align="center" cellpadding="5">SUSPECTACTION</td></tr>
+		<tr><td port="SHELFLOCATION_WIDTH" align="center" cellpadding="5">SHELFLOCATION_WIDTH</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="SUSPECTCLEARTIME" align="center" cellpadding="5">SUSPECTCLEARTIME</td></tr>
+		<tr><td port="LOADTASKNUMBER" align="center" cellpadding="5">LOADTASKNUMBER</td></tr>
+		<tr><td port="SHELFLOCATION_OFFSETY" align="center" cellpadding="5">SHELFLOCATION_OFFSETY</td></tr>
+		<tr><td port="SUSPECTTIME" align="center" cellpadding="5">SUSPECTTIME</td></tr>
+		<tr><td port="ITEMTYPE" align="center" cellpadding="5">ITEMTYPE</td></tr>
+		<tr><td port="SHELFLOCATION_CARTONOFFSETX" align="center" cellpadding="5">SHELFLOCATION_CARTONOFFSETX</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 SHAKEANDSEALLOADS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>SHAKEANDSEALLOADS</b></td></tr>
+        
+		<tr><td port="SUSPECTACTION" align="center" cellpadding="5">SUSPECTACTION</td></tr>
+		<tr><td port="UNLOADTIME" align="center" cellpadding="5">UNLOADTIME</td></tr>
+		<tr><td port="ISSUSPECT" align="center" cellpadding="5">ISSUSPECT</td></tr>
+		<tr><td port="SUSPECTLOCATIONSUBSTATE" align="center" cellpadding="5">SUSPECTLOCATIONSUBSTATE</td></tr>
+		<tr><td port="CARTONID" align="center" cellpadding="5">CARTONID</td></tr>
+		<tr><td port="SUSPECTTYPE" align="center" cellpadding="5">SUSPECTTYPE</td></tr>
+		<tr><td port="CUSTOMERCARTONGROUPREF" align="center" cellpadding="5">CUSTOMERCARTONGROUPREF</td></tr>
+		<tr><td port="CASEGROUPNUMBER" align="center" cellpadding="5">CASEGROUPNUMBER</td></tr>
+		<tr><td port="SUSPECTREPORTEDBY" align="center" cellpadding="5">SUSPECTREPORTEDBY</td></tr>
+		<tr><td port="LOADTIME" align="center" cellpadding="5">LOADTIME</td></tr>
+		<tr><td port="SUSPECTCLEARTIME" align="center" cellpadding="5">SUSPECTCLEARTIME</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="DROPOFFTRANSFERBUFFERID" align="center" cellpadding="5">DROPOFFTRANSFERBUFFERID</td></tr>
+		<tr><td port="SUSPECTTIME" align="center" cellpadding="5">SUSPECTTIME</td></tr>
+		<tr><td port="SUSPECTREASON" align="center" cellpadding="5">SUSPECTREASON</td></tr>
+		<tr><td port="PICKDEPTH" align="center" cellpadding="5">PICKDEPTH</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="SUSPECTRESOLUTION" align="center" cellpadding="5">SUSPECTRESOLUTION</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 SHAKEANDSEALLOADSTOMBSTONE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>SHAKEANDSEALLOADSTOMBSTONE</b></td></tr>
+        
+		<tr><td port="DROPOFFTRANSFERBUFFERID" align="center" cellpadding="5">DROPOFFTRANSFERBUFFERID</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="SUSPECTTIME" align="center" cellpadding="5">SUSPECTTIME</td></tr>
+		<tr><td port="SUSPECTTYPE" align="center" cellpadding="5">SUSPECTTYPE</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="SHAKEANDSEALLOADSTOMBSTONESK" align="center" cellpadding="5">SHAKEANDSEALLOADSTOMBSTONESK</td></tr>
+		<tr><td port="LOADTIME" align="center" cellpadding="5">LOADTIME</td></tr>
+		<tr><td port="SUSPECTLOCATIONSUBSTATE" align="center" cellpadding="5">SUSPECTLOCATIONSUBSTATE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="CUSTOMERCARTONGROUPREF" align="center" cellpadding="5">CUSTOMERCARTONGROUPREF</td></tr>
+		<tr><td port="SUSPECTACTION" align="center" cellpadding="5">SUSPECTACTION</td></tr>
+		<tr><td port="SUSPECTCLEARTIME" align="center" cellpadding="5">SUSPECTCLEARTIME</td></tr>
+		<tr><td port="UNLOADTIME" align="center" cellpadding="5">UNLOADTIME</td></tr>
+		<tr><td port="TOMBSTONEDATE" align="center" cellpadding="5">TOMBSTONEDATE</td></tr>
+		<tr><td port="SUSPECTRESOLUTION" align="center" cellpadding="5">SUSPECTRESOLUTION</td></tr>
+		<tr><td port="PICKDEPTH" align="center" cellpadding="5">PICKDEPTH</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="SUSPECTREPORTEDBY" align="center" cellpadding="5">SUSPECTREPORTEDBY</td></tr>
+		<tr><td port="CARTONID" align="center" cellpadding="5">CARTONID</td></tr>
+		<tr><td port="SUSPECTREASON" align="center" cellpadding="5">SUSPECTREASON</td></tr>
+		<tr><td port="CASEGROUPNUMBER" align="center" cellpadding="5">CASEGROUPNUMBER</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 TASKPLANCARTONS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>TASKPLANCARTONS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="TASKPLANID" align="center" cellpadding="5">TASKPLANID</td></tr>
+		<tr><td port="POSITION" align="center" cellpadding="5">POSITION</td></tr>
+		<tr><td port="CARTONID" align="center" cellpadding="5">CARTONID</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 TASKPLANCARTONSTOMBSTONE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>TASKPLANCARTONSTOMBSTONE</b></td></tr>
+        
+		<tr><td port="TASKPLANCTNSTOMBSTONESK" align="center" cellpadding="5">TASKPLANCTNSTOMBSTONESK</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="CARTONID" align="center" cellpadding="5">CARTONID</td></tr>
+		<tr><td port="POSITION" align="center" cellpadding="5">POSITION</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="TOMBSTONEDATE" align="center" cellpadding="5">TOMBSTONEDATE</td></tr>
+		<tr><td port="TASKPLANID" align="center" cellpadding="5">TASKPLANID</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 TASKPLANS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>TASKPLANS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="PICKDEPTH" align="center" cellpadding="5">PICKDEPTH</td></tr>
+		<tr><td port="LOADSHELFLOCATION_OFFSETX" align="center" cellpadding="5">LOADSHELFLOCATION_OFFSETX</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="LOADTIME" align="center" cellpadding="5">LOADTIME</td></tr>
+		<tr><td port="LOADSHELFLOCATION_CARTONOFFSETX" align="center" cellpadding="5">LOADSHELFLOCATION_CARTONOFFSETX</td></tr>
+		<tr><td port="LOADSHELFID" align="center" cellpadding="5">LOADSHELFID</td></tr>
+		<tr><td port="UNLOADTRANSFERBUFFERID" align="center" cellpadding="5">UNLOADTRANSFERBUFFERID</td></tr>
+		<tr><td port="LOADTASKNUMBER" align="center" cellpadding="5">LOADTASKNUMBER</td></tr>
+		<tr><td port="SUSPECTTIME" align="center" cellpadding="5">SUSPECTTIME</td></tr>
+		<tr><td port="SUSPECTCLEARTIME" align="center" cellpadding="5">SUSPECTCLEARTIME</td></tr>
+		<tr><td port="UNLOADSHELFLOCATION_OFFSETX" align="center" cellpadding="5">UNLOADSHELFLOCATION_OFFSETX</td></tr>
+		<tr><td port="LASTSCANTIME" align="center" cellpadding="5">LASTSCANTIME</td></tr>
+		<tr><td port="UNLOADTIME" align="center" cellpadding="5">UNLOADTIME</td></tr>
+		<tr><td port="SUSPECTACTION" align="center" cellpadding="5">SUSPECTACTION</td></tr>
+		<tr><td port="LEVELID" align="center" cellpadding="5">LEVELID</td></tr>
+		<tr><td port="CUSTOMERCARTONGROUPREF" align="center" cellpadding="5">CUSTOMERCARTONGROUPREF</td></tr>
+		<tr><td port="UNLOADSHELFLOCATION_CARTONOFFSETY" align="center" cellpadding="5">UNLOADSHELFLOCATION_CARTONOFFSETY</td></tr>
+		<tr><td port="UNLOADSHELFID" align="center" cellpadding="5">UNLOADSHELFID</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="UNLOADSHELFLOCATION_WIDTH" align="center" cellpadding="5">UNLOADSHELFLOCATION_WIDTH</td></tr>
+		<tr><td port="UNLOADTASKNUMBER" align="center" cellpadding="5">UNLOADTASKNUMBER</td></tr>
+		<tr><td port="LOADSHELFLOCATION_WIDTH" align="center" cellpadding="5">LOADSHELFLOCATION_WIDTH</td></tr>
+		<tr><td port="LOADTRANSFERBUFFERID" align="center" cellpadding="5">LOADTRANSFERBUFFERID</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="UNLOADSHELFLOCATION_OFFSETY" align="center" cellpadding="5">UNLOADSHELFLOCATION_OFFSETY</td></tr>
+		<tr><td port="UNLOADSHELFLOCATION_CARTONOFFSETX" align="center" cellpadding="5">UNLOADSHELFLOCATION_CARTONOFFSETX</td></tr>
+		<tr><td port="CASEGROUPNUMBER" align="center" cellpadding="5">CASEGROUPNUMBER</td></tr>
+		<tr><td port="SUSPECTRESOLUTION" align="center" cellpadding="5">SUSPECTRESOLUTION</td></tr>
+		<tr><td port="SUSPECTLOCATIONSUBSTATE" align="center" cellpadding="5">SUSPECTLOCATIONSUBSTATE</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="SUSPECTTYPE" align="center" cellpadding="5">SUSPECTTYPE</td></tr>
+		<tr><td port="SUSPECTREPORTEDBY" align="center" cellpadding="5">SUSPECTREPORTEDBY</td></tr>
+		<tr><td port="LOADSHELFLOCATION_CARTONOFFSETY" align="center" cellpadding="5">LOADSHELFLOCATION_CARTONOFFSETY</td></tr>
+		<tr><td port="ISSUSPECT" align="center" cellpadding="5">ISSUSPECT</td></tr>
+		<tr><td port="SUSPECTREASON" align="center" cellpadding="5">SUSPECTREASON</td></tr>
+		<tr><td port="LOADSHELFLOCATION_OFFSETY" align="center" cellpadding="5">LOADSHELFLOCATION_OFFSETY</td></tr>
+		<tr><td port="BOTID" align="center" cellpadding="5">BOTID</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 TASKPLANSTOMBSTONE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>TASKPLANSTOMBSTONE</b></td></tr>
+        
+		<tr><td port="TASKPLANSTOMBSTONESK" align="center" cellpadding="5">TASKPLANSTOMBSTONESK</td></tr>
+		<tr><td port="PICKDEPTH" align="center" cellpadding="5">PICKDEPTH</td></tr>
+		<tr><td port="LOADSHELFLOCATION_WIDTH" align="center" cellpadding="5">LOADSHELFLOCATION_WIDTH</td></tr>
+		<tr><td port="SUSPECTTIME" align="center" cellpadding="5">SUSPECTTIME</td></tr>
+		<tr><td port="LOADSHELFLOCATION_OFFSETX" align="center" cellpadding="5">LOADSHELFLOCATION_OFFSETX</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="BOTID" align="center" cellpadding="5">BOTID</td></tr>
+		<tr><td port="SUSPECTREASON" align="center" cellpadding="5">SUSPECTREASON</td></tr>
+		<tr><td port="LEVELID" align="center" cellpadding="5">LEVELID</td></tr>
+		<tr><td port="LOADSHELFLOCATION_CARTONOFFSETX" align="center" cellpadding="5">LOADSHELFLOCATION_CARTONOFFSETX</td></tr>
+		<tr><td port="CUSTOMERCARTONGROUPREF" align="center" cellpadding="5">CUSTOMERCARTONGROUPREF</td></tr>
+		<tr><td port="SUSPECTRESOLUTION" align="center" cellpadding="5">SUSPECTRESOLUTION</td></tr>
+		<tr><td port="SUSPECTREPORTEDBY" align="center" cellpadding="5">SUSPECTREPORTEDBY</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="LOADSHELFLOCATION_CARTONOFFSETY" align="center" cellpadding="5">LOADSHELFLOCATION_CARTONOFFSETY</td></tr>
+		<tr><td port="CASEGROUPNUMBER" align="center" cellpadding="5">CASEGROUPNUMBER</td></tr>
+		<tr><td port="SUSPECTTYPE" align="center" cellpadding="5">SUSPECTTYPE</td></tr>
+		<tr><td port="SUSPECTCLEARTIME" align="center" cellpadding="5">SUSPECTCLEARTIME</td></tr>
+		<tr><td port="LOADTASKNUMBER" align="center" cellpadding="5">LOADTASKNUMBER</td></tr>
+		<tr><td port="UNLOADSHELFLOCATION_OFFSETX" align="center" cellpadding="5">UNLOADSHELFLOCATION_OFFSETX</td></tr>
+		<tr><td port="LOADSHELFID" align="center" cellpadding="5">LOADSHELFID</td></tr>
+		<tr><td port="UNLOADTRANSFERBUFFERID" align="center" cellpadding="5">UNLOADTRANSFERBUFFERID</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="UNLOADSHELFLOCATION_OFFSETY" align="center" cellpadding="5">UNLOADSHELFLOCATION_OFFSETY</td></tr>
+		<tr><td port="SUSPECTLOCATIONSUBSTATE" align="center" cellpadding="5">SUSPECTLOCATIONSUBSTATE</td></tr>
+		<tr><td port="UNLOADTASKNUMBER" align="center" cellpadding="5">UNLOADTASKNUMBER</td></tr>
+		<tr><td port="LOADTRANSFERBUFFERID" align="center" cellpadding="5">LOADTRANSFERBUFFERID</td></tr>
+		<tr><td port="LOADSHELFLOCATION_OFFSETY" align="center" cellpadding="5">LOADSHELFLOCATION_OFFSETY</td></tr>
+		<tr><td port="TOMBSTONEDATE" align="center" cellpadding="5">TOMBSTONEDATE</td></tr>
+		<tr><td port="UNLOADSHELFLOCATION_CARTONOFFSETX" align="center" cellpadding="5">UNLOADSHELFLOCATION_CARTONOFFSETX</td></tr>
+		<tr><td port="SUSPECTACTION" align="center" cellpadding="5">SUSPECTACTION</td></tr>
+		<tr><td port="UNLOADTIME" align="center" cellpadding="5">UNLOADTIME</td></tr>
+		<tr><td port="UNLOADSHELFID" align="center" cellpadding="5">UNLOADSHELFID</td></tr>
+		<tr><td port="UNLOADSHELFLOCATION_CARTONOFFSETY" align="center" cellpadding="5">UNLOADSHELFLOCATION_CARTONOFFSETY</td></tr>
+		<tr><td port="LASTSCANTIME" align="center" cellpadding="5">LASTSCANTIME</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="UNLOADSHELFLOCATION_WIDTH" align="center" cellpadding="5">UNLOADSHELFLOCATION_WIDTH</td></tr>
+		<tr><td port="LOADTIME" align="center" cellpadding="5">LOADTIME</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 TRANSFERBUFFERLOADCARTONS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>TRANSFERBUFFERLOADCARTONS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="TRANSFERBUFFERLOADID" align="center" cellpadding="5">TRANSFERBUFFERLOADID</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="POSITION" align="center" cellpadding="5">POSITION</td></tr>
+		<tr><td port="CARTONID" align="center" cellpadding="5">CARTONID</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 TRANSFERBUFFERLOADCARTONSTOMBSTONE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>TRANSFERBUFFERLOADCARTONSTOMBSTONE</b></td></tr>
+        
+		<tr><td port="TRANSFERBUFFERLOADCARTONSTOMBSTONESK" align="center" cellpadding="5">TRANSFERBUFFERLOADCARTONSTOMBSTONESK</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="TOMBSTONEDATE" align="center" cellpadding="5">TOMBSTONEDATE</td></tr>
+		<tr><td port="POSITION" align="center" cellpadding="5">POSITION</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="TRANSFERBUFFERLOADID" align="center" cellpadding="5">TRANSFERBUFFERLOADID</td></tr>
+		<tr><td port="CARTONID" align="center" cellpadding="5">CARTONID</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 TRANSFERBUFFERLOADS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>TRANSFERBUFFERLOADS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="PICKDEPTH" align="center" cellpadding="5">PICKDEPTH</td></tr>
+		<tr><td port="SUSPECTRESOLUTION" align="center" cellpadding="5">SUSPECTRESOLUTION</td></tr>
+		<tr><td port="UNLOADTIME" align="center" cellpadding="5">UNLOADTIME</td></tr>
+		<tr><td port="LOADTASKNUMBER" align="center" cellpadding="5">LOADTASKNUMBER</td></tr>
+		<tr><td port="SUSPECTCLEARTIME" align="center" cellpadding="5">SUSPECTCLEARTIME</td></tr>
+		<tr><td port="CUSTOMERCARTONGROUPREF" align="center" cellpadding="5">CUSTOMERCARTONGROUPREF</td></tr>
+		<tr><td port="SUSPECTACTION" align="center" cellpadding="5">SUSPECTACTION</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="TRANSFERBUFFERID" align="center" cellpadding="5">TRANSFERBUFFERID</td></tr>
+		<tr><td port="LOADTIME" align="center" cellpadding="5">LOADTIME</td></tr>
+		<tr><td port="SUSPECTLOCATIONSUBSTATE" align="center" cellpadding="5">SUSPECTLOCATIONSUBSTATE</td></tr>
+		<tr><td port="SUSPECTTIME" align="center" cellpadding="5">SUSPECTTIME</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="ISSUSPECT" align="center" cellpadding="5">ISSUSPECT</td></tr>
+		<tr><td port="SUSPECTTYPE" align="center" cellpadding="5">SUSPECTTYPE</td></tr>
+		<tr><td port="SUSPECTREASON" align="center" cellpadding="5">SUSPECTREASON</td></tr>
+		<tr><td port="CASEGROUPNUMBER" align="center" cellpadding="5">CASEGROUPNUMBER</td></tr>
+		<tr><td port="SUSPECTREPORTEDBY" align="center" cellpadding="5">SUSPECTREPORTEDBY</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="LASTSCANTIME" align="center" cellpadding="5">LASTSCANTIME</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 TRANSFERBUFFERLOADSTOMBSTONE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>TRANSFERBUFFERLOADSTOMBSTONE</b></td></tr>
+        
+		<tr><td port="TRANSFERBUFFERLOADSTOMBSTONESK" align="center" cellpadding="5">TRANSFERBUFFERLOADSTOMBSTONESK</td></tr>
+		<tr><td port="LASTSCANTIME" align="center" cellpadding="5">LASTSCANTIME</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="PICKDEPTH" align="center" cellpadding="5">PICKDEPTH</td></tr>
+		<tr><td port="SUSPECTTYPE" align="center" cellpadding="5">SUSPECTTYPE</td></tr>
+		<tr><td port="SUSPECTTIME" align="center" cellpadding="5">SUSPECTTIME</td></tr>
+		<tr><td port="UNLOADTIME" align="center" cellpadding="5">UNLOADTIME</td></tr>
+		<tr><td port="SUSPECTACTION" align="center" cellpadding="5">SUSPECTACTION</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="LOADTASKNUMBER" align="center" cellpadding="5">LOADTASKNUMBER</td></tr>
+		<tr><td port="TRANSFERBUFFERID" align="center" cellpadding="5">TRANSFERBUFFERID</td></tr>
+		<tr><td port="SUSPECTREASON" align="center" cellpadding="5">SUSPECTREASON</td></tr>
+		<tr><td port="CUSTOMERCARTONGROUPREF" align="center" cellpadding="5">CUSTOMERCARTONGROUPREF</td></tr>
+		<tr><td port="SUSPECTCLEARTIME" align="center" cellpadding="5">SUSPECTCLEARTIME</td></tr>
+		<tr><td port="TOMBSTONEDATE" align="center" cellpadding="5">TOMBSTONEDATE</td></tr>
+		<tr><td port="CASEGROUPNUMBER" align="center" cellpadding="5">CASEGROUPNUMBER</td></tr>
+		<tr><td port="SUSPECTLOCATIONSUBSTATE" align="center" cellpadding="5">SUSPECTLOCATIONSUBSTATE</td></tr>
+		<tr><td port="SUSPECTREPORTEDBY" align="center" cellpadding="5">SUSPECTREPORTEDBY</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="SUSPECTRESOLUTION" align="center" cellpadding="5">SUSPECTRESOLUTION</td></tr>
+		<tr><td port="LOADTIME" align="center" cellpadding="5">LOADTIME</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 CARTONEXTENSION:CARTONID->CARTONS:ID;
+
+	 CARTONSCANS:CARTONID->CARTONS:ID;
+
+	 EXCEPTIONPROCESSINGREQUIREDDETAILS:CARTONID->CARTONS:ID;
+
+	 INBOUNDCONVEYORLOADCARTONS:INBOUNDCONVEYORLOADID->INBOUNDCONVEYORLOADS:ID;
+
+	 INBOUNDCONVEYORLOADCARTONS:CARTONID->CARTONS:ID;
+
+	 INBOUNDCONVEYORLOADCARTONSTOMBSTONE:INBOUNDCONVEYORLOADID->INBOUNDCONVEYORLOADS:ID;
+
+	 INBOUNDCONVEYORLOADCARTONSTOMBSTONE:CARTONID->CARTONS:ID;
+
+	 INVENTORY:CARTONID->CARTONS:ID;
+
+	 INVENTORYTOMBSTONE:CARTONID->CARTONS:ID;
+
+	 SHAKEANDSEALLOADS:CARTONID->CARTONS:ID;
+
+	 SHAKEANDSEALLOADSTOMBSTONE:CARTONID->CARTONS:ID;
+
+	 TASKPLANCARTONS:TASKPLANID->TASKPLANS:ID;
+
+	 TASKPLANCARTONS:CARTONID->CARTONS:ID;
+
+	 TASKPLANCARTONSTOMBSTONE:CARTONID->CARTONS:ID;
+
+	 TASKPLANCARTONSTOMBSTONE:TASKPLANID->TASKPLANS:ID;
+
+	 TRANSFERBUFFERLOADCARTONS:TRANSFERBUFFERLOADID->TRANSFERBUFFERLOADS:ID;
+
+	 TRANSFERBUFFERLOADCARTONS:CARTONID->CARTONS:ID;
+
+	 TRANSFERBUFFERLOADCARTONSTOMBSTONE:TRANSFERBUFFERLOADID->TRANSFERBUFFERLOADS:ID;
+
+	 TRANSFERBUFFERLOADCARTONSTOMBSTONE:CARTONID->CARTONS:ID;
+	}

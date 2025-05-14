@@ -1,0 +1,75 @@
+digraph G {
+        graph [
+            nodesep=0.5;
+            rankdir="LR";
+            cencentrate=true;
+            splines="spline";
+            fontname="Helvetica";
+            pad="0.2,0.2",
+            label="",
+
+        ];
+
+        node [shape=plain, fontname="Helvetica"];
+        edge [
+            dir=both,
+            fontsize=12,
+            arrowsize=0.9,
+            penwidth=1.0,
+            labelangle=32,
+            labeldistance=1.8,
+            fontname="Helvetica"
+        ];
+
+	 LU_FREIGHT_TYPE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>LU_FREIGHT_TYPE</b></td></tr>
+        
+		<tr><td port="FREIGHT_TYPE_SK" align="center" cellpadding="5">FREIGHT_TYPE_SK</td></tr>
+		<tr><td port="FREIGHT_TYPE_NAME" align="center" cellpadding="5">FREIGHT_TYPE_NAME</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 LU_PUTAWAY_WORKFLOW [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>LU_PUTAWAY_WORKFLOW</b></td></tr>
+        
+		<tr><td port="PUTAWAY_WORKFLOW_SK" align="center" cellpadding="5">PUTAWAY_WORKFLOW_SK</td></tr>
+		<tr><td port="PUTAWAY_WORKFLOW_NAME" align="center" cellpadding="5">PUTAWAY_WORKFLOW_NAME</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 PUTAWAY_ORDER [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>PUTAWAY_ORDER</b></td></tr>
+        
+		<tr><td port="LABEL_ID" align="center" cellpadding="5">LABEL_ID</td></tr>
+		<tr><td port="PUTAWAY_ORDER_NUMBER" align="center" cellpadding="5">PUTAWAY_ORDER_NUMBER</td></tr>
+		<tr><td port="EXPECTED_QTY" align="center" cellpadding="5">EXPECTED_QTY</td></tr>
+		<tr><td port="PUTAWAY_WORKFLOW_SK" align="center" cellpadding="5">PUTAWAY_WORKFLOW_SK</td></tr>
+		<tr><td port="ITEM_NUMBER" align="center" cellpadding="5">ITEM_NUMBER</td></tr>
+		<tr><td port="LABEL_TYPE" align="center" cellpadding="5">LABEL_TYPE</td></tr>
+		<tr><td port="FREIGHT_TYPE_SK" align="center" cellpadding="5">FREIGHT_TYPE_SK</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 PUTAWAY_ORDER_TXN [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>PUTAWAY_ORDER_TXN</b></td></tr>
+        
+		<tr><td port="AS_OF_TIMESTAMP" align="center" cellpadding="5">AS_OF_TIMESTAMP</td></tr>
+		<tr><td port="LABEL_ID" align="center" cellpadding="5">LABEL_ID</td></tr>
+		<tr><td port="UPDATED_BY" align="center" cellpadding="5">UPDATED_BY</td></tr>
+		<tr><td port="PUTAWAY_ORDER_NUMBER" align="center" cellpadding="5">PUTAWAY_ORDER_NUMBER</td></tr>
+		<tr><td port="EXPECTED_QTY" align="center" cellpadding="5">EXPECTED_QTY</td></tr>
+		<tr><td port="PUTAWAY_WORKFLOW_SK" align="center" cellpadding="5">PUTAWAY_WORKFLOW_SK</td></tr>
+		<tr><td port="DELETED_INDICATOR" align="center" cellpadding="5">DELETED_INDICATOR</td></tr>
+		<tr><td port="ITEM_NUMBER" align="center" cellpadding="5">ITEM_NUMBER</td></tr>
+		<tr><td port="FREIGHT_TYPE_SK" align="center" cellpadding="5">FREIGHT_TYPE_SK</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+	}

@@ -1,0 +1,395 @@
+digraph G {
+        graph [
+            nodesep=0.5;
+            rankdir="LR";
+            cencentrate=true;
+            splines="spline";
+            fontname="Helvetica";
+            pad="0.2,0.2",
+            label="",
+
+        ];
+
+        node [shape=plain, fontname="Helvetica"];
+        edge [
+            dir=both,
+            fontsize=12,
+            arrowsize=0.9,
+            penwidth=1.0,
+            labelangle=32,
+            labeldistance=1.8,
+            fontname="Helvetica"
+        ];
+
+	 FIVETRAN_AUDIT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>FIVETRAN_AUDIT</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="MESSAGE" align="center" cellpadding="5">MESSAGE</td></tr>
+		<tr><td port="UPDATE_STARTED" align="center" cellpadding="5">UPDATE_STARTED</td></tr>
+		<tr><td port="UPDATE_ID" align="center" cellpadding="5">UPDATE_ID</td></tr>
+		<tr><td port="SCHEMA" align="center" cellpadding="5">SCHEMA</td></tr>
+		<tr><td port="TABLE" align="center" cellpadding="5">TABLE</td></tr>
+		<tr><td port="START" align="center" cellpadding="5">START</td></tr>
+		<tr><td port="DONE" align="center" cellpadding="5">DONE</td></tr>
+		<tr><td port="ROWS_UPDATED_OR_INSERTED" align="center" cellpadding="5">ROWS_UPDATED_OR_INSERTED</td></tr>
+		<tr><td port="STATUS" align="center" cellpadding="5">STATUS</td></tr>
+		<tr><td port="PROGRESS" align="center" cellpadding="5">PROGRESS</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 LU_FREIGHT_TYPE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>LU_FREIGHT_TYPE</b></td></tr>
+        
+		<tr><td port="FREIGHT_TYPE_SK" align="center" cellpadding="5">FREIGHT_TYPE_SK</td></tr>
+		<tr><td port="FREIGHT_TYPE_NAME" align="center" cellpadding="5">FREIGHT_TYPE_NAME</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 LU_PICK_WORKFLOW_STATUS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>LU_PICK_WORKFLOW_STATUS</b></td></tr>
+        
+		<tr><td port="PICK_WORKFLOW_STATUS_SK" align="center" cellpadding="5">PICK_WORKFLOW_STATUS_SK</td></tr>
+		<tr><td port="PICK_WORKFLOW_STATUS_NAME" align="center" cellpadding="5">PICK_WORKFLOW_STATUS_NAME</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 LU_STORE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>LU_STORE</b></td></tr>
+        
+		<tr><td port="STORE_NUMBER" align="center" cellpadding="5">STORE_NUMBER</td></tr>
+		<tr><td port="MODE" align="center" cellpadding="5">MODE</td></tr>
+		<tr><td port="SELECTION_MODE_SK" align="center" cellpadding="5">SELECTION_MODE_SK</td></tr>
+		<tr><td port="LANE_NUMBER" align="center" cellpadding="5">LANE_NUMBER</td></tr>
+		<tr><td port="HELD_PRODUCT_ELIGIBLE_INDICATOR" align="center" cellpadding="5">HELD_PRODUCT_ELIGIBLE_INDICATOR</td></tr>
+		<tr><td port="PRINT_BATCH_NUMBER" align="center" cellpadding="5">PRINT_BATCH_NUMBER</td></tr>
+		<tr><td port="STORE_ALIGNMENT_TO" align="center" cellpadding="5">STORE_ALIGNMENT_TO</td></tr>
+		<tr><td port="PALLETIZE_INDICATOR" align="center" cellpadding="5">PALLETIZE_INDICATOR</td></tr>
+		<tr><td port="EXPIRED_PRODUCT_ELIGIBLE_INDICATOR" align="center" cellpadding="5">EXPIRED_PRODUCT_ELIGIBLE_INDICATOR</td></tr>
+		<tr><td port="STORE_GROUP_NUMBER" align="center" cellpadding="5">STORE_GROUP_NUMBER</td></tr>
+		<tr><td port="PICK_BATCH_NUMBER" align="center" cellpadding="5">PICK_BATCH_NUMBER</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		<tr><td port="CELL_GROUP" align="center" cellpadding="5">CELL_GROUP</td></tr>
+		<tr><td port="BREAKPACK_BATCH" align="center" cellpadding="5">BREAKPACK_BATCH</td></tr>
+		</table>>];
+
+	 LU_STORE_TOTE_WORKFLOW_STATUS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>LU_STORE_TOTE_WORKFLOW_STATUS</b></td></tr>
+        
+		<tr><td port="STORE_TOTE_WORKFLOW_STATUS_SK" align="center" cellpadding="5">STORE_TOTE_WORKFLOW_STATUS_SK</td></tr>
+		<tr><td port="STORE_TOTE_WORKFLOW_STATUS_NAME" align="center" cellpadding="5">STORE_TOTE_WORKFLOW_STATUS_NAME</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 LU_WEEKDAY [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>LU_WEEKDAY</b></td></tr>
+        
+		<tr><td port="WEEKDAY_SK" align="center" cellpadding="5">WEEKDAY_SK</td></tr>
+		<tr><td port="WEEKDAY_DATEPART" align="center" cellpadding="5">WEEKDAY_DATEPART</td></tr>
+		<tr><td port="WEEKDAY_NAME" align="center" cellpadding="5">WEEKDAY_NAME</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 PICK_ORDER [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>PICK_ORDER</b></td></tr>
+        
+		<tr><td port="PICK_ORDER_NUMBER" align="center" cellpadding="5">PICK_ORDER_NUMBER</td></tr>
+		<tr><td port="DISTRIBUTION_CENTER_NUMBER" align="center" cellpadding="5">DISTRIBUTION_CENTER_NUMBER</td></tr>
+		<tr><td port="MODE" align="center" cellpadding="5">MODE</td></tr>
+		<tr><td port="STORE_NUMBER" align="center" cellpadding="5">STORE_NUMBER</td></tr>
+		<tr><td port="PICK_ORDER_TYPE_SK" align="center" cellpadding="5">PICK_ORDER_TYPE_SK</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 PICK_ORDER_LABEL [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>PICK_ORDER_LABEL</b></td></tr>
+        
+		<tr><td port="SHIPPING_LABEL_ID" align="center" cellpadding="5">SHIPPING_LABEL_ID</td></tr>
+		<tr><td port="LABEL_CREATED_TS" align="center" cellpadding="5">LABEL_CREATED_TS</td></tr>
+		<tr><td port="PALLET_PLAN_ORDER_ID" align="center" cellpadding="5">PALLET_PLAN_ORDER_ID</td></tr>
+		<tr><td port="SYMBOTIC_ORDER_ID" align="center" cellpadding="5">SYMBOTIC_ORDER_ID</td></tr>
+		<tr><td port="PICK_ORDER_LABEL_EVENT_SK" align="center" cellpadding="5">PICK_ORDER_LABEL_EVENT_SK</td></tr>
+		<tr><td port="UNLOAD_ZONE_SK" align="center" cellpadding="5">UNLOAD_ZONE_SK</td></tr>
+		<tr><td port="PICK_ORDER_NUMBER" align="center" cellpadding="5">PICK_ORDER_NUMBER</td></tr>
+		<tr><td port="PURCHASE_ORDER_EVENT_SK" align="center" cellpadding="5">PURCHASE_ORDER_EVENT_SK</td></tr>
+		<tr><td port="PALLET_SEQUENCE_NUMBER" align="center" cellpadding="5">PALLET_SEQUENCE_NUMBER</td></tr>
+		<tr><td port="PICK_ORDER_LINE_NUMBER" align="center" cellpadding="5">PICK_ORDER_LINE_NUMBER</td></tr>
+		<tr><td port="PALLET_PURCHASE_ORDER_EVENT_SK" align="center" cellpadding="5">PALLET_PURCHASE_ORDER_EVENT_SK</td></tr>
+		<tr><td port="STORE_DIVISION_NUMBER" align="center" cellpadding="5">STORE_DIVISION_NUMBER</td></tr>
+		<tr><td port="PICK_WORKFLOW_STATUS_SK" align="center" cellpadding="5">PICK_WORKFLOW_STATUS_SK</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		<tr><td port="LABEL_DATA" align="center" cellpadding="5">LABEL_DATA</td></tr>
+		<tr><td port="LABEL_FORMAT_SK" align="center" cellpadding="5">LABEL_FORMAT_SK</td></tr>
+		<tr><td port="REORDER_INDICATOR" align="center" cellpadding="5">REORDER_INDICATOR</td></tr>
+		</table>>];
+
+	 PICK_ORDER_LABEL_TXN [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>PICK_ORDER_LABEL_TXN</b></td></tr>
+        
+		<tr><td port="AS_OF_TIMESTAMP" align="center" cellpadding="5">AS_OF_TIMESTAMP</td></tr>
+		<tr><td port="SHIPPING_LABEL_ID" align="center" cellpadding="5">SHIPPING_LABEL_ID</td></tr>
+		<tr><td port="PICK_ORDER_LABEL_EVENT_SK" align="center" cellpadding="5">PICK_ORDER_LABEL_EVENT_SK</td></tr>
+		<tr><td port="UPDATED_BY" align="center" cellpadding="5">UPDATED_BY</td></tr>
+		<tr><td port="DELETED_INDICATOR" align="center" cellpadding="5">DELETED_INDICATOR</td></tr>
+		<tr><td port="LABEL_CREATED_TS" align="center" cellpadding="5">LABEL_CREATED_TS</td></tr>
+		<tr><td port="PALLET_PLAN_ORDER_ID" align="center" cellpadding="5">PALLET_PLAN_ORDER_ID</td></tr>
+		<tr><td port="PICK_WORKFLOW_STATUS_SK" align="center" cellpadding="5">PICK_WORKFLOW_STATUS_SK</td></tr>
+		<tr><td port="STORE_DIVISION_NUMBER" align="center" cellpadding="5">STORE_DIVISION_NUMBER</td></tr>
+		<tr><td port="PICK_ORDER_NUMBER" align="center" cellpadding="5">PICK_ORDER_NUMBER</td></tr>
+		<tr><td port="PALLET_SEQUENCE_NUMBER" align="center" cellpadding="5">PALLET_SEQUENCE_NUMBER</td></tr>
+		<tr><td port="PICK_ORDER_LINE_NUMBER" align="center" cellpadding="5">PICK_ORDER_LINE_NUMBER</td></tr>
+		<tr><td port="UNLOAD_ZONE_SK" align="center" cellpadding="5">UNLOAD_ZONE_SK</td></tr>
+		<tr><td port="SYMBOTIC_ORDER_ID" align="center" cellpadding="5">SYMBOTIC_ORDER_ID</td></tr>
+		<tr><td port="PALLET_PURCHASE_ORDER_EVENT_SK" align="center" cellpadding="5">PALLET_PURCHASE_ORDER_EVENT_SK</td></tr>
+		<tr><td port="PURCHASE_ORDER_EVENT_SK" align="center" cellpadding="5">PURCHASE_ORDER_EVENT_SK</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		<tr><td port="LABEL_DATA" align="center" cellpadding="5">LABEL_DATA</td></tr>
+		<tr><td port="LABEL_FORMAT_SK" align="center" cellpadding="5">LABEL_FORMAT_SK</td></tr>
+		<tr><td port="REORDER_INDICATOR" align="center" cellpadding="5">REORDER_INDICATOR</td></tr>
+		</table>>];
+
+	 PICK_ORDER_LINE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>PICK_ORDER_LINE</b></td></tr>
+        
+		<tr><td port="PICK_ORDER_LINE_NUMBER" align="center" cellpadding="5">PICK_ORDER_LINE_NUMBER</td></tr>
+		<tr><td port="PICK_ORDER_NUMBER" align="center" cellpadding="5">PICK_ORDER_NUMBER</td></tr>
+		<tr><td port="SECONDARY_SECTION_SK" align="center" cellpadding="5">SECONDARY_SECTION_SK</td></tr>
+		<tr><td port="TERTIARY_AISLE_SK" align="center" cellpadding="5">TERTIARY_AISLE_SK</td></tr>
+		<tr><td port="SECONDARY_AISLE_SK" align="center" cellpadding="5">SECONDARY_AISLE_SK</td></tr>
+		<tr><td port="LABEL_TYPE_SK" align="center" cellpadding="5">LABEL_TYPE_SK</td></tr>
+		<tr><td port="HAZMAT_INDICATOR" align="center" cellpadding="5">HAZMAT_INDICATOR</td></tr>
+		<tr><td port="FREIGHT_TYPE_SK" align="center" cellpadding="5">FREIGHT_TYPE_SK</td></tr>
+		<tr><td port="SECONDARY_ZONE_SK" align="center" cellpadding="5">SECONDARY_ZONE_SK</td></tr>
+		<tr><td port="PRINT_LABEL_INDICATOR" align="center" cellpadding="5">PRINT_LABEL_INDICATOR</td></tr>
+		<tr><td port="HIGH_RISK_SHRINK_INDICATOR" align="center" cellpadding="5">HIGH_RISK_SHRINK_INDICATOR</td></tr>
+		<tr><td port="PRIMARY_ZONE_SK" align="center" cellpadding="5">PRIMARY_ZONE_SK</td></tr>
+		<tr><td port="PRIMARY_SECTION_SK" align="center" cellpadding="5">PRIMARY_SECTION_SK</td></tr>
+		<tr><td port="LOW_STORE_INVENTORY_INDICATOR" align="center" cellpadding="5">LOW_STORE_INVENTORY_INDICATOR</td></tr>
+		<tr><td port="TERTIARY_SECTION_SK" align="center" cellpadding="5">TERTIARY_SECTION_SK</td></tr>
+		<tr><td port="WALMART_ITEM_NUMBER" align="center" cellpadding="5">WALMART_ITEM_NUMBER</td></tr>
+		<tr><td port="ORDER_QUANTITY" align="center" cellpadding="5">ORDER_QUANTITY</td></tr>
+		<tr><td port="PRIMARY_AISLE_SK" align="center" cellpadding="5">PRIMARY_AISLE_SK</td></tr>
+		<tr><td port="DEPARTMENT_NUMBER" align="center" cellpadding="5">DEPARTMENT_NUMBER</td></tr>
+		<tr><td port="TERTIARY_ZONE_SK" align="center" cellpadding="5">TERTIARY_ZONE_SK</td></tr>
+		<tr><td port="PICK_SEQUENCE" align="center" cellpadding="5">PICK_SEQUENCE</td></tr>
+		<tr><td port="SKU_MERCHANDISE_CATEGORY" align="center" cellpadding="5">SKU_MERCHANDISE_CATEGORY</td></tr>
+		<tr><td port="SKU_MERCHANDISE_SUBCATEGORY" align="center" cellpadding="5">SKU_MERCHANDISE_SUBCATEGORY</td></tr>
+		<tr><td port="PICK_BY_LABEL_INDICATOR" align="center" cellpadding="5">PICK_BY_LABEL_INDICATOR</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 PICK_ORDER_LINE_TXN [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>PICK_ORDER_LINE_TXN</b></td></tr>
+        
+		<tr><td port="PRIMARY_SECTION_SK" align="center" cellpadding="5">PRIMARY_SECTION_SK</td></tr>
+		<tr><td port="DEPARTMENT_NUMBER" align="center" cellpadding="5">DEPARTMENT_NUMBER</td></tr>
+		<tr><td port="PICK_ORDER_LINE_NUMBER" align="center" cellpadding="5">PICK_ORDER_LINE_NUMBER</td></tr>
+		<tr><td port="PICK_SEQUENCE" align="center" cellpadding="5">PICK_SEQUENCE</td></tr>
+		<tr><td port="FREIGHT_TYPE_SK" align="center" cellpadding="5">FREIGHT_TYPE_SK</td></tr>
+		<tr><td port="TERTIARY_SECTION_SK" align="center" cellpadding="5">TERTIARY_SECTION_SK</td></tr>
+		<tr><td port="WALMART_ITEM_NUMBER" align="center" cellpadding="5">WALMART_ITEM_NUMBER</td></tr>
+		<tr><td port="PRIMARY_ZONE_SK" align="center" cellpadding="5">PRIMARY_ZONE_SK</td></tr>
+		<tr><td port="AS_OF_TIMESTAMP" align="center" cellpadding="5">AS_OF_TIMESTAMP</td></tr>
+		<tr><td port="ORDER_QUANTITY" align="center" cellpadding="5">ORDER_QUANTITY</td></tr>
+		<tr><td port="DELETED_INDICATOR" align="center" cellpadding="5">DELETED_INDICATOR</td></tr>
+		<tr><td port="PICK_BY_LABEL_INDICATOR" align="center" cellpadding="5">PICK_BY_LABEL_INDICATOR</td></tr>
+		<tr><td port="SECONDARY_SECTION_SK" align="center" cellpadding="5">SECONDARY_SECTION_SK</td></tr>
+		<tr><td port="SKU_MERCHANDISE_CATEGORY" align="center" cellpadding="5">SKU_MERCHANDISE_CATEGORY</td></tr>
+		<tr><td port="TERTIARY_AISLE_SK" align="center" cellpadding="5">TERTIARY_AISLE_SK</td></tr>
+		<tr><td port="PRINT_LABEL_INDICATOR" align="center" cellpadding="5">PRINT_LABEL_INDICATOR</td></tr>
+		<tr><td port="SECONDARY_ZONE_SK" align="center" cellpadding="5">SECONDARY_ZONE_SK</td></tr>
+		<tr><td port="HAZMAT_INDICATOR" align="center" cellpadding="5">HAZMAT_INDICATOR</td></tr>
+		<tr><td port="LOW_STORE_INVENTORY_INDICATOR" align="center" cellpadding="5">LOW_STORE_INVENTORY_INDICATOR</td></tr>
+		<tr><td port="HIGH_RISK_SHRINK_INDICATOR" align="center" cellpadding="5">HIGH_RISK_SHRINK_INDICATOR</td></tr>
+		<tr><td port="PICK_ORDER_NUMBER" align="center" cellpadding="5">PICK_ORDER_NUMBER</td></tr>
+		<tr><td port="PRIMARY_AISLE_SK" align="center" cellpadding="5">PRIMARY_AISLE_SK</td></tr>
+		<tr><td port="SKU_MERCHANDISE_SUBCATEGORY" align="center" cellpadding="5">SKU_MERCHANDISE_SUBCATEGORY</td></tr>
+		<tr><td port="LABEL_TYPE_SK" align="center" cellpadding="5">LABEL_TYPE_SK</td></tr>
+		<tr><td port="UPDATED_BY" align="center" cellpadding="5">UPDATED_BY</td></tr>
+		<tr><td port="SECONDARY_AISLE_SK" align="center" cellpadding="5">SECONDARY_AISLE_SK</td></tr>
+		<tr><td port="TERTIARY_ZONE_SK" align="center" cellpadding="5">TERTIARY_ZONE_SK</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 PICK_ORDER_TXN [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>PICK_ORDER_TXN</b></td></tr>
+        
+		<tr><td port="AS_OF_TIMESTAMP" align="center" cellpadding="5">AS_OF_TIMESTAMP</td></tr>
+		<tr><td port="PICK_ORDER_NUMBER" align="center" cellpadding="5">PICK_ORDER_NUMBER</td></tr>
+		<tr><td port="DISTRIBUTION_CENTER_NUMBER" align="center" cellpadding="5">DISTRIBUTION_CENTER_NUMBER</td></tr>
+		<tr><td port="UPDATED_BY" align="center" cellpadding="5">UPDATED_BY</td></tr>
+		<tr><td port="MODE" align="center" cellpadding="5">MODE</td></tr>
+		<tr><td port="STORE_NUMBER" align="center" cellpadding="5">STORE_NUMBER</td></tr>
+		<tr><td port="PICK_ORDER_TYPE_SK" align="center" cellpadding="5">PICK_ORDER_TYPE_SK</td></tr>
+		<tr><td port="DELETED_INDICATOR" align="center" cellpadding="5">DELETED_INDICATOR</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 REL_STORE_TOTE_PICK_ORDER_LABEL [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>REL_STORE_TOTE_PICK_ORDER_LABEL</b></td></tr>
+        
+		<tr><td port="SHIPPING_LABEL_ID" align="center" cellpadding="5">SHIPPING_LABEL_ID</td></tr>
+		<tr><td port="TOTE_SK" align="center" cellpadding="5">TOTE_SK</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 REL_STORE_TOTE_PICK_ORDER_LABEL_TXN [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>REL_STORE_TOTE_PICK_ORDER_LABEL_TXN</b></td></tr>
+        
+		<tr><td port="SHIPPING_LABEL_ID" align="center" cellpadding="5">SHIPPING_LABEL_ID</td></tr>
+		<tr><td port="UPDATED_BY" align="center" cellpadding="5">UPDATED_BY</td></tr>
+		<tr><td port="TOTE_SK" align="center" cellpadding="5">TOTE_SK</td></tr>
+		<tr><td port="DELETED_INDICATOR" align="center" cellpadding="5">DELETED_INDICATOR</td></tr>
+		<tr><td port="AS_OF_TIMESTAMP" align="center" cellpadding="5">AS_OF_TIMESTAMP</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 REL_STORE_WEEKDAY_SHIP_SCHEDULE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>REL_STORE_WEEKDAY_SHIP_SCHEDULE</b></td></tr>
+        
+		<tr><td port="STORE_NUMBER" align="center" cellpadding="5">STORE_NUMBER</td></tr>
+		<tr><td port="WEEKDAY_SK" align="center" cellpadding="5">WEEKDAY_SK</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 STG_STORE_BATCH_CONFIGURATION [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>STG_STORE_BATCH_CONFIGURATION</b></td></tr>
+        
+		<tr><td port="STORE_NUMBER" align="center" cellpadding="5">STORE_NUMBER</td></tr>
+		<tr><td port="PRINT_BATCH_NUMBER" align="center" cellpadding="5">PRINT_BATCH_NUMBER</td></tr>
+		<tr><td port="EXPIRED_PRODUCT_ELIGIBLE_INDICATOR" align="center" cellpadding="5">EXPIRED_PRODUCT_ELIGIBLE_INDICATOR</td></tr>
+		<tr><td port="HELD_PRODUCT_ELIGIBLE_INDICATOR" align="center" cellpadding="5">HELD_PRODUCT_ELIGIBLE_INDICATOR</td></tr>
+		<tr><td port="PALLETIZE_INDICATOR" align="center" cellpadding="5">PALLETIZE_INDICATOR</td></tr>
+		<tr><td port="LANE_NUMBER" align="center" cellpadding="5">LANE_NUMBER</td></tr>
+		<tr><td port="PICK_BATCH_NUMBER" align="center" cellpadding="5">PICK_BATCH_NUMBER</td></tr>
+		<tr><td port="SELECTION_MODE" align="center" cellpadding="5">SELECTION_MODE</td></tr>
+		<tr><td port="STORE_GROUP_NUMBER" align="center" cellpadding="5">STORE_GROUP_NUMBER</td></tr>
+		<tr><td port="MODE" align="center" cellpadding="5">MODE</td></tr>
+		<tr><td port="STORE_ALIGNMENT_TO" align="center" cellpadding="5">STORE_ALIGNMENT_TO</td></tr>
+		<tr><td port="SHIP_SCHEDULE" align="center" cellpadding="5">SHIP_SCHEDULE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		<tr><td port="CELL_GROUP" align="center" cellpadding="5">CELL_GROUP</td></tr>
+		<tr><td port="BREAKPACK_BATCH" align="center" cellpadding="5">BREAKPACK_BATCH</td></tr>
+		</table>>];
+
+	 STORE_TOTE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>STORE_TOTE</b></td></tr>
+        
+		<tr><td port="STORE_TOTE_WORKFLOW_STATUS_SK" align="center" cellpadding="5">STORE_TOTE_WORKFLOW_STATUS_SK</td></tr>
+		<tr><td port="TOTE_SK" align="center" cellpadding="5">TOTE_SK</td></tr>
+		<tr><td port="COMPLETION_TIMESTAMP" align="center" cellpadding="5">COMPLETION_TIMESTAMP</td></tr>
+		<tr><td port="TOTE_BARCODE" align="center" cellpadding="5">TOTE_BARCODE</td></tr>
+		<tr><td port="STORE_NUMBER" align="center" cellpadding="5">STORE_NUMBER</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 STORE_TOTE_CONTENT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>STORE_TOTE_CONTENT</b></td></tr>
+        
+		<tr><td port="WALMART_ITEM_NUMBER" align="center" cellpadding="5">WALMART_ITEM_NUMBER</td></tr>
+		<tr><td port="TOTE_QUANTITY" align="center" cellpadding="5">TOTE_QUANTITY</td></tr>
+		<tr><td port="PICK_QUANTITY" align="center" cellpadding="5">PICK_QUANTITY</td></tr>
+		<tr><td port="TOTE_SK" align="center" cellpadding="5">TOTE_SK</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 STORE_TOTE_TXN [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>STORE_TOTE_TXN</b></td></tr>
+        
+		<tr><td port="AS_OF_TIMESTAMP" align="center" cellpadding="5">AS_OF_TIMESTAMP</td></tr>
+		<tr><td port="TOTE_SK" align="center" cellpadding="5">TOTE_SK</td></tr>
+		<tr><td port="STORE_NUMBER" align="center" cellpadding="5">STORE_NUMBER</td></tr>
+		<tr><td port="STORE_TOTE_WORKFLOW_STATUS_SK" align="center" cellpadding="5">STORE_TOTE_WORKFLOW_STATUS_SK</td></tr>
+		<tr><td port="TOTE_BARCODE" align="center" cellpadding="5">TOTE_BARCODE</td></tr>
+		<tr><td port="UPDATED_BY" align="center" cellpadding="5">UPDATED_BY</td></tr>
+		<tr><td port="DELETED_INDICATOR" align="center" cellpadding="5">DELETED_INDICATOR</td></tr>
+		<tr><td port="COMPLETION_TIMESTAMP" align="center" cellpadding="5">COMPLETION_TIMESTAMP</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 SYMBOTIC_ORDER [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>SYMBOTIC_ORDER</b></td></tr>
+        
+		<tr><td port="ON_HOLD_INDICATOR" align="center" cellpadding="5">ON_HOLD_INDICATOR</td></tr>
+		<tr><td port="HELD_PRODUCT_ELIGIBLE_INDICATOR" align="center" cellpadding="5">HELD_PRODUCT_ELIGIBLE_INDICATOR</td></tr>
+		<tr><td port="SELECTION_MODE_SK" align="center" cellpadding="5">SELECTION_MODE_SK</td></tr>
+		<tr><td port="EXPIRED_PRODUCT_ELIGIBLE_INDICATOR" align="center" cellpadding="5">EXPIRED_PRODUCT_ELIGIBLE_INDICATOR</td></tr>
+		<tr><td port="PICK_BATCH_NUMBER" align="center" cellpadding="5">PICK_BATCH_NUMBER</td></tr>
+		<tr><td port="PARENT_ORDER_ID" align="center" cellpadding="5">PARENT_ORDER_ID</td></tr>
+		<tr><td port="ROUTE_NUMBER" align="center" cellpadding="5">ROUTE_NUMBER</td></tr>
+		<tr><td port="LANE_NUMBER" align="center" cellpadding="5">LANE_NUMBER</td></tr>
+		<tr><td port="STOP_NUMBER" align="center" cellpadding="5">STOP_NUMBER</td></tr>
+		<tr><td port="PALLETIZE_INDICATOR" align="center" cellpadding="5">PALLETIZE_INDICATOR</td></tr>
+		<tr><td port="SYMBOTIC_ORDER_ID" align="center" cellpadding="5">SYMBOTIC_ORDER_ID</td></tr>
+		<tr><td port="DISPATCH_TIMESTAMP" align="center" cellpadding="5">DISPATCH_TIMESTAMP</td></tr>
+		<tr><td port="ORDER_WORKFLOW_STATUS_SK" align="center" cellpadding="5">ORDER_WORKFLOW_STATUS_SK</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 SYMBOTIC_ORDER_TXN [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>SYMBOTIC_ORDER_TXN</b></td></tr>
+        
+		<tr><td port="AS_OF_TIMESTAMP" align="center" cellpadding="5">AS_OF_TIMESTAMP</td></tr>
+		<tr><td port="SYMBOTIC_ORDER_ID" align="center" cellpadding="5">SYMBOTIC_ORDER_ID</td></tr>
+		<tr><td port="UPDATED_BY" align="center" cellpadding="5">UPDATED_BY</td></tr>
+		<tr><td port="DELETED_INDICATOR" align="center" cellpadding="5">DELETED_INDICATOR</td></tr>
+		<tr><td port="PALLETIZE_INDICATOR" align="center" cellpadding="5">PALLETIZE_INDICATOR</td></tr>
+		<tr><td port="PARENT_ORDER_ID" align="center" cellpadding="5">PARENT_ORDER_ID</td></tr>
+		<tr><td port="SELECTION_MODE_SK" align="center" cellpadding="5">SELECTION_MODE_SK</td></tr>
+		<tr><td port="LANE_NUMBER" align="center" cellpadding="5">LANE_NUMBER</td></tr>
+		<tr><td port="EXPIRED_PRODUCT_ELIGIBLE_INDICATOR" align="center" cellpadding="5">EXPIRED_PRODUCT_ELIGIBLE_INDICATOR</td></tr>
+		<tr><td port="ON_HOLD_INDICATOR" align="center" cellpadding="5">ON_HOLD_INDICATOR</td></tr>
+		<tr><td port="STOP_NUMBER" align="center" cellpadding="5">STOP_NUMBER</td></tr>
+		<tr><td port="PICK_BATCH_NUMBER" align="center" cellpadding="5">PICK_BATCH_NUMBER</td></tr>
+		<tr><td port="DISPATCH_TIMESTAMP" align="center" cellpadding="5">DISPATCH_TIMESTAMP</td></tr>
+		<tr><td port="ORDER_WORKFLOW_STATUS_SK" align="center" cellpadding="5">ORDER_WORKFLOW_STATUS_SK</td></tr>
+		<tr><td port="ROUTE_NUMBER" align="center" cellpadding="5">ROUTE_NUMBER</td></tr>
+		<tr><td port="HELD_PRODUCT_ELIGIBLE_INDICATOR" align="center" cellpadding="5">HELD_PRODUCT_ELIGIBLE_INDICATOR</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 PICK_ORDER_LABEL:SYMBOTIC_ORDER_ID->SYMBOTIC_ORDER:SYMBOTIC_ORDER_ID;
+
+	 PICK_ORDER_LABEL_TXN:SYMBOTIC_ORDER_ID->SYMBOTIC_ORDER:SYMBOTIC_ORDER_ID;
+	}

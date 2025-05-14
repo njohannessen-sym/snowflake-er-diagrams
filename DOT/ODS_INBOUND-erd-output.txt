@@ -1,0 +1,292 @@
+digraph G {
+        graph [
+            nodesep=0.5;
+            rankdir="LR";
+            cencentrate=true;
+            splines="spline";
+            fontname="Helvetica";
+            pad="0.2,0.2",
+            label="",
+
+        ];
+
+        node [shape=plain, fontname="Helvetica"];
+        edge [
+            dir=both,
+            fontsize=12,
+            arrowsize=0.9,
+            penwidth=1.0,
+            labelangle=32,
+            labeldistance=1.8,
+            fontname="Helvetica"
+        ];
+
+	 FIVETRAN_AUDIT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>FIVETRAN_AUDIT</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="MESSAGE" align="center" cellpadding="5">MESSAGE</td></tr>
+		<tr><td port="UPDATE_STARTED" align="center" cellpadding="5">UPDATE_STARTED</td></tr>
+		<tr><td port="UPDATE_ID" align="center" cellpadding="5">UPDATE_ID</td></tr>
+		<tr><td port="SCHEMA" align="center" cellpadding="5">SCHEMA</td></tr>
+		<tr><td port="TABLE" align="center" cellpadding="5">TABLE</td></tr>
+		<tr><td port="START" align="center" cellpadding="5">START</td></tr>
+		<tr><td port="DONE" align="center" cellpadding="5">DONE</td></tr>
+		<tr><td port="ROWS_UPDATED_OR_INSERTED" align="center" cellpadding="5">ROWS_UPDATED_OR_INSERTED</td></tr>
+		<tr><td port="STATUS" align="center" cellpadding="5">STATUS</td></tr>
+		<tr><td port="PROGRESS" align="center" cellpadding="5">PROGRESS</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 INBOUNDCARTONINBOUNDCARTONREJECTREASONS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INBOUNDCARTONINBOUNDCARTONREJECTREASONS</b></td></tr>
+        
+		<tr><td port="INBOUNDCARTONID" align="center" cellpadding="5">INBOUNDCARTONID</td></tr>
+		<tr><td port="INBOUNDCARTONREJECTREASONID" align="center" cellpadding="5">INBOUNDCARTONREJECTREASONID</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 INBOUNDCARTONREJECTREASONS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INBOUNDCARTONREJECTREASONS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="NAME" align="center" cellpadding="5">NAME</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 INBOUNDCARTONS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INBOUNDCARTONS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="ONLIFTARMTIME" align="center" cellpadding="5">ONLIFTARMTIME</td></tr>
+		<tr><td port="PURGETIME" align="center" cellpadding="5">PURGETIME</td></tr>
+		<tr><td port="INBOUNDLPNID" align="center" cellpadding="5">INBOUNDLPNID</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="CUSTOMERCARTONGROUPREF" align="center" cellpadding="5">CUSTOMERCARTONGROUPREF</td></tr>
+		<tr><td port="REJECTTIME" align="center" cellpadding="5">REJECTTIME</td></tr>
+		<tr><td port="ONBOTTIME" align="center" cellpadding="5">ONBOTTIME</td></tr>
+		<tr><td port="CONVEYORCASEID" align="center" cellpadding="5">CONVEYORCASEID</td></tr>
+		<tr><td port="ONSHELFTIME" align="center" cellpadding="5">ONSHELFTIME</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="REJECTREASON" align="center" cellpadding="5">REJECTREASON</td></tr>
+		<tr><td port="INBOUNDID" align="center" cellpadding="5">INBOUNDID</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="REPORTEDTIME" align="center" cellpadding="5">REPORTEDTIME</td></tr>
+		<tr><td port="ONCARTONLIFTTIME" align="center" cellpadding="5">ONCARTONLIFTTIME</td></tr>
+		<tr><td port="INBOUNDCONVEYORID" align="center" cellpadding="5">INBOUNDCONVEYORID</td></tr>
+		<tr><td port="PICKFACETIME" align="center" cellpadding="5">PICKFACETIME</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="ONLIFTBUFFERTIME" align="center" cellpadding="5">ONLIFTBUFFERTIME</td></tr>
+		<tr><td port="ONCONVEYORTIME" align="center" cellpadding="5">ONCONVEYORTIME</td></tr>
+		<tr><td port="INBOUNDDESTINATION" align="center" cellpadding="5">INBOUNDDESTINATION</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		<tr><td port="REJECTCONVEYORID" align="center" cellpadding="5">REJECTCONVEYORID</td></tr>
+		</table>>];
+
+	 INBOUNDLPNS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INBOUNDLPNS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="NUMCASESREJECTEDUNKNOWNUPC" align="center" cellpadding="5">NUMCASESREJECTEDUNKNOWNUPC</td></tr>
+		<tr><td port="NUMCASESREJECTEDLPNREJECTED" align="center" cellpadding="5">NUMCASESREJECTEDLPNREJECTED</td></tr>
+		<tr><td port="LPNREJECTREASONID" align="center" cellpadding="5">LPNREJECTREASONID</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="RECORDNUMBER" align="center" cellpadding="5">RECORDNUMBER</td></tr>
+		<tr><td port="PURCHASEORDERNUMBER" align="center" cellpadding="5">PURCHASEORDERNUMBER</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="CARTONSREJECTEDOUTOFTOLERANCE" align="center" cellpadding="5">CARTONSREJECTEDOUTOFTOLERANCE</td></tr>
+		<tr><td port="INDUCTIONTYPE" align="center" cellpadding="5">INDUCTIONTYPE</td></tr>
+		<tr><td port="CARTONSSCRATCHED" align="center" cellpadding="5">CARTONSSCRATCHED</td></tr>
+		<tr><td port="NUMCASESREMOVEDNOTREJECTED" align="center" cellpadding="5">NUMCASESREMOVEDNOTREJECTED</td></tr>
+		<tr><td port="PALLETLAYERID" align="center" cellpadding="5">PALLETLAYERID</td></tr>
+		<tr><td port="CARTONSEXPECTED" align="center" cellpadding="5">CARTONSEXPECTED</td></tr>
+		<tr><td port="NUMCASESREJECTEDUNREADABLEUPC" align="center" cellpadding="5">NUMCASESREJECTEDUNREADABLEUPC</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="LPNID" align="center" cellpadding="5">LPNID</td></tr>
+		<tr><td port="CARTONSINDUCTED" align="center" cellpadding="5">CARTONSINDUCTED</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="CARTONSREJECTEDDAMAGED" align="center" cellpadding="5">CARTONSREJECTEDDAMAGED</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		<tr><td port="NUMCASESREMOVED" align="center" cellpadding="5">NUMCASESREMOVED</td></tr>
+		<tr><td port="NUMCASESNOTINDUCTED" align="center" cellpadding="5">NUMCASESNOTINDUCTED</td></tr>
+		<tr><td port="NUMCASESREJECTEDOUTOFTOLERANCE" align="center" cellpadding="5">NUMCASESREJECTEDOUTOFTOLERANCE</td></tr>
+		<tr><td port="AUTORECEIVINGSTATUS" align="center" cellpadding="5">AUTORECEIVINGSTATUS</td></tr>
+		<tr><td port="NUMCASESONREJECTEDPALLET" align="center" cellpadding="5">NUMCASESONREJECTEDPALLET</td></tr>
+		<tr><td port="NUMCASESINDUCTED" align="center" cellpadding="5">NUMCASESINDUCTED</td></tr>
+		</table>>];
+
+	 INBOUNDLPNSHISTORY [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INBOUNDLPNSHISTORY</b></td></tr>
+        
+		<tr><td port="NUMCASESREJECTEDUNKNOWNUPC" align="center" cellpadding="5">NUMCASESREJECTEDUNKNOWNUPC</td></tr>
+		<tr><td port="NUMCASESREJECTEDOUTOFTOLERANCE" align="center" cellpadding="5">NUMCASESREJECTEDOUTOFTOLERANCE</td></tr>
+		<tr><td port="CARTONSREJECTEDDAMAGED" align="center" cellpadding="5">CARTONSREJECTEDDAMAGED</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="NUMCASESREJECTEDLPNREJECTED" align="center" cellpadding="5">NUMCASESREJECTEDLPNREJECTED</td></tr>
+		<tr><td port="LPNID" align="center" cellpadding="5">LPNID</td></tr>
+		<tr><td port="HISTORYINSERTDATE" align="center" cellpadding="5">HISTORYINSERTDATE</td></tr>
+		<tr><td port="PALLETLAYERID" align="center" cellpadding="5">PALLETLAYERID</td></tr>
+		<tr><td port="CARTONSSCRATCHED" align="center" cellpadding="5">CARTONSSCRATCHED</td></tr>
+		<tr><td port="INBOUNDLPNSHISTORYSK" align="center" cellpadding="5">INBOUNDLPNSHISTORYSK</td></tr>
+		<tr><td port="INDUCTIONTYPE" align="center" cellpadding="5">INDUCTIONTYPE</td></tr>
+		<tr><td port="PURCHASEORDERNUMBER" align="center" cellpadding="5">PURCHASEORDERNUMBER</td></tr>
+		<tr><td port="AUTORECEIVINGSTATUS" align="center" cellpadding="5">AUTORECEIVINGSTATUS</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="CARTONSREJECTEDOUTOFTOLERANCE" align="center" cellpadding="5">CARTONSREJECTEDOUTOFTOLERANCE</td></tr>
+		<tr><td port="NUMCASESREMOVEDNOTREJECTED" align="center" cellpadding="5">NUMCASESREMOVEDNOTREJECTED</td></tr>
+		<tr><td port="CARTONSINDUCTED" align="center" cellpadding="5">CARTONSINDUCTED</td></tr>
+		<tr><td port="CARTONSEXPECTED" align="center" cellpadding="5">CARTONSEXPECTED</td></tr>
+		<tr><td port="NUMCASESNOTINDUCTED" align="center" cellpadding="5">NUMCASESNOTINDUCTED</td></tr>
+		<tr><td port="LPNREJECTREASONID" align="center" cellpadding="5">LPNREJECTREASONID</td></tr>
+		<tr><td port="NUMCASESONREJECTEDPALLET" align="center" cellpadding="5">NUMCASESONREJECTEDPALLET</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="NUMCASESREJECTEDUNREADABLEUPC" align="center" cellpadding="5">NUMCASESREJECTEDUNREADABLEUPC</td></tr>
+		<tr><td port="NUMCASESREMOVED" align="center" cellpadding="5">NUMCASESREMOVED</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="RECORDNUMBER" align="center" cellpadding="5">RECORDNUMBER</td></tr>
+		<tr><td port="NUMCASESINDUCTED" align="center" cellpadding="5">NUMCASESINDUCTED</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 INBOUNDPALLETS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INBOUNDPALLETS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="CANCELEDTIME" align="center" cellpadding="5">CANCELEDTIME</td></tr>
+		<tr><td port="PARENTLPN" align="center" cellpadding="5">PARENTLPN</td></tr>
+		<tr><td port="LAYERSEXPECTED" align="center" cellpadding="5">LAYERSEXPECTED</td></tr>
+		<tr><td port="DEPALLETIZINGSTARTEDTIME" align="center" cellpadding="5">DEPALLETIZINGSTARTEDTIME</td></tr>
+		<tr><td port="LAYERSRECEIVED" align="center" cellpadding="5">LAYERSRECEIVED</td></tr>
+		<tr><td port="DEPALLETIZEROPERATIONALMODE" align="center" cellpadding="5">DEPALLETIZEROPERATIONALMODE</td></tr>
+		<tr><td port="REPORTEDTIME" align="center" cellpadding="5">REPORTEDTIME</td></tr>
+		<tr><td port="PARTIALPALLETSTATE" align="center" cellpadding="5">PARTIALPALLETSTATE</td></tr>
+		<tr><td port="DEPALLETIZINGSUBSTATE" align="center" cellpadding="5">DEPALLETIZINGSUBSTATE</td></tr>
+		<tr><td port="INDUCTIONTYPE" align="center" cellpadding="5">INDUCTIONTYPE</td></tr>
+		<tr><td port="ISTOPLAYERPARTIAL" align="center" cellpadding="5">ISTOPLAYERPARTIAL</td></tr>
+		<tr><td port="SCANNEDTIME" align="center" cellpadding="5">SCANNEDTIME</td></tr>
+		<tr><td port="RECORDNUMBER" align="center" cellpadding="5">RECORDNUMBER</td></tr>
+		<tr><td port="LABELINGSUBSTATE" align="center" cellpadding="5">LABELINGSUBSTATE</td></tr>
+		<tr><td port="DEPALLETIZERID" align="center" cellpadding="5">DEPALLETIZERID</td></tr>
+		<tr><td port="ISONHOLD" align="center" cellpadding="5">ISONHOLD</td></tr>
+		<tr><td port="PALLETBASETYPEID" align="center" cellpadding="5">PALLETBASETYPEID</td></tr>
+		<tr><td port="ADDEDTIME" align="center" cellpadding="5">ADDEDTIME</td></tr>
+		<tr><td port="STOREDSTATE" align="center" cellpadding="5">STOREDSTATE</td></tr>
+		<tr><td port="PICKUPLOCATION" align="center" cellpadding="5">PICKUPLOCATION</td></tr>
+		<tr><td port="DELIVERYSTATE" align="center" cellpadding="5">DELIVERYSTATE</td></tr>
+		<tr><td port="INBOUNDPALLETSOURCEID" align="center" cellpadding="5">INBOUNDPALLETSOURCEID</td></tr>
+		<tr><td port="DEPALLETIZINGREJECTIONREASON" align="center" cellpadding="5">DEPALLETIZINGREJECTIONREASON</td></tr>
+		<tr><td port="INBOUNDPALLETNUMBER" align="center" cellpadding="5">INBOUNDPALLETNUMBER</td></tr>
+		<tr><td port="REJECTEDTIME" align="center" cellpadding="5">REJECTEDTIME</td></tr>
+		<tr><td port="PALLETTYPE" align="center" cellpadding="5">PALLETTYPE</td></tr>
+		<tr><td port="ISTESTPALLET" align="center" cellpadding="5">ISTESTPALLET</td></tr>
+		<tr><td port="ALTERNATEPRINTINGSTATE" align="center" cellpadding="5">ALTERNATEPRINTINGSTATE</td></tr>
+		<tr><td port="DEPALLETIZINGCOMPLETEDTIME" align="center" cellpadding="5">DEPALLETIZINGCOMPLETEDTIME</td></tr>
+		<tr><td port="PALLETSTATE" align="center" cellpadding="5">PALLETSTATE</td></tr>
+		<tr><td port="ROTATIONDATE" align="center" cellpadding="5">ROTATIONDATE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 INBOUNDPALLETSHISTORY [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INBOUNDPALLETSHISTORY</b></td></tr>
+        
+		<tr><td port="LABELINGSUBSTATE" align="center" cellpadding="5">LABELINGSUBSTATE</td></tr>
+		<tr><td port="CANCELEDTIME" align="center" cellpadding="5">CANCELEDTIME</td></tr>
+		<tr><td port="ISONHOLD" align="center" cellpadding="5">ISONHOLD</td></tr>
+		<tr><td port="PALLETSTATE" align="center" cellpadding="5">PALLETSTATE</td></tr>
+		<tr><td port="ADDEDTIME" align="center" cellpadding="5">ADDEDTIME</td></tr>
+		<tr><td port="PALLETBASETYPEID" align="center" cellpadding="5">PALLETBASETYPEID</td></tr>
+		<tr><td port="HISTORYINSERTDATE" align="center" cellpadding="5">HISTORYINSERTDATE</td></tr>
+		<tr><td port="SCANNEDTIME" align="center" cellpadding="5">SCANNEDTIME</td></tr>
+		<tr><td port="PARENTLPN" align="center" cellpadding="5">PARENTLPN</td></tr>
+		<tr><td port="DEPALLETIZINGSUBSTATE" align="center" cellpadding="5">DEPALLETIZINGSUBSTATE</td></tr>
+		<tr><td port="DEPALLETIZINGREJECTIONREASON" align="center" cellpadding="5">DEPALLETIZINGREJECTIONREASON</td></tr>
+		<tr><td port="INBOUNDPALLETSHISTORYSK" align="center" cellpadding="5">INBOUNDPALLETSHISTORYSK</td></tr>
+		<tr><td port="INDUCTIONTYPE" align="center" cellpadding="5">INDUCTIONTYPE</td></tr>
+		<tr><td port="LAYERSEXPECTED" align="center" cellpadding="5">LAYERSEXPECTED</td></tr>
+		<tr><td port="LAYERSRECEIVED" align="center" cellpadding="5">LAYERSRECEIVED</td></tr>
+		<tr><td port="DEPALLETIZINGSTARTEDTIME" align="center" cellpadding="5">DEPALLETIZINGSTARTEDTIME</td></tr>
+		<tr><td port="DEPALLETIZERID" align="center" cellpadding="5">DEPALLETIZERID</td></tr>
+		<tr><td port="DEPALLETIZEROPERATIONALMODE" align="center" cellpadding="5">DEPALLETIZEROPERATIONALMODE</td></tr>
+		<tr><td port="DEPALLETIZINGCOMPLETEDTIME" align="center" cellpadding="5">DEPALLETIZINGCOMPLETEDTIME</td></tr>
+		<tr><td port="REPORTEDTIME" align="center" cellpadding="5">REPORTEDTIME</td></tr>
+		<tr><td port="PARTIALPALLETSTATE" align="center" cellpadding="5">PARTIALPALLETSTATE</td></tr>
+		<tr><td port="ALTERNATEPRINTINGSTATE" align="center" cellpadding="5">ALTERNATEPRINTINGSTATE</td></tr>
+		<tr><td port="STOREDSTATE" align="center" cellpadding="5">STOREDSTATE</td></tr>
+		<tr><td port="PICKUPLOCATION" align="center" cellpadding="5">PICKUPLOCATION</td></tr>
+		<tr><td port="ISTOPLAYERPARTIAL" align="center" cellpadding="5">ISTOPLAYERPARTIAL</td></tr>
+		<tr><td port="DELIVERYSTATE" align="center" cellpadding="5">DELIVERYSTATE</td></tr>
+		<tr><td port="ISTESTPALLET" align="center" cellpadding="5">ISTESTPALLET</td></tr>
+		<tr><td port="REJECTEDTIME" align="center" cellpadding="5">REJECTEDTIME</td></tr>
+		<tr><td port="ROTATIONDATE" align="center" cellpadding="5">ROTATIONDATE</td></tr>
+		<tr><td port="INBOUNDPALLETSOURCEID" align="center" cellpadding="5">INBOUNDPALLETSOURCEID</td></tr>
+		<tr><td port="INBOUNDPALLETNUMBER" align="center" cellpadding="5">INBOUNDPALLETNUMBER</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="RECORDNUMBER" align="center" cellpadding="5">RECORDNUMBER</td></tr>
+		<tr><td port="PALLETTYPE" align="center" cellpadding="5">PALLETTYPE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 INBOUNDS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>INBOUNDS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="CUSTOMERCARTONGROUPREF" align="center" cellpadding="5">CUSTOMERCARTONGROUPREF</td></tr>
+		<tr><td port="CUSTOMERINBOUNDREF" align="center" cellpadding="5">CUSTOMERINBOUNDREF</td></tr>
+		<tr><td port="CARTONSEXPECTED" align="center" cellpadding="5">CARTONSEXPECTED</td></tr>
+		<tr><td port="CARTONSSTORED" align="center" cellpadding="5">CARTONSSTORED</td></tr>
+		<tr><td port="CARTONSRECEIVED" align="center" cellpadding="5">CARTONSRECEIVED</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="CARTONSSTOREDTIME" align="center" cellpadding="5">CARTONSSTOREDTIME</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 PALLETLAYERS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>PALLETLAYERS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="NUMBEROFLAYERS" align="center" cellpadding="5">NUMBEROFLAYERS</td></tr>
+		<tr><td port="RECORDNUMBER" align="center" cellpadding="5">RECORDNUMBER</td></tr>
+		<tr><td port="LAYERNUMBER" align="center" cellpadding="5">LAYERNUMBER</td></tr>
+		<tr><td port="PALLETID" align="center" cellpadding="5">PALLETID</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 INBOUNDCARTONS:INBOUNDLPNID->INBOUNDLPNS:ID;
+
+	 INBOUNDCARTONS:INBOUNDID->INBOUNDS:ID;
+
+	 INBOUNDLPNS:PALLETLAYERID->PALLETLAYERS:ID;
+
+	 INBOUNDLPNSHISTORY:PALLETLAYERID->PALLETLAYERS:ID;
+	}

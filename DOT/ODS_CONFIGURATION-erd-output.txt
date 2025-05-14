@@ -1,0 +1,73 @@
+digraph G {
+        graph [
+            nodesep=0.5;
+            rankdir="LR";
+            cencentrate=true;
+            splines="spline";
+            fontname="Helvetica";
+            pad="0.2,0.2",
+            label="",
+
+        ];
+
+        node [shape=plain, fontname="Helvetica"];
+        edge [
+            dir=both,
+            fontsize=12,
+            arrowsize=0.9,
+            penwidth=1.0,
+            labelangle=32,
+            labeldistance=1.8,
+            fontname="Helvetica"
+        ];
+
+	 CONFIGURATIONPARAMETERS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>CONFIGURATIONPARAMETERS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="GROUPID" align="center" cellpadding="5">GROUPID</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="DISPLAYTEXT" align="center" cellpadding="5">DISPLAYTEXT</td></tr>
+		<tr><td port="FULLYQUALIFIEDTYPENAME" align="center" cellpadding="5">FULLYQUALIFIEDTYPENAME</td></tr>
+		<tr><td port="VALIDATIONREGEX" align="center" cellpadding="5">VALIDATIONREGEX</td></tr>
+		<tr><td port="AUDITTRAILEVENT" align="center" cellpadding="5">AUDITTRAILEVENT</td></tr>
+		<tr><td port="VALUE" align="center" cellpadding="5">VALUE</td></tr>
+		<tr><td port="ISRUNTIMEEDITABLE" align="center" cellpadding="5">ISRUNTIMEEDITABLE</td></tr>
+		<tr><td port="SORTORDER" align="center" cellpadding="5">SORTORDER</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="NAME" align="center" cellpadding="5">NAME</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="AUDITTRAILGROUP" align="center" cellpadding="5">AUDITTRAILGROUP</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="MINVALUE" align="center" cellpadding="5">MINVALUE</td></tr>
+		<tr><td port="MAXVALUE" align="center" cellpadding="5">MAXVALUE</td></tr>
+		<tr><td port="DESCRIPTION" align="center" cellpadding="5">DESCRIPTION</td></tr>
+		<tr><td port="ISEDITABLE" align="center" cellpadding="5">ISEDITABLE</td></tr>
+		<tr><td port="ISAUDITABLE" align="center" cellpadding="5">ISAUDITABLE</td></tr>
+		<tr><td port="PATH" align="center" cellpadding="5">PATH</td></tr>
+		<tr><td port="VALIDATIONREGEXFAILMESSAGE" align="center" cellpadding="5">VALIDATIONREGEXFAILMESSAGE</td></tr>
+		<tr><td port="AUDITTRAILREASON" align="center" cellpadding="5">AUDITTRAILREASON</td></tr>
+		<tr><td port="ISACTIVE" align="center" cellpadding="5">ISACTIVE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 FIVETRAN_AUDIT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>FIVETRAN_AUDIT</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="MESSAGE" align="center" cellpadding="5">MESSAGE</td></tr>
+		<tr><td port="UPDATE_STARTED" align="center" cellpadding="5">UPDATE_STARTED</td></tr>
+		<tr><td port="UPDATE_ID" align="center" cellpadding="5">UPDATE_ID</td></tr>
+		<tr><td port="SCHEMA" align="center" cellpadding="5">SCHEMA</td></tr>
+		<tr><td port="TABLE" align="center" cellpadding="5">TABLE</td></tr>
+		<tr><td port="START" align="center" cellpadding="5">START</td></tr>
+		<tr><td port="DONE" align="center" cellpadding="5">DONE</td></tr>
+		<tr><td port="ROWS_UPDATED_OR_INSERTED" align="center" cellpadding="5">ROWS_UPDATED_OR_INSERTED</td></tr>
+		<tr><td port="STATUS" align="center" cellpadding="5">STATUS</td></tr>
+		<tr><td port="PROGRESS" align="center" cellpadding="5">PROGRESS</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+	}

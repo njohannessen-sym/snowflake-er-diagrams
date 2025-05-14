@@ -1,0 +1,198 @@
+digraph G {
+        graph [
+            nodesep=0.5;
+            rankdir="LR";
+            cencentrate=true;
+            splines="spline";
+            fontname="Helvetica";
+            pad="0.2,0.2",
+            label="",
+
+        ];
+
+        node [shape=plain, fontname="Helvetica"];
+        edge [
+            dir=both,
+            fontsize=12,
+            arrowsize=0.9,
+            penwidth=1.0,
+            labelangle=32,
+            labeldistance=1.8,
+            fontname="Helvetica"
+        ];
+
+	 BOTMODELS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>BOTMODELS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="MASS" align="center" cellpadding="5">MASS</td></tr>
+		<tr><td port="MAXAMPMOTORACCELERATION" align="center" cellpadding="5">MAXAMPMOTORACCELERATION</td></tr>
+		<tr><td port="HOTELLOAD" align="center" cellpadding="5">HOTELLOAD</td></tr>
+		<tr><td port="MAXCASELENGTH" align="center" cellpadding="5">MAXCASELENGTH</td></tr>
+		<tr><td port="REFORIGINY" align="center" cellpadding="5">REFORIGINY</td></tr>
+		<tr><td port="PAYLOADBAYLENGTH" align="center" cellpadding="5">PAYLOADBAYLENGTH</td></tr>
+		<tr><td port="ULTRACAPCAPACITANCE" align="center" cellpadding="5">ULTRACAPCAPACITANCE</td></tr>
+		<tr><td port="DESCRIPTION" align="center" cellpadding="5">DESCRIPTION</td></tr>
+		<tr><td port="MINCASEWIDTH" align="center" cellpadding="5">MINCASEWIDTH</td></tr>
+		<tr><td port="BOTHEIGHT" align="center" cellpadding="5">BOTHEIGHT</td></tr>
+		<tr><td port="MAXCHARGEMVOLTS" align="center" cellpadding="5">MAXCHARGEMVOLTS</td></tr>
+		<tr><td port="MOTORRESISTANCE20" align="center" cellpadding="5">MOTORRESISTANCE20</td></tr>
+		<tr><td port="TRANSFERENERGYRATE" align="center" cellpadding="5">TRANSFERENERGYRATE</td></tr>
+		<tr><td port="CASEPICKTIME" align="center" cellpadding="5">CASEPICKTIME</td></tr>
+		<tr><td port="REFORIGINX" align="center" cellpadding="5">REFORIGINX</td></tr>
+		<tr><td port="RESISTANCESTATICAISLE" align="center" cellpadding="5">RESISTANCESTATICAISLE</td></tr>
+		<tr><td port="MAXDECKSPEED" align="center" cellpadding="5">MAXDECKSPEED</td></tr>
+		<tr><td port="DRAGCOEFFICIENT" align="center" cellpadding="5">DRAGCOEFFICIENT</td></tr>
+		<tr><td port="ROTATE90ENERGYRATE" align="center" cellpadding="5">ROTATE90ENERGYRATE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="BOTWIDTH" align="center" cellpadding="5">BOTWIDTH</td></tr>
+		<tr><td port="MAXDECELERATION" align="center" cellpadding="5">MAXDECELERATION</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="MOTORDRIVEEFFICIENCY" align="center" cellpadding="5">MOTORDRIVEEFFICIENCY</td></tr>
+		<tr><td port="RESISTANCEROLLINGAISLE" align="center" cellpadding="5">RESISTANCEROLLINGAISLE</td></tr>
+		<tr><td port="MOTORRESISTANCE100" align="center" cellpadding="5">MOTORRESISTANCE100</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="EXTENTSX" align="center" cellpadding="5">EXTENTSX</td></tr>
+		<tr><td port="MINSTORAGELOCATIONLENGTH" align="center" cellpadding="5">MINSTORAGELOCATIONLENGTH</td></tr>
+		<tr><td port="MAXCHARGINGCURRENT" align="center" cellpadding="5">MAXCHARGINGCURRENT</td></tr>
+		<tr><td port="ROTATE180ENERGYRATE" align="center" cellpadding="5">ROTATE180ENERGYRATE</td></tr>
+		<tr><td port="CASEPUTTIME" align="center" cellpadding="5">CASEPUTTIME</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="MINCASEMASS" align="center" cellpadding="5">MINCASEMASS</td></tr>
+		<tr><td port="MINCASEDEPTH" align="center" cellpadding="5">MINCASEDEPTH</td></tr>
+		<tr><td port="FINGEREXTENSIONTIME" align="center" cellpadding="5">FINGEREXTENSIONTIME</td></tr>
+		<tr><td port="DECKRAILTRANSITIONWAITTIME" align="center" cellpadding="5">DECKRAILTRANSITIONWAITTIME</td></tr>
+		<tr><td port="FIRMWAREVERSION" align="center" cellpadding="5">FIRMWAREVERSION</td></tr>
+		<tr><td port="MAXACCELERATION" align="center" cellpadding="5">MAXACCELERATION</td></tr>
+		<tr><td port="CHARGETRIGGER" align="center" cellpadding="5">CHARGETRIGGER</td></tr>
+		<tr><td port="EXTENTSY" align="center" cellpadding="5">EXTENTSY</td></tr>
+		<tr><td port="MINCASEHEIGHT" align="center" cellpadding="5">MINCASEHEIGHT</td></tr>
+		<tr><td port="DISTANCEFROMCEDSENSORTOFRONTOFBOT" align="center" cellpadding="5">DISTANCEFROMCEDSENSORTOFRONTOFBOT</td></tr>
+		<tr><td port="DISTANCEFROMCEDSENSORTOREAROFBOT" align="center" cellpadding="5">DISTANCEFROMCEDSENSORTOREAROFBOT</td></tr>
+		<tr><td port="BOTPAYLOADCENTEROFFSET" align="center" cellpadding="5">BOTPAYLOADCENTEROFFSET</td></tr>
+		<tr><td port="MAXAMPMOTORDECELERATION" align="center" cellpadding="5">MAXAMPMOTORDECELERATION</td></tr>
+		<tr><td port="MAXCASEDEPTH" align="center" cellpadding="5">MAXCASEDEPTH</td></tr>
+		<tr><td port="MAXSPEED" align="center" cellpadding="5">MAXSPEED</td></tr>
+		<tr><td port="MAXPAYLOADWEIGHT" align="center" cellpadding="5">MAXPAYLOADWEIGHT</td></tr>
+		<tr><td port="MAXAISLESPEED" align="center" cellpadding="5">MAXAISLESPEED</td></tr>
+		<tr><td port="MINEDGESTORAGELOCATIONLENGTH" align="center" cellpadding="5">MINEDGESTORAGELOCATIONLENGTH</td></tr>
+		<tr><td port="ULTRACAPRESISTANCE" align="center" cellpadding="5">ULTRACAPRESISTANCE</td></tr>
+		<tr><td port="MINCHARGEMVOLTS" align="center" cellpadding="5">MINCHARGEMVOLTS</td></tr>
+		<tr><td port="RESISTANCESTATICDECK" align="center" cellpadding="5">RESISTANCESTATICDECK</td></tr>
+		<tr><td port="RESISTANCEROLLINGDECK" align="center" cellpadding="5">RESISTANCEROLLINGDECK</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 BOTPULLDETAILS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>BOTPULLDETAILS</b></td></tr>
+        
+		<tr><td port="PULLSCORE" align="center" cellpadding="5">PULLSCORE</td></tr>
+		<tr><td port="PULLLASTUPDATED" align="center" cellpadding="5">PULLLASTUPDATED</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="BOTNUMBER" align="center" cellpadding="5">BOTNUMBER</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="PULLREASON" align="center" cellpadding="5">PULLREASON</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 BOTS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>BOTS</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="RESISTANCESTATICDECK" align="center" cellpadding="5">RESISTANCESTATICDECK</td></tr>
+		<tr><td port="MACADDRESS1" align="center" cellpadding="5">MACADDRESS1</td></tr>
+		<tr><td port="MOTORRESISTANCE20" align="center" cellpadding="5">MOTORRESISTANCE20</td></tr>
+		<tr><td port="VIN" align="center" cellpadding="5">VIN</td></tr>
+		<tr><td port="MINCHARGEMVOLTS" align="center" cellpadding="5">MINCHARGEMVOLTS</td></tr>
+		<tr><td port="MAXCHARGINGCURRENT" align="center" cellpadding="5">MAXCHARGINGCURRENT</td></tr>
+		<tr><td port="MASS" align="center" cellpadding="5">MASS</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="RESISTANCEROLLINGAISLE" align="center" cellpadding="5">RESISTANCEROLLINGAISLE</td></tr>
+		<tr><td port="RESISTANCEROLLINGDECK" align="center" cellpadding="5">RESISTANCEROLLINGDECK</td></tr>
+		<tr><td port="MODELTYPE" align="center" cellpadding="5">MODELTYPE</td></tr>
+		<tr><td port="DECKRAILTRANSITIONWAITTIME" align="center" cellpadding="5">DECKRAILTRANSITIONWAITTIME</td></tr>
+		<tr><td port="MAXCASEDEPTH" align="center" cellpadding="5">MAXCASEDEPTH</td></tr>
+		<tr><td port="NUMBER" align="center" cellpadding="5">NUMBER</td></tr>
+		<tr><td port="MOTORDRIVEEFFICIENCY" align="center" cellpadding="5">MOTORDRIVEEFFICIENCY</td></tr>
+		<tr><td port="MOTORRESISTANCE100" align="center" cellpadding="5">MOTORRESISTANCE100</td></tr>
+		<tr><td port="MAXCASELENGTH" align="center" cellpadding="5">MAXCASELENGTH</td></tr>
+		<tr><td port="BOTHEIGHT" align="center" cellpadding="5">BOTHEIGHT</td></tr>
+		<tr><td port="CASEPICKTIME" align="center" cellpadding="5">CASEPICKTIME</td></tr>
+		<tr><td port="ULTRACAPCAPACITANCE" align="center" cellpadding="5">ULTRACAPCAPACITANCE</td></tr>
+		<tr><td port="MAXAMPMOTORACCELERATION" align="center" cellpadding="5">MAXAMPMOTORACCELERATION</td></tr>
+		<tr><td port="CASEPUTTIME" align="center" cellpadding="5">CASEPUTTIME</td></tr>
+		<tr><td port="RFID2" align="center" cellpadding="5">RFID2</td></tr>
+		<tr><td port="RESISTANCESTATICAISLE" align="center" cellpadding="5">RESISTANCESTATICAISLE</td></tr>
+		<tr><td port="MAXAMPMOTORDECELERATION" align="center" cellpadding="5">MAXAMPMOTORDECELERATION</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="FIRMWAREVERSION" align="center" cellpadding="5">FIRMWAREVERSION</td></tr>
+		<tr><td port="MAXACCELERATION" align="center" cellpadding="5">MAXACCELERATION</td></tr>
+		<tr><td port="ULTRACAPRESISTANCE" align="center" cellpadding="5">ULTRACAPRESISTANCE</td></tr>
+		<tr><td port="RFID1" align="center" cellpadding="5">RFID1</td></tr>
+		<tr><td port="ADDRESSENDPOINTIP" align="center" cellpadding="5">ADDRESSENDPOINTIP</td></tr>
+		<tr><td port="MACADDRESS2" align="center" cellpadding="5">MACADDRESS2</td></tr>
+		<tr><td port="CHARGETRIGGER" align="center" cellpadding="5">CHARGETRIGGER</td></tr>
+		<tr><td port="ROTATE90ENERGYRATE" align="center" cellpadding="5">ROTATE90ENERGYRATE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="FINGEREXTENSIONTIME" align="center" cellpadding="5">FINGEREXTENSIONTIME</td></tr>
+		<tr><td port="TRANSFERENERGYRATE" align="center" cellpadding="5">TRANSFERENERGYRATE</td></tr>
+		<tr><td port="MAXCHARGEMVOLTS" align="center" cellpadding="5">MAXCHARGEMVOLTS</td></tr>
+		<tr><td port="BOTWIDTH" align="center" cellpadding="5">BOTWIDTH</td></tr>
+		<tr><td port="MAXDECELERATION" align="center" cellpadding="5">MAXDECELERATION</td></tr>
+		<tr><td port="MAXPAYLOADWEIGHT" align="center" cellpadding="5">MAXPAYLOADWEIGHT</td></tr>
+		<tr><td port="HOTELLOAD" align="center" cellpadding="5">HOTELLOAD</td></tr>
+		<tr><td port="ROTATE180ENERGYRATE" align="center" cellpadding="5">ROTATE180ENERGYRATE</td></tr>
+		<tr><td port="DRAGCOEFFICIENT" align="center" cellpadding="5">DRAGCOEFFICIENT</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="MAXSPEED" align="center" cellpadding="5">MAXSPEED</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 BOTWAREHOUSESTATES [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>BOTWAREHOUSESTATES</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="FROMDATE" align="center" cellpadding="5">FROMDATE</td></tr>
+		<tr><td port="BOTID" align="center" cellpadding="5">BOTID</td></tr>
+		<tr><td port="TODATE" align="center" cellpadding="5">TODATE</td></tr>
+		<tr><td port="LOCATION" align="center" cellpadding="5">LOCATION</td></tr>
+		<tr><td port="BOTLIFTID" align="center" cellpadding="5">BOTLIFTID</td></tr>
+		<tr><td port="LEVELID" align="center" cellpadding="5">LEVELID</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 FIVETRAN_AUDIT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>FIVETRAN_AUDIT</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="MESSAGE" align="center" cellpadding="5">MESSAGE</td></tr>
+		<tr><td port="UPDATE_STARTED" align="center" cellpadding="5">UPDATE_STARTED</td></tr>
+		<tr><td port="UPDATE_ID" align="center" cellpadding="5">UPDATE_ID</td></tr>
+		<tr><td port="SCHEMA" align="center" cellpadding="5">SCHEMA</td></tr>
+		<tr><td port="TABLE" align="center" cellpadding="5">TABLE</td></tr>
+		<tr><td port="START" align="center" cellpadding="5">START</td></tr>
+		<tr><td port="DONE" align="center" cellpadding="5">DONE</td></tr>
+		<tr><td port="ROWS_UPDATED_OR_INSERTED" align="center" cellpadding="5">ROWS_UPDATED_OR_INSERTED</td></tr>
+		<tr><td port="STATUS" align="center" cellpadding="5">STATUS</td></tr>
+		<tr><td port="PROGRESS" align="center" cellpadding="5">PROGRESS</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 BOTWAREHOUSESTATES:BOTID->BOTS:ID;
+	}

@@ -1,0 +1,323 @@
+digraph G {
+        graph [
+            nodesep=0.5;
+            rankdir="LR";
+            cencentrate=true;
+            splines="spline";
+            fontname="Helvetica";
+            pad="0.2,0.2",
+            label="",
+
+        ];
+
+        node [shape=plain, fontname="Helvetica"];
+        edge [
+            dir=both,
+            fontsize=12,
+            arrowsize=0.9,
+            penwidth=1.0,
+            labelangle=32,
+            labeldistance=1.8,
+            fontname="Helvetica"
+        ];
+
+	 ALARMCOMPONENT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>ALARMCOMPONENT</b></td></tr>
+        
+		<tr><td port="PK_ALARMCOMPONENT" align="center" cellpadding="5">PK_ALARMCOMPONENT</td></tr>
+		<tr><td port="ISREPLICATED" align="center" cellpadding="5">ISREPLICATED</td></tr>
+		<tr><td port="DESCRIPTION" align="center" cellpadding="5">DESCRIPTION</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 ALARMDEFINITIONS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>ALARMDEFINITIONS</b></td></tr>
+        
+		<tr><td port="PK_ALARMDEFINITIONS" align="center" cellpadding="5">PK_ALARMDEFINITIONS</td></tr>
+		<tr><td port="GROUPID" align="center" cellpadding="5">GROUPID</td></tr>
+		<tr><td port="FK_ALARMCOMPONENT" align="center" cellpadding="5">FK_ALARMCOMPONENT</td></tr>
+		<tr><td port="ALARMID" align="center" cellpadding="5">ALARMID</td></tr>
+		<tr><td port="ALARMTEXT" align="center" cellpadding="5">ALARMTEXT</td></tr>
+		<tr><td port="BLOCKING" align="center" cellpadding="5">BLOCKING</td></tr>
+		<tr><td port="EQUIPMENTTYPE" align="center" cellpadding="5">EQUIPMENTTYPE</td></tr>
+		<tr><td port="ISREPLICATED" align="center" cellpadding="5">ISREPLICATED</td></tr>
+		<tr><td port="STARVING" align="center" cellpadding="5">STARVING</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 ALARMMETADATATYPE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>ALARMMETADATATYPE</b></td></tr>
+        
+		<tr><td port="PK_ALARMMETADATATYPE" align="center" cellpadding="5">PK_ALARMMETADATATYPE</td></tr>
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="DESCRIPTION" align="center" cellpadding="5">DESCRIPTION</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 ALARMS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>ALARMS</b></td></tr>
+        
+		<tr><td port="PK_ALARM" align="center" cellpadding="5">PK_ALARM</td></tr>
+		<tr><td port="CURRENTLYACTIVE" align="center" cellpadding="5">CURRENTLYACTIVE</td></tr>
+		<tr><td port="TIMESTAMPSTART" align="center" cellpadding="5">TIMESTAMPSTART</td></tr>
+		<tr><td port="ISREPLICATED" align="center" cellpadding="5">ISREPLICATED</td></tr>
+		<tr><td port="ALARMDEFINITION" align="center" cellpadding="5">ALARMDEFINITION</td></tr>
+		<tr><td port="TIMESTAMPEND" align="center" cellpadding="5">TIMESTAMPEND</td></tr>
+		<tr><td port="EQUIPMENT" align="center" cellpadding="5">EQUIPMENT</td></tr>
+		<tr><td port="EQUIPMENTAREA" align="center" cellpadding="5">EQUIPMENTAREA</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		<tr><td port="FK_METADATATYPE" align="center" cellpadding="5">FK_METADATATYPE</td></tr>
+		<tr><td port="METADATA" align="center" cellpadding="5">METADATA</td></tr>
+		<tr><td port="TOTALIMPACTING" align="center" cellpadding="5">TOTALIMPACTING</td></tr>
+		</table>>];
+
+	 ALARMSEGMENTS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>ALARMSEGMENTS</b></td></tr>
+        
+		<tr><td port="PK_ALARMSEGMENT" align="center" cellpadding="5">PK_ALARMSEGMENT</td></tr>
+		<tr><td port="EQUIPMENT" align="center" cellpadding="5">EQUIPMENT</td></tr>
+		<tr><td port="ISREPLICATED" align="center" cellpadding="5">ISREPLICATED</td></tr>
+		<tr><td port="STARTSEGMENT" align="center" cellpadding="5">STARTSEGMENT</td></tr>
+		<tr><td port="ALARM" align="center" cellpadding="5">ALARM</td></tr>
+		<tr><td port="SEGMENTDURATION" align="center" cellpadding="5">SEGMENTDURATION</td></tr>
+		<tr><td port="ENDSEGMENT" align="center" cellpadding="5">ENDSEGMENT</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 AOIS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>AOIS</b></td></tr>
+        
+		<tr><td port="PLCTYPE" align="center" cellpadding="5">PLCTYPE</td></tr>
+		<tr><td port="NAME" align="center" cellpadding="5">NAME</td></tr>
+		<tr><td port="PK_AOIS" align="center" cellpadding="5">PK_AOIS</td></tr>
+		<tr><td port="ISREPLICATED" align="center" cellpadding="5">ISREPLICATED</td></tr>
+		<tr><td port="VERSION" align="center" cellpadding="5">VERSION</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 AVAILABILITY [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>AVAILABILITY</b></td></tr>
+        
+		<tr><td port="PK_AVAILABILITY" align="center" cellpadding="5">PK_AVAILABILITY</td></tr>
+		<tr><td port="ACCESSTIME" align="center" cellpadding="5">ACCESSTIME</td></tr>
+		<tr><td port="PRODUCTLOSS" align="center" cellpadding="5">PRODUCTLOSS</td></tr>
+		<tr><td port="AVAILABILITY" align="center" cellpadding="5">AVAILABILITY</td></tr>
+		<tr><td port="UNAVAILABLETIME" align="center" cellpadding="5">UNAVAILABLETIME</td></tr>
+		<tr><td port="FK_EQUIPMENT" align="center" cellpadding="5">FK_EQUIPMENT</td></tr>
+		<tr><td port="SCHEDULEDTIME" align="center" cellpadding="5">SCHEDULEDTIME</td></tr>
+		<tr><td port="DATE" align="center" cellpadding="5">DATE</td></tr>
+		<tr><td port="ISREPLICATED" align="center" cellpadding="5">ISREPLICATED</td></tr>
+		<tr><td port="HOUR" align="center" cellpadding="5">HOUR</td></tr>
+		<tr><td port="SYSTEMLOSS" align="center" cellpadding="5">SYSTEMLOSS</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 CELLAVAILABILITY_SCHEMA [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>CELLAVAILABILITY_SCHEMA</b></td></tr>
+        
+		<tr><td port="APPLICATION" align="center" cellpadding="5">APPLICATION</td></tr>
+		<tr><td port="VERSION" align="center" cellpadding="5">VERSION</td></tr>
+		<tr><td port="APPLIED" align="center" cellpadding="5">APPLIED</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 EQUIPMENT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>EQUIPMENT</b></td></tr>
+        
+		<tr><td port="PK_EQUIPMENT" align="center" cellpadding="5">PK_EQUIPMENT</td></tr>
+		<tr><td port="DESCRIPTION" align="center" cellpadding="5">DESCRIPTION</td></tr>
+		<tr><td port="ISREPLICATED" align="center" cellpadding="5">ISREPLICATED</td></tr>
+		<tr><td port="EQUIPMENTTYPE" align="center" cellpadding="5">EQUIPMENTTYPE</td></tr>
+		<tr><td port="CELLID" align="center" cellpadding="5">CELLID</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		<tr><td port="LASTGOODCHECK" align="center" cellpadding="5">LASTGOODCHECK</td></tr>
+		</table>>];
+
+	 EQUIPMENTACTIVITY [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>EQUIPMENTACTIVITY</b></td></tr>
+        
+		<tr><td port="PK_ACTIVITY" align="center" cellpadding="5">PK_ACTIVITY</td></tr>
+		<tr><td port="ACTION_TYPE" align="center" cellpadding="5">ACTION_TYPE</td></tr>
+		<tr><td port="TIMESTAMP" align="center" cellpadding="5">TIMESTAMP</td></tr>
+		<tr><td port="FK_OPERATOR" align="center" cellpadding="5">FK_OPERATOR</td></tr>
+		<tr><td port="FK_EQUIPMENT" align="center" cellpadding="5">FK_EQUIPMENT</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 EQUIPMENTAREA [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>EQUIPMENTAREA</b></td></tr>
+        
+		<tr><td port="PK_EQUIPMENTAREA" align="center" cellpadding="5">PK_EQUIPMENTAREA</td></tr>
+		<tr><td port="EQUIPMENTAREAID" align="center" cellpadding="5">EQUIPMENTAREAID</td></tr>
+		<tr><td port="EQUIPMENTTYPE" align="center" cellpadding="5">EQUIPMENTTYPE</td></tr>
+		<tr><td port="ISREPLICATED" align="center" cellpadding="5">ISREPLICATED</td></tr>
+		<tr><td port="DESCRIPTION" align="center" cellpadding="5">DESCRIPTION</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 EQUIPMENTAREAACCESS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>EQUIPMENTAREAACCESS</b></td></tr>
+        
+		<tr><td port="PK_EQUIPMENTAREAACCESS" align="center" cellpadding="5">PK_EQUIPMENTAREAACCESS</td></tr>
+		<tr><td port="OPERATORRECORDTIME" align="center" cellpadding="5">OPERATORRECORDTIME</td></tr>
+		<tr><td port="SYSTEMISSUE" align="center" cellpadding="5">SYSTEMISSUE</td></tr>
+		<tr><td port="ISREPLICATED" align="center" cellpadding="5">ISREPLICATED</td></tr>
+		<tr><td port="ACCESSSTARTTIME" align="center" cellpadding="5">ACCESSSTARTTIME</td></tr>
+		<tr><td port="ACCESSENDTIME" align="center" cellpadding="5">ACCESSENDTIME</td></tr>
+		<tr><td port="EQUIPMENTAREA" align="center" cellpadding="5">EQUIPMENTAREA</td></tr>
+		<tr><td port="EQUIPMENT" align="center" cellpadding="5">EQUIPMENT</td></tr>
+		<tr><td port="PRODUCTISSUE" align="center" cellpadding="5">PRODUCTISSUE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 EQUIPMENTSTATUS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>EQUIPMENTSTATUS</b></td></tr>
+        
+		<tr><td port="PK_EQUIPMENTSTATUS" align="center" cellpadding="5">PK_EQUIPMENTSTATUS</td></tr>
+		<tr><td port="TIMESTAMPSTART" align="center" cellpadding="5">TIMESTAMPSTART</td></tr>
+		<tr><td port="ISREPLICATED" align="center" cellpadding="5">ISREPLICATED</td></tr>
+		<tr><td port="BLOCKED" align="center" cellpadding="5">BLOCKED</td></tr>
+		<tr><td port="TRAINING" align="center" cellpadding="5">TRAINING</td></tr>
+		<tr><td port="INCSDN" align="center" cellpadding="5">INCSDN</td></tr>
+		<tr><td port="STARVED" align="center" cellpadding="5">STARVED</td></tr>
+		<tr><td port="BREAK" align="center" cellpadding="5">BREAK</td></tr>
+		<tr><td port="TIMESTAMPEND" align="center" cellpadding="5">TIMESTAMPEND</td></tr>
+		<tr><td port="INPDN" align="center" cellpadding="5">INPDN</td></tr>
+		<tr><td port="EQUIPMENT" align="center" cellpadding="5">EQUIPMENT</td></tr>
+		<tr><td port="SCHEDULED" align="center" cellpadding="5">SCHEDULED</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		<tr><td port="INCUSTOMERPDN" align="center" cellpadding="5">INCUSTOMERPDN</td></tr>
+		<tr><td port="INCUSTOMERCSDN" align="center" cellpadding="5">INCUSTOMERCSDN</td></tr>
+		</table>>];
+
+	 EQUIPMENTTYPE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>EQUIPMENTTYPE</b></td></tr>
+        
+		<tr><td port="PK_EQUIPMENTTYPE" align="center" cellpadding="5">PK_EQUIPMENTTYPE</td></tr>
+		<tr><td port="ISREPLICATED" align="center" cellpadding="5">ISREPLICATED</td></tr>
+		<tr><td port="DESCRIPTION" align="center" cellpadding="5">DESCRIPTION</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 FIVETRAN_AUDIT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>FIVETRAN_AUDIT</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="MESSAGE" align="center" cellpadding="5">MESSAGE</td></tr>
+		<tr><td port="UPDATE_STARTED" align="center" cellpadding="5">UPDATE_STARTED</td></tr>
+		<tr><td port="UPDATE_ID" align="center" cellpadding="5">UPDATE_ID</td></tr>
+		<tr><td port="SCHEMA" align="center" cellpadding="5">SCHEMA</td></tr>
+		<tr><td port="TABLE" align="center" cellpadding="5">TABLE</td></tr>
+		<tr><td port="START" align="center" cellpadding="5">START</td></tr>
+		<tr><td port="DONE" align="center" cellpadding="5">DONE</td></tr>
+		<tr><td port="ROWS_UPDATED_OR_INSERTED" align="center" cellpadding="5">ROWS_UPDATED_OR_INSERTED</td></tr>
+		<tr><td port="STATUS" align="center" cellpadding="5">STATUS</td></tr>
+		<tr><td port="PROGRESS" align="center" cellpadding="5">PROGRESS</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 OPERATOR [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>OPERATOR</b></td></tr>
+        
+		<tr><td port="DISPLAY_NAME" align="center" cellpadding="5">DISPLAY_NAME</td></tr>
+		<tr><td port="CREATED" align="center" cellpadding="5">CREATED</td></tr>
+		<tr><td port="PK_OPERATOR" align="center" cellpadding="5">PK_OPERATOR</td></tr>
+		<tr><td port="LAST_MODIFIED" align="center" cellpadding="5">LAST_MODIFIED</td></tr>
+		<tr><td port="LAST_MODIFIED_BY" align="center" cellpadding="5">LAST_MODIFIED_BY</td></tr>
+		<tr><td port="IS_ACTIVE" align="center" cellpadding="5">IS_ACTIVE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 OPERATORHISTORY [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>OPERATORHISTORY</b></td></tr>
+        
+		<tr><td port="LAST_MODIFIED_BY" align="center" cellpadding="5">LAST_MODIFIED_BY</td></tr>
+		<tr><td port="CREATED" align="center" cellpadding="5">CREATED</td></tr>
+		<tr><td port="MOVED_TO_HISTORY" align="center" cellpadding="5">MOVED_TO_HISTORY</td></tr>
+		<tr><td port="PK_OPERATOR" align="center" cellpadding="5">PK_OPERATOR</td></tr>
+		<tr><td port="LAST_MODIFIED" align="center" cellpadding="5">LAST_MODIFIED</td></tr>
+		<tr><td port="DISPLAY_NAME" align="center" cellpadding="5">DISPLAY_NAME</td></tr>
+		<tr><td port="IS_ACTIVE" align="center" cellpadding="5">IS_ACTIVE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 PLCTYPES [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>PLCTYPES</b></td></tr>
+        
+		<tr><td port="ISREPLICATED" align="center" cellpadding="5">ISREPLICATED</td></tr>
+		<tr><td port="TYPENAME" align="center" cellpadding="5">TYPENAME</td></tr>
+		<tr><td port="PK_PLCTYPES" align="center" cellpadding="5">PK_PLCTYPES</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 TYPEMEMEBERS [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>TYPEMEMEBERS</b></td></tr>
+        
+		<tr><td port="MEMBERNAME" align="center" cellpadding="5">MEMBERNAME</td></tr>
+		<tr><td port="PLCTYPE" align="center" cellpadding="5">PLCTYPE</td></tr>
+		<tr><td port="PK_TYPEMEMBERS" align="center" cellpadding="5">PK_TYPEMEMBERS</td></tr>
+		<tr><td port="MEMBERTYPE" align="center" cellpadding="5">MEMBERTYPE</td></tr>
+		<tr><td port="ISREPLICATED" align="center" cellpadding="5">ISREPLICATED</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 ALARMDEFINITIONS:FK_ALARMCOMPONENT->ALARMCOMPONENT:PK_ALARMCOMPONENT;
+
+	 AVAILABILITY:FK_EQUIPMENT->EQUIPMENT:PK_EQUIPMENT;
+
+	 EQUIPMENTACTIVITY:FK_OPERATOR->OPERATOR:PK_OPERATOR;
+
+	 EQUIPMENTACTIVITY:FK_EQUIPMENT->EQUIPMENT:PK_EQUIPMENT;
+
+	 EQUIPMENTAREAACCESS:EQUIPMENTAREA->EQUIPMENTAREA:EQUIPMENTAREAID;
+
+	 ALARMS:ALARMDEFINITION->ALARMDEFINITIONS:PK_ALARMDEFINITIONS;
+
+	 ALARMS:PK_ALARM->ALARMSEGMENTS:ALARM;
+
+	 ALARMS:EQUIPMENT->EQUIPMENT:PK_EQUIPMENT;
+
+	 ALARMSEGMENTS:EQUIPMENT->EQUIPMENT:PK_EQUIPMENT;
+
+	 EQUIPMENTSTATUS:EQUIPMENT->EQUIPMENT:PK_EQUIPMENT;
+
+	 EQUIPMENTAREAACCESS:EQUIPMENT->EQUIPMENT:PK_EQUIPMENT;
+OPERATOR:PK_OPERATOR->OPERATORHISTORY:PK_OPERATOR;
+	}

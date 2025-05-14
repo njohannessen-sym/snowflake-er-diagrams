@@ -1,0 +1,94 @@
+digraph G {
+        graph [
+            nodesep=0.5;
+            rankdir="LR";
+            cencentrate=true;
+            splines="spline";
+            fontname="Helvetica";
+            pad="0.2,0.2",
+            label="",
+
+        ];
+
+        node [shape=plain, fontname="Helvetica"];
+        edge [
+            dir=both,
+            fontsize=12,
+            arrowsize=0.9,
+            penwidth=1.0,
+            labelangle=32,
+            labeldistance=1.8,
+            fontname="Helvetica"
+        ];
+
+	 FIVETRAN_AUDIT [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>FIVETRAN_AUDIT</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="MESSAGE" align="center" cellpadding="5">MESSAGE</td></tr>
+		<tr><td port="UPDATE_STARTED" align="center" cellpadding="5">UPDATE_STARTED</td></tr>
+		<tr><td port="UPDATE_ID" align="center" cellpadding="5">UPDATE_ID</td></tr>
+		<tr><td port="SCHEMA" align="center" cellpadding="5">SCHEMA</td></tr>
+		<tr><td port="TABLE" align="center" cellpadding="5">TABLE</td></tr>
+		<tr><td port="START" align="center" cellpadding="5">START</td></tr>
+		<tr><td port="DONE" align="center" cellpadding="5">DONE</td></tr>
+		<tr><td port="ROWS_UPDATED_OR_INSERTED" align="center" cellpadding="5">ROWS_UPDATED_OR_INSERTED</td></tr>
+		<tr><td port="STATUS" align="center" cellpadding="5">STATUS</td></tr>
+		<tr><td port="PROGRESS" align="center" cellpadding="5">PROGRESS</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 LABELBASE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>LABELBASE</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="BARCODE" align="center" cellpadding="5">BARCODE</td></tr>
+		<tr><td port="CREATEDBY" align="center" cellpadding="5">CREATEDBY</td></tr>
+		<tr><td port="MODIFIEDBY" align="center" cellpadding="5">MODIFIEDBY</td></tr>
+		<tr><td port="ISACTIVE" align="center" cellpadding="5">ISACTIVE</td></tr>
+		<tr><td port="LABELDATA" align="center" cellpadding="5">LABELDATA</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+
+	 PALLETBASETYPE [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="grey"><b>PALLETBASETYPE</b></td></tr>
+        
+		<tr><td port="ID" align="center" cellpadding="5">ID</td></tr>
+		<tr><td port="ISDEFAULTOUTBOUND" align="center" cellpadding="5">ISDEFAULTOUTBOUND</td></tr>
+		<tr><td port="DISPLAYORDER" align="center" cellpadding="5">DISPLAYORDER</td></tr>
+		<tr><td port="ISOUTBOUND" align="center" cellpadding="5">ISOUTBOUND</td></tr>
+		<tr><td port="NAME" align="center" cellpadding="5">NAME</td></tr>
+		<tr><td port="MAXHEIGHTFLOOR" align="center" cellpadding="5">MAXHEIGHTFLOOR</td></tr>
+		<tr><td port="MAXWEIGHTCEILING" align="center" cellpadding="5">MAXWEIGHTCEILING</td></tr>
+		<tr><td port="OVERHANGWIDTHCEILING" align="center" cellpadding="5">OVERHANGWIDTHCEILING</td></tr>
+		<tr><td port="DISPLAYNAME" align="center" cellpadding="5">DISPLAYNAME</td></tr>
+		<tr><td port="OVERHANGWIDTH" align="center" cellpadding="5">OVERHANGWIDTH</td></tr>
+		<tr><td port="ISINBOUND" align="center" cellpadding="5">ISINBOUND</td></tr>
+		<tr><td port="ISDEFAULTINBOUND" align="center" cellpadding="5">ISDEFAULTINBOUND</td></tr>
+		<tr><td port="OVERHANGLENGTHFLOOR" align="center" cellpadding="5">OVERHANGLENGTHFLOOR</td></tr>
+		<tr><td port="LENGTH" align="center" cellpadding="5">LENGTH</td></tr>
+		<tr><td port="HEIGHT" align="center" cellpadding="5">HEIGHT</td></tr>
+		<tr><td port="ISMODIFIED" align="center" cellpadding="5">ISMODIFIED</td></tr>
+		<tr><td port="MAXWEIGHT" align="center" cellpadding="5">MAXWEIGHT</td></tr>
+		<tr><td port="MAXWEIGHTFLOOR" align="center" cellpadding="5">MAXWEIGHTFLOOR</td></tr>
+		<tr><td port="CREATEDDATE" align="center" cellpadding="5">CREATEDDATE</td></tr>
+		<tr><td port="MAXHEIGHT" align="center" cellpadding="5">MAXHEIGHT</td></tr>
+		<tr><td port="WEIGHTOFBASE" align="center" cellpadding="5">WEIGHTOFBASE</td></tr>
+		<tr><td port="OVERHANGLENGTH" align="center" cellpadding="5">OVERHANGLENGTH</td></tr>
+		<tr><td port="MAXHEIGHTCEILING" align="center" cellpadding="5">MAXHEIGHTCEILING</td></tr>
+		<tr><td port="OVERHANGWIDTHFLOOR" align="center" cellpadding="5">OVERHANGWIDTHFLOOR</td></tr>
+		<tr><td port="DESCRIPTION" align="center" cellpadding="5">DESCRIPTION</td></tr>
+		<tr><td port="OVERHANGLENGTHCEILING" align="center" cellpadding="5">OVERHANGLENGTHCEILING</td></tr>
+		<tr><td port="WIDTH" align="center" cellpadding="5">WIDTH</td></tr>
+		<tr><td port="MODIFIEDDATE" align="center" cellpadding="5">MODIFIEDDATE</td></tr>
+		<tr><td port="ISACTIVE" align="center" cellpadding="5">ISACTIVE</td></tr>
+		<tr><td port="_FIVETRAN_DELETED" align="center" cellpadding="5">_FIVETRAN_DELETED</td></tr>
+		<tr><td port="_FIVETRAN_SYNCED" align="center" cellpadding="5">_FIVETRAN_SYNCED</td></tr>
+		</table>>];
+	}
